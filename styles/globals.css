@@ -2,12 +2,9 @@ footer, footer a {
     color: white;
 }
 footer > div:nth-child(1) {
-    background-color: #6351ce;
-}
-footer > div:nth-child(2) {
     background-color: #1c2331;
 }
-footer > div:nth-child(3) {
+footer > div:nth-child(2) {
     background-color: #161c27;
 }
 footer hr {
