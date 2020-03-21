@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: EagleLake-Regular;
+    src: url("../fonts/EagleLake-Regular.ttf");
+}
 
 /* Body */
 body {
@@ -62,19 +66,110 @@ body > nav > ul li {
 
 }
 
+/* Footer */
+body > footer > div:first-child {
 
+    /* Sizing */
+    padding: 0 5rem;
 
-
-/* Footer 
-footer, footer a {
-    color: white;
-}
-footer > div:nth-child(1) {
+    /* Appearance */
     background-color: #1c2331;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
-footer > div:nth-child(2) {
+body > footer > div:first-child > div {
+
+    /* Sizing */
+    padding: 0.5rem 1rem;
+
+    /* Flexbox */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+body > footer > div:first-child h6 {
+
+    /* Appearance */
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: solid 0.125rem #7c4dff;
+
+}
+body > footer > div:first-child ul {
+
+    /* Appearance */
+    list-style: none;
+    color: white;
+    
+}
+body > footer > div:first-child ul li {
+
+    /* Sizing */
+    margin: 0.5rem auto;
+
+}
+body > footer > div:first-child ul li a {
+    
+    /* Appearance */
+    color: white;
+    text-decoration: none;
+
+}
+body > footer > div:last-child {
+
+    /* Sizing */
+    padding: 0 5rem;
+
+    /* Appearance */
     background-color: #161c27;
+    color: white;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
 }
-footer hr {
-    background-color: #7c4dff;
-}*/
+body > footer > div:last-child > blockquote {
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+body > footer > div:last-child > blockquote > p {
+
+    /* Sizing */
+    margin-top: 1rem;
+
+    /* Appearance */
+    text-align: center;
+    font-family: EagleLake-Regular;
+    font-size: 1.20rem;
+    letter-spacing: 1px;
+
+}
+body > footer > div:last-child > blockquote > cite {
+
+    /* Appearance */
+    text-align: center;
+    font-size: 1rem;
+
+}
+body > footer > div:last-child > p {
+
+    /* Sizing */
+    margin: 1rem auto;
+
+    /* Appearance */
+    text-align: center;
+    font-size: 1rem;
+
+}
