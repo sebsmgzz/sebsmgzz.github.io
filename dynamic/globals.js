@@ -1,9 +1,8 @@
 
 const Nav = document.querySelector("body nav");
 const NavButton = document.querySelector("body nav div button");
-const NavList = document.querySelector("body nav ul");
-const NavItems = document.querySelectorAll("body nav ul li");
+const NavRight = document.querySelector(".NavRight");
 
 NavButton.addEventListener("click", (e) => {
-    NavList.className = (NavList.className === "collapsed") ? "uncollapsed" : "collapsed";
+    NavRight.className = (NavRight.className === "NavRight collapsed") ? "NavRight uncollapsed" : "NavRight collapsed";
 });

@@ -34,9 +34,12 @@ body > nav {
     /* Behaviour */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+
 }
 .NavLeft {
+
+    /* Size */
+    height: 100%;
 
     /* Behaviour */
     display: flex;
@@ -67,9 +70,9 @@ body > nav {
 }
 .NavLeft > button {
 
-
     /* Size */
-    padding: 0 .50rem;
+    width: 2rem;
+    margin: .25rem 1rem;
 
     /* Appearance */
     font-size: 1rem;
@@ -87,15 +90,6 @@ body > nav {
     /* Appearance */
     background-color: rgba(255,255,255,.2);
 
-}
-.NavLeft > button > i {
-
-    /* Behaviour */
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
 }
 .NavRight {
 
@@ -121,6 +115,12 @@ body > nav {
     text-decoration: none;
 
 }
+.NavRight > a:hover {
+
+    /* Appearance */
+    background-color: rgba(255,255,255,.2);
+
+}
 .NavRight > a > p {
 
     /* Behaviour */
@@ -130,16 +130,33 @@ body > nav {
     transform: translate(-50%, -50%);
 }
 @media (max-width: 800px) {
+    body > nav {
+
+        /* Size */
+        height: auto;
+
+        /* Behaviour */
+        display: block;
+
+    }
     .NavLeft {
 
         /* Size */
+        height: 100%;
         width: 100%;
 
+    }
+    .NavLeft > a {
+
+        /* Size */
+        height: 2.5rem;
+        padding: 0 1rem;
+    
     }
     .NavLeft > button {
 
         /* Behaviour */
-        display: flex;
+        display: inline;
 
     }
     .NavRight.collapsed {
@@ -154,6 +171,20 @@ body > nav {
         display: flex;
         flex-direction: column;
 
+    }
+    .NavRight.uncollapsed > a {
+
+        /* Size */
+        height: inherit;
+        padding: 0.25rem 1rem;
+    
+    }
+    .NavRight.uncollapsed > a > p {
+
+        /* Behaviour */
+        position: static;
+        transform: none;
+        
     }
 }
 
