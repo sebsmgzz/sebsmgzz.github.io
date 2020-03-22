@@ -36,6 +36,8 @@ body > nav > div > a {
 
     /* Appearance */
     font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
 
 }
 body > nav > div > button {
@@ -69,20 +71,17 @@ body > nav > ul {
     flex-direction: row;
     
 }
-body > nav a {
+body > nav > ul > li {
+
+    /* Sizing */
+    margin: 0 1rem;
+
+}
+body > nav > ul > li > a {
 
     /* Appearance */
     color: #fff;
     text-decoration: none;
-    
-    /* Dinamic */
-    vertical-align: middle;
-
-}
-body > nav > ul li {
-
-    /* Sizing */
-    margin: 0 1rem;
 
 }
 @media (max-width: 1000px) {
