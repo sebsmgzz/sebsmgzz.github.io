@@ -34,26 +34,39 @@ body > nav {
     /* Behaviour */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+.NavLeft {
+
+    /* Behaviour */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
-body > nav > div > a {
+.NavLeft > a {
 
     /* Size */
     height: 100%;
-    margin: 0 1rem;
-    padding-top: 4%; /* This is just temporal while i figure out how to center the text inside an anchore */
+    padding: 0 1rem;
 
     /* Appearance */
     font-size: 1.25rem;
     color: #fff;
     text-decoration: none;
 
+}
+.NavLeft > a > p {
+
     /* Behaviour */
-    display: block;
-    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
-body > nav > div > button {
+.NavLeft > button {
+
 
     /* Size */
     padding: 0 .50rem;
@@ -69,79 +82,73 @@ body > nav > div > button {
     display: none;
 
 }
-body > nav > div > button:hover {
+.NavLeft > button:hover {
 
     /* Appearance */
     background-color: rgba(255,255,255,.2);
 
 }
-body > nav > ul {
+.NavLeft > button > i {
+
+    /* Behaviour */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.NavRight {
 
     /* Size */
     height: 100%;
-
-    /* Appearance */
-    list-style: none;
 
     /* Behaviour */
     flex: 1;
     display: flex;
     flex-direction: row;
-    
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
 }
-body > nav > ul > li {
+.NavRight > a {
 
     /* Size */
     height: 100%;
-
-}
-body > nav > ul > li > a {
-
-    /* Size */
-    height: 100%;
-    margin: 0 1rem;
-    padding-top: 10%; /* This is just temporal while i figure out how to center the text inside an anchore */
+    padding: 0 1rem;
 
     /* Appearance */
     color: #fff;
     text-decoration: none;
 
-    /* Behaviour */
-    display: block;
-    text-align: center;
+}
+.NavRight > a > p {
 
+    /* Behaviour */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @media (max-width: 800px) {
-    body > nav {
-
-        /* Behaviour */
-        flex-wrap: wrap;
-
-    }
-    body > nav > div {
+    .NavLeft {
 
         /* Size */
         width: 100%;
 
-        /* Behaviour */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
     }
-    body > nav > div > button {
+    .NavLeft > button {
 
         /* Behaviour */
         display: flex;
 
     }
-    body > nav > ul.collapsed {
+    .NavRight.collapsed {
 
         /* Behaviour */
         display: none;
         
     }
-    body > nav > ul.uncollapsed {
+    .NavRight.uncollapsed {
 
         /* Behaviour */
         display: flex;
