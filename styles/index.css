@@ -1,0 +1,70 @@
+
+#main {
+
+    /* Appearance */
+    background-image: url("../imgs/TimeLineBackground.jpg");
+
+}
+.smallGridRow {
+
+    /* Size */
+    width: 100%;
+
+    /* Behaviour */
+    display: grid;
+    grid-template-columns: [LLL] 5% [L] 45% [CL CR] 45% [R] 5% [RRR];
+
+}
+.mediumGridRow {
+
+    /* Size */
+    width: 100%;
+
+    /* Behaviour */
+    display: grid;
+    grid-template-columns: [LLL] 5% [L] 30% [CL] 30% [CR] 30% [R] 5% [RRR];
+
+}
+.LeftContent {
+
+    /* Behaviour */
+    text-align: right;
+    grid-column-start: L;
+    grid-column-end: CL;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.CenterContent {
+
+    /* Behaviour */
+    text-align: center;
+    grid-column-start: CL;
+    grid-column-end: CR;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.RightContent {
+
+    /* Behaviour */
+    text-align: left;
+    grid-column-start: CR;
+    grid-column-end: R;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#main > div:first-child img {
+
+    /* Size */
+    width: 200px;
+
+    /* Appearance */
+    border-radius: 50%;
+
+}
