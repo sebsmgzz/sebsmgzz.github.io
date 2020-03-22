@@ -189,7 +189,7 @@ body > nav {
 }
 
 /* Footer */
-body > footer > div:first-child {
+.FooterTop {
 
     /* Size */
     padding: 0 5%;
@@ -203,7 +203,7 @@ body > footer > div:first-child {
     align-content: space-between;
 
 }
-body > footer > div:first-child > div {
+.FooterTop > div {
 
     /* Size */
     padding: 0.5rem 1rem;
@@ -214,7 +214,7 @@ body > footer > div:first-child > div {
     flex-direction: column;
 
 }
-body > footer > div:first-child > div > h6 {
+.FooterTop > div > h6 {
 
     /* Appearance */
     color: white;
@@ -223,27 +223,33 @@ body > footer > div:first-child > div > h6 {
     border-bottom: solid 0.125rem #7c4dff;
 
 }
-body > footer > div:first-child > div > ul {
+.FooterTop > div > ul {
 
     /* Appearance */
     list-style: none;
     color: white;
     
 }
-body > footer > div:first-child > div > ul > li {
+.FooterTop > div > ul > li {
 
     /* Size */
     margin: 0.5rem auto;
 
 }
-body > footer > div:first-child > div > ul > li > a {
+.FooterTop > div > ul > li > a {
     
     /* Appearance */
     color: white;
     text-decoration: none;
 
 }
-body > footer > div:last-child {
+.FooterTop > div > ul > li > a:hover {
+    
+    /* Appearance */
+    color: #91B6FF;
+
+}
+.FooterBottom {
 
     /* Size */
     padding: 0 5rem;
@@ -258,7 +264,7 @@ body > footer > div:last-child {
     align-items: stretch;
 
 }
-body > footer > div:last-child > blockquote {
+.FooterBottom > blockquote {
 
     /* Behaviour */
     display: flex;
@@ -266,7 +272,7 @@ body > footer > div:last-child > blockquote {
     align-items: stretch;
 
 }
-body > footer > div:last-child > blockquote > p {
+.FooterBottom > blockquote > p {
 
     /* Size */
     margin-top: 1rem;
@@ -278,14 +284,14 @@ body > footer > div:last-child > blockquote > p {
     letter-spacing: 1px;
 
 }
-body > footer > div:last-child > blockquote > cite {
+.FooterBottom > blockquote > cite {
 
     /* Appearance */
     text-align: center;
     font-size: 1rem;
 
 }
-body > footer > div:last-child > p {
+.FooterBottom > p {
 
     /* Size */
     margin: 1rem auto;
