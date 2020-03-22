@@ -57,7 +57,7 @@ body > nav > div > button {
     border-radius: .25rem;
 
 }
-body > nav > button:hover {
+body > nav > div > button:hover {
 
     /* Appearance */
     background-color: rgba(255,255,255,.2);
@@ -91,6 +91,9 @@ body > nav > ul li {
 
 }
 @media (max-width: 1000px) {
+    body > nav {
+        flex-wrap: wrap;
+    }
     body > nav > div {
 
         /* Flexbox */
@@ -100,10 +103,16 @@ body > nav > ul li {
         justify-content: flex-end;
 
     }
-    body > nav > ul {
+    body > nav > ul.collapsed {
 
         /* Appearance */
         display: none;
+        
+    }
+    body > nav > ul.uncollapsed {
+
+        /* Flexbox */
+        display: flex;
 
     }
 }
