@@ -26,7 +26,7 @@ body {
 body > nav {
 
     /* Size */
-    padding: 0.5rem 1rem;
+    height: 2.5rem;
 
     /* Appearance */
     background-color: #343a40;
@@ -39,12 +39,18 @@ body > nav {
 body > nav > div > a {
 
     /* Size */
+    height: 100%;
     margin: 0 1rem;
+    padding-top: 4%; /* This is just temporal while i figure out how to center the text inside an anchore */
 
     /* Appearance */
     font-size: 1.25rem;
     color: #fff;
     text-decoration: none;
+
+    /* Behaviour */
+    display: block;
+    text-align: center;
 
 }
 body > nav > div > button {
@@ -71,6 +77,9 @@ body > nav > div > button:hover {
 }
 body > nav > ul {
 
+    /* Size */
+    height: 100%;
+
     /* Appearance */
     list-style: none;
 
@@ -83,14 +92,23 @@ body > nav > ul {
 body > nav > ul > li {
 
     /* Size */
-    margin: 0 1rem;
+    height: 100%;
 
 }
 body > nav > ul > li > a {
 
+    /* Size */
+    height: 100%;
+    margin: 0 1rem;
+    padding-top: 10%; /* This is just temporal while i figure out how to center the text inside an anchore */
+
     /* Appearance */
     color: #fff;
     text-decoration: none;
+
+    /* Behaviour */
+    display: block;
+    text-align: center;
 
 }
 @media (max-width: 800px) {
