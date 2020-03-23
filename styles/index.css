@@ -27,6 +27,9 @@
 }
 .LeftContent {
 
+    /* Size */
+    padding: 1.5rem 0;
+
     /* Behaviour */
     text-align: right;
     grid-column-start: L;
@@ -34,9 +37,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
 
 }
 .CenterContent {
+
+    /* Size */
+    padding: 1.5rem 0;
 
     /* Behaviour */
     text-align: center;
@@ -45,9 +52,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: stretch;
+
 }
 .RightContent {
+
+    /* Size */
+    padding: 1.5rem 0;
 
     /* Behaviour */
     text-align: left;
@@ -56,6 +67,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
 
 }
 
