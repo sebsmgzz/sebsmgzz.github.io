@@ -25,18 +25,18 @@ window.onscroll = function (e) {
 }
 
 scrollerUp.addEventListener( "click", (e) => {
-    alert("beep");
-    let windowBottomPosition = window.scrollY + window.innerHeight
-    for (let i = 0; i < rows.length; i++ ) {
-        let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
-        if (windowBottomPosition > rowBottomPosition) {
-            
+    let windowTopPosition = window.scrollY;
+    for (let i = rows.length - 1; i >= 0; i-- ) {
+        let rowTopPosition = rows[i].offsetTop;
+        if (windowTopPosition > rowTopPosition) {
+            window.scrollTo(0,rowTopPosition);
+            return;
         }
     }
 });
 
 scrollerDown.addEventListener( "click", (e) => {
-    let windowBottomPosition = window.scrollY + window.innerHeight
+    let windowBottomPosition = window.scrollY + window.innerHeight;
     for (let i = 0; i < rows.length; i++ ) {
         let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
         if (rowBottomPosition > windowBottomPosition) {
