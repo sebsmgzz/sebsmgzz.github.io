@@ -3,6 +3,8 @@
 
     /* Appearance */
     background-image: url("../imgs/TimeLineBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .smallGridRow {
@@ -68,6 +70,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+
+}
+.visibleRow {
+    
+    /* Appearance */
+    opacity: 1;
+
+    /* Behaviour */
+    transition: opacity 1s linear;
+
+}
+.hiddenRow {
+
+    /* Appearance */
+    opacity: 0;
+
+    /* Behaviour */
+    transition: opacity 1s linear;
+    
+}
+#scroller {
+
+    /* Appearance */
+    text-align: center;
+
+    /* Behaviour */
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+#scroller button {
+
+    /* Appearance */
+    background-color: transparent;
+    border: none;
+
+}
+#scroller i {
+
+    /* Appearance */
+    font-size: 2rem;
 
 }
 
