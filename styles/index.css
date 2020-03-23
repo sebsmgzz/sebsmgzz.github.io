@@ -57,6 +57,15 @@
     align-items: stretch;
 
 }
+.CenterContent img {
+
+    /* Size */
+    width: 200px;
+
+    /* Appearance */
+    border-radius: 50%;
+    
+}
 .RightContent {
 
     /* Size */
