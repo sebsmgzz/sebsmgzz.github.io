@@ -40,6 +40,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    z-index: 2;
 
 }
 .LeftContent .year {
@@ -83,6 +84,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    z-index: 2;
 
 }
 .CenterContent img {
@@ -117,6 +119,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    z-index: 2;
 
 }
 .RightContent .year {
@@ -189,13 +192,19 @@
 
 }
 
+.header > img {
+
+    /* Behaviour */
+    z-index: 1;
+
+}
 .header .LeftContent {
 
     /* Appearance */
     background-color: transparent;
 
 }
-.header img {
+.header .LeftContent img {
 
     /* Size */
     margin-right: 2rem;
