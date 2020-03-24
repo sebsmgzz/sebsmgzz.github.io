@@ -62,6 +62,7 @@
     
     /* Appearance */
     text-align: center;
+    font-family: LibreBaskerville-Regular;
 
 }
 .CenterContent {
@@ -90,8 +91,17 @@
     width: 90%;
     margin: 0 auto;
 
+}
+.CenterContent img.circle {
+
     /* Appearance */
     border-radius: 50%;
+
+}
+.CenterContent img.square {
+
+    /* Appearance */
+    border-radius: 25%;
 
 }
 .RightContent {
@@ -129,6 +139,7 @@
 
     /* Appearance */
     text-align: center;
+    font-family: LibreBaskerville-Regular;
 
 }
 .visibleRow {
