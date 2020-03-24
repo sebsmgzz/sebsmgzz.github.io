@@ -6,14 +6,16 @@ const scrollerMonth = document.querySelector("#scroller h3");
 const rows = document.querySelectorAll("#main > div:not(:last-child)")
 
 window.onscroll = function (e) {  
-    let thresholdPosition = window.scrollY + window.innerHeight - 200;
+    let thresholdBottom = window.scrollY + window.innerHeight;
+    let thresholdTop = window.scrollY;
     for (let i = 1; i < rows.length; i++ ) {
         let rowTopPosition = rows[i].offsetTop;
-        if (thresholdPosition > rowTopPosition) {
+        let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
+        if (thresholdBottom > rowTopPosition) {
             rows[i].classList.remove("hiddenRow");
             rows[i].classList.add("visibleRow");
         }
-        if (rowTopPosition > thresholdPosition) {
+        if (rowTopPosition > thresholdBottom || rowBottomPosition < thresholdTop ) {
             rows[i].classList.remove("visibleRow");
             rows[i].classList.add("hiddenRow");
         }

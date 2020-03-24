@@ -24,7 +24,7 @@
 
     /* Behaviour */
     display: grid;
-    grid-template-columns: [LLL] 5% [L] 30% [CL] 30% [CR] 30% [R] 5% [RRR];
+    grid-template-columns: [LLL] 5% [L] 40% [CL] 10% [CR] 40% [R] 5% [RRR];
 
 }
 .LeftContent {
@@ -39,13 +39,40 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-end;
+
+}
+.LeftContent .year {
+
+    /* Size */
+    margin-right: 1rem;
+
+}
+.LeftContent .month {
+
+    /* Size */
+    margin-right: 1rem;
+
+}
+.LeftContent p {
+
+    /* Size */
+    width: 50%;
+    margin-right: 2rem;
+    
+    /* Appearance */
+    text-align: center;
 
 }
 .CenterContent {
 
     /* Size */
     padding: 1.5rem 0;
+
+    /* Appearance */
+    background-image: url(../imgs/tree-trunk.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     /* Behaviour */
     text-align: center;
@@ -60,11 +87,12 @@
 .CenterContent img {
 
     /* Size */
-    width: 200px;
+    width: 90%;
+    margin: 0 auto;
 
     /* Appearance */
     border-radius: 50%;
-    
+
 }
 .RightContent {
 
@@ -78,7 +106,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-start;
+
+}
+.RightContent .year {
+
+    /* Size */
+    margin-left: 1rem;
+
+}
+.RightContent .month {
+
+    /* Size */
+    margin-left: 1rem;
+    
+}
+.RightContent p {
+
+    /* Size */
+    width: 50%;
+    margin-left: 2rem;
+
+    /* Appearance */
+    text-align: center;
 
 }
 .visibleRow {
@@ -128,12 +178,43 @@
 
 }
 
-#main > div:first-child img {
+.header .LeftContent {
+
+    /* Appearance */
+    background-color: transparent;
+
+}
+.header img {
 
     /* Size */
+    margin-right: 2rem;
     width: 200px;
 
     /* Appearance */
     border-radius: 50%;
+
+}
+.header h1 {
+
+    /* Appearance */
+    font-size: 2.5rem;
+    font-family: LibreBaskerville-Regular;
+
+}
+.header h3 {
+
+    /* Appearance */
+    font-size: 2rem;
+    font-family: LibreBaskerville-Regular;
+
+}
+.header h6 {
+
+    /* Appearance */
+    padding: 1rem 0;
+
+    /* Appearance */
+    font-size: 2rem;
+    font-family: LibreBaskerville-Regular;
 
 }

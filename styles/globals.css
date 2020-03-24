@@ -7,13 +7,13 @@
 
 }
 @font-face {
-
-    /* Appearance */ 
     font-family: EagleLake-Regular;
     src: url("../fonts/EagleLake-Regular.ttf");
-
 }
-
+@font-face {
+    font-family: LibreBaskerville-Regular;
+    src: url("../fonts/LibreBaskerville-Regular.ttf");
+}
 /* Body */
 body {
 
