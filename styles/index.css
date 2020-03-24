@@ -214,27 +214,45 @@
 .header .LeftContent {
 
     /* Appearance */
-    background-color: transparent;
+    background-image: url("../imgs/tree-top4.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transform: rotateY(180deg);
+}
+.header .RightContent {
+
+    /* Appearance */
+    background-image: url("../imgs/tree-top4.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
 }
-.header .LeftContent img {
+.header img {
 
     /* Size */
-    margin-right: 2rem;
-    width: 200px;
+    margin-right: 60%;
+    width: 35%;
 
     /* Appearance */
     border-radius: 50%;
+    transform: rotateY(180deg);
+    box-shadow: 5px 10px 10px  black;
 
 }
 .header h1 {
 
+    /* Size */
+    margin-left: 1rem;
+
     /* Appearance */
     font-size: 2.5rem;
     font-family: LibreBaskerville-Regular;
-
+    
 }
 .header h3 {
+
+    /* Size */
+    margin-left: 1rem;
 
     /* Appearance */
     font-size: 2rem;
@@ -242,6 +260,9 @@
 
 }
 .header h6 {
+
+    /* Size */
+    margin-left: 1rem;
 
     /* Appearance */
     padding: 1rem 0;
