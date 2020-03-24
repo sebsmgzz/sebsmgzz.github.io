@@ -2,7 +2,7 @@
 #main {
 
     /* Appearance */
-    background-image: url("../imgs/TimeLineBackground.jpg");
+    background-image: url("../imgs/clouds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -40,7 +40,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    z-index: 2;
 
 }
 .LeftContent .year {
@@ -72,7 +71,7 @@
     padding: 1.5rem 0;
 
     /* Appearance */
-    background-image: url(../imgs/tree-trunk.webp);
+    background-image: url(../imgs/tree-trunk3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -84,7 +83,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    z-index: 2;
 
 }
 .CenterContent img {
@@ -119,7 +117,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    z-index: 2;
 
 }
 .RightContent .year {
@@ -192,12 +189,28 @@
 
 }
 
-.header > img {
+.leaves1 {
 
-    /* Behaviour */
-    z-index: 1;
+    /* Appearance */
+    background-image: url(../imgs/leaves1.png);
+    background-size: auto 100%;
 
 }
+.leaves2 {
+
+    /* Appearance */
+    background-image: url(../imgs/leaves2.png);
+    background-size: auto 100%;
+    
+}
+.leaves3 {
+
+    /* Appearance */
+    background-image: url(../imgs/leaves3.png);
+    background-size: auto 100%;
+    
+}
+
 .header .LeftContent {
 
     /* Appearance */
