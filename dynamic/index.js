@@ -10,11 +10,16 @@ const rows = document.querySelectorAll("#main > div:not(:last-child)")
 let scrollerRow = 1;
 
 // Event listeners
+window.addEventListener("load",windowLoaded)
 window.addEventListener("scroll", windowScrolled);
 scrollerUp.addEventListener( "click", scrollerUpClick);
 scrollerDown.addEventListener( "click", scrollerDownClick);
 
 // Functions
+function windowLoaded() {
+    rowToggleClasses(1,"hidden","visible");
+    scrollerUpdate(1);
+}
 function windowScrolled() {
 
     // Define visible area
@@ -23,11 +28,6 @@ function windowScrolled() {
 
     // Iterate per row element
     for (let i = 1; i < rows.length; i++ ) {
-
-        // Define row DOM elements
-        let rowLeftContent = rows[i].children[0];
-        let rowRightContent = rows[i].children[2];
-        let rowImage = rows[i].children[1].children[0];
 
         // Define row attributes
         let rowTopPosition = rows[i].offsetTop;
@@ -39,28 +39,16 @@ function windowScrolled() {
 
         // Row is in visible area
         if (thresholdBottom > rowTopPosition) {
-            classToRemove = "hidden";
-            classToAdd = "visible";
-            
+            rowToggleClasses(i, "hidden", "visible");
             if (rowBottomPosition < thresholdBottom) {
                 scrollerUpdate(i);
             }
-
         }
 
         // Row is above or below visible area
         if (rowTopPosition > thresholdBottom || rowBottomPosition < thresholdTop ) {
-            classToRemove = "visible";
-            classToAdd = "hidden";
+            rowToggleClasses(i, "visible", "hidden");
         }
-
-        // Toggle classes
-        rowLeftContent.classList.remove(classToRemove);
-        rowRightContent.classList.remove(classToRemove);
-        rowImage.classList.remove(classToRemove);
-        rowLeftContent.classList.add(classToAdd);
-        rowRightContent.classList.add(classToAdd);
-        rowImage.classList.add(classToAdd);
 
     }
 
@@ -116,5 +104,21 @@ function scrollerUpdate(rowIndexReference) {
     // Update
     scrollerYear.innerText = rowYear.innerText;
     scrollerMonth.innerText = rowMonth.innerText;
+
+}
+function rowToggleClasses(rowIndex, classToRemove, classToAdd) {
+    
+    // Define row DOM elements
+    let rowLeftContent = rows[rowIndex].children[0];
+    let rowRightContent = rows[rowIndex].children[2];
+    let rowImage = rows[rowIndex].children[1].children[0];
+
+    // Toggle classes
+    rowLeftContent.classList.remove(classToRemove);
+    rowRightContent.classList.remove(classToRemove);
+    rowImage.classList.remove(classToRemove);
+    rowLeftContent.classList.add(classToAdd);
+    rowRightContent.classList.add(classToAdd);
+    rowImage.classList.add(classToAdd);
 
 }
