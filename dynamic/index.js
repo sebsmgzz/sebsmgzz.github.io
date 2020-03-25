@@ -35,50 +35,103 @@ function windowScrolled() {
         let rowTopPosition = rows[i].offsetTop;
         let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
 
+        // Define locals
+        let classToRemove;
+        let classToAdd;
+
         // Row is in visible area
         if (thresholdBottom > rowTopPosition) {
-            rowLeftContent.classList.remove("hidden");
-            rowRightContent.classList.remove("hidden");
-            rowImage.classList.remove("hidden");
-            rowLeftContent.classList.add("visible");
-            rowRightContent.classList.add("visible");
-            rowImage.classList.add("visible");
+            classToRemove = "hidden";
+            classToAdd = "visible";
+
             scrollerYear.innerText = rowYear.innerText;
             scrollerMonth.innerText = rowMonth.innerText;
         }
 
         // Row is above or below visible area
         if (rowTopPosition > thresholdBottom || rowBottomPosition < thresholdTop ) {
-            rowLeftContent.classList.remove("visible");
-            rowRightContent.classList.remove("visible");
-            rowImage.classList.remove("visible");
-            rowLeftContent.classList.add("hidden");
-            rowRightContent.classList.add("hidden");
-            rowImage.classList.add("hidden");
+            classToRemove = "visible";
+            classToAdd = "hidden";
         }
+
+        // Toggle classes
+        rowLeftContent.classList.remove(classToRemove);
+        rowRightContent.classList.remove(classToRemove);
+        rowImage.classList.remove(classToRemove);
+        rowLeftContent.classList.add(classToAdd);
+        rowRightContent.classList.add(classToAdd);
+        rowImage.classList.add(classToAdd);
 
     }
 
 }
 function scrollerUpClick() {
+
+    // Define top limit
     let windowTopPosition = window.scrollY;
+
+    // Iterate per row
     for (let i = rows.length - 1; i >= 0; i-- ) {
+
+        // Declare row position
         let rowTopPosition = rows[i].offsetTop;
+
+        // Row is above limit
         if (windowTopPosition > rowTopPosition) {
+
+            // Define row DOM elements
+            let rowYear = rows[i].querySelector("h2");
+            let rowMonth = rows[i].querySelector("h4");
+
+            // Scroll to row
             window.scrollTo(0,rowTopPosition);
+
+            // Updated scroller
+            scrollerYear.innerText = rowYear.innerText;
+            scrollerMonth.innerText = rowMonth.innerText;
+
+            // End
             return;
+
         }
+
     }
+
 }
 function scrollerDownClick() {
+
+    // Define bottom limit
     let windowBottomPosition = window.scrollY + window.innerHeight;
+
+    // Iterate per row
     for (let i = 0; i < rows.length; i++ ) {
+
+        // Declare row position
         let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
+
+        // Row is below limit
         if (rowBottomPosition > windowBottomPosition) {
+
+            // Define row DOM elements
+            let rowYear = rows[i].querySelector("h2");
+            let rowMonth = rows[i].querySelector("h4");
+
+            // Defnie row attributes
             let rowTopPosition = rows[i].offsetTop;
             let offset = window.innerHeight - rows[i].offsetHeight;
-            window.scrollTo(0,rowTopPosition-offset);
+
+            // Scroll to row
+            window.scrollTo(0, rowTopPosition - offset);
+
+            // Updated scroller
+            scrollerYear.innerText = rowYear.innerText;
+            scrollerMonth.innerText = rowMonth.innerText;
+
+            // End
             return;
+
         }
+
     }
+
 }
