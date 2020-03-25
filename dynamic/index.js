@@ -9,40 +9,58 @@ const rows = document.querySelectorAll("#main > div:not(:last-child)")
 // Local variables
 let scrollerRow = 1;
 
-// Events
-window.onscroll = function (e) {  
+// Event listeners
+window.addEventListener("scroll", windowScrolled);
+scrollerUp.addEventListener( "click", scrollerUpClick);
+scrollerDown.addEventListener( "click", scrollerDownClick);
+
+// Functions
+function windowScrolled() {
+
+    // Define visible area
+    let thresholdTop = window.scrollY; 
     let thresholdBottom = window.scrollY + window.innerHeight;
-    let thresholdTop = window.scrollY;
+    
+    // Iterate per row element
     for (let i = 1; i < rows.length; i++ ) {
+
+        // Define row DOM elements
+        let rowLeftContent = rows[i].children[0];
+        let rowRightContent = rows[i].children[2];
+        let rowImage = rows[i].children[1].children[0];
+        let rowYear = rows[i].querySelector("h2");
+        let rowMonth = rows[i].querySelector("h4");
+
+        // Define row attributes
         let rowTopPosition = rows[i].offsetTop;
         let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
-        let leftContent = rows[i].children[0];
-        let rightContent = rows[i].children[2];
-        let image = rows[i].children[1].children[0];
-        let year = rows[i].querySelector("h2");
-        let month = rows[i].querySelector("h4");
-        if (thresholdBottom > rowTopPosition) {
-            leftContent.classList.remove("hidden");
-            rightContent.classList.remove("hidden");
-            image.classList.remove("hidden");
-            leftContent.classList.add("visible");
-            rightContent.classList.add("visible");
-            image.classList.add("visible");
-            scrollerYear.innerText = year.innerText;
-            scrollerMonth.innerText = month.innerText;
-        }
-        if (rowTopPosition > thresholdBottom || rowBottomPosition < thresholdTop ) {
-            leftContent.classList.remove("visible");
-            rightContent.classList.remove("visible");
-            image.classList.remove("visible");
-            leftContent.classList.add("hidden");
-            rightContent.classList.add("hidden");
-            image.classList.add("hidden");
-        }
-    }
-}
 
-scrollerUp.addEventListener( "click", (e) => {
+        // Row is in visible area
+        if (thresholdBottom > rowTopPosition) {
+            rowLeftContent.classList.remove("hidden");
+            rowRightContent.classList.remove("hidden");
+            rowImage.classList.remove("hidden");
+            rowLeftContent.classList.add("visible");
+            rowRightContent.classList.add("visible");
+            rowImage.classList.add("visible");
+            scrollerYear.innerText = rowYear.innerText;
+            scrollerMonth.innerText = rowMonth.innerText;
+        }
+
+        // Row is above or below visible area
+        if (rowTopPosition > thresholdBottom || rowBottomPosition < thresholdTop ) {
+            rowLeftContent.classList.remove("visible");
+            rowRightContent.classList.remove("visible");
+            rowImage.classList.remove("visible");
+            rowLeftContent.classList.add("hidden");
+            rowRightContent.classList.add("hidden");
+            rowImage.classList.add("hidden");
+        }
+
+    }
+
+}
+function scrollerUpClick() {
     let windowTopPosition = window.scrollY;
     for (let i = rows.length - 1; i >= 0; i-- ) {
         let rowTopPosition = rows[i].offsetTop;
@@ -51,9 +69,8 @@ scrollerUp.addEventListener( "click", (e) => {
             return;
         }
     }
-});
-
-scrollerDown.addEventListener( "click", (e) => {
+}
+function scrollerDownClick() {
     let windowBottomPosition = window.scrollY + window.innerHeight;
     for (let i = 0; i < rows.length; i++ ) {
         let rowBottomPosition = rows[i].offsetTop + rows[i].offsetHeight;
@@ -64,6 +81,4 @@ scrollerDown.addEventListener( "click", (e) => {
             return;
         }
     }
-});
-
-// Functions
+}
