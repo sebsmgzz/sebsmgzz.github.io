@@ -485,3 +485,34 @@
     }
     
 }
+
+@media (max-width: 500px) {
+
+    .mediumGridRow {
+    
+        /* Behaviour */
+        grid-template-columns: [LLL] 5% [TL] 30% [TR] 30% [R] 30% [RR] 5% [RRR];
+        grid-template-rows: auto;
+
+    }
+
+    .header h1 {
+    
+        /* Appearance */
+        font-size: 2rem;
+        
+    }
+    .header h3 {
+    
+        /* Appearance */
+        font-size: 1.5rem;
+
+    }
+    .header h6 {
+    
+        /* Appearance */
+        font-size: 1.5rem;
+
+    }
+
+}
