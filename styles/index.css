@@ -45,13 +45,30 @@
 .LeftContent .year {
 
     /* Size */
+    margin-bottom: 1px;
     margin-right: 1rem;
+    padding-right: 0.5rem;
+    width: 20%;
+
+    /* Appearance */
+    font-family: Montserrat-Regular;
+    background-color: RGBA(116, 140, 28, 0.5);
+    border-right: solid 2px black;
+    box-shadow: 5px 0 0 #786900;
 
 }
 .LeftContent .month {
 
     /* Size */
     margin-right: 1rem;
+    padding-right: 0.5rem;
+    width: 20%;
+
+    /* Appearance */
+    font-family: Montserrat-Regular;
+    background-color: RGBA(217, 126, 74, 0.4);
+    border-right: solid 2px black;
+    box-shadow: 5px 0 0 #A5941E;
 
 }
 .LeftContent p {
@@ -122,14 +139,31 @@
 .RightContent .year {
 
     /* Size */
+    margin-bottom: 1px;
     margin-left: 1rem;
+    padding-left: 0.5rem;
+    width: 20%;
+
+    /* Appearance */
+    font-family: Montserrat-Regular;
+    background-color: RGBA(116, 140, 28, 0.5);
+    border-left: solid 2px black;
+    box-shadow: -5px 0 0 #786900;
 
 }
 .RightContent .month {
 
     /* Size */
     margin-left: 1rem;
-    
+    padding-left: 0.5rem;
+    width: 20%;
+
+    /* Appearance */
+    font-family: Montserrat-Regular;
+    background-color: RGBA(217, 126, 74, 0.4);
+    border-left: solid 2px black;
+    box-shadow: -5px 0 0 #A5941E;
+
 }
 .RightContent p {
 
