@@ -194,6 +194,30 @@
     transition: opacity 1s linear;
     
 }
+
+
+.leaves1 {
+
+    /* Appearance */
+    background-image: url(../imgs/leaves1.png);
+    background-size: auto 100%;
+
+}
+.leaves2 {
+
+    /* Appearance */
+    background-image: url(../imgs/leaves2.png);
+    background-size: auto 100%;
+    
+}
+.leaves3 {
+
+    /* Appearance */
+    background-image: url(../imgs/leaves3.png);
+    background-size: auto 100%;
+    
+}
+
 #scroller {
 
     /* Appearance */
@@ -222,26 +246,10 @@
     font-size: 2rem;
 
 }
+#scroller .month {
 
-.leaves1 {
-
-    /* Appearance */
-    background-image: url(../imgs/leaves1.png);
-    background-size: auto 100%;
-
-}
-.leaves2 {
-
-    /* Appearance */
-    background-image: url(../imgs/leaves2.png);
-    background-size: auto 100%;
-    
-}
-.leaves3 {
-
-    /* Appearance */
-    background-image: url(../imgs/leaves3.png);
-    background-size: auto 100%;
+    /* Size */
+    width: 5.5rem;
     
 }
 
