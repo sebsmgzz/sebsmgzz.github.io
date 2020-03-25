@@ -81,7 +81,7 @@
     padding: 1.5rem 0;
 
     /* Appearance */
-    background-image: url(../imgs/tree-trunk3.jpg);
+    background-image: url(../imgs/tree-trunk.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -249,16 +249,15 @@
 .header .LeftContent {
 
     /* Appearance */
-    background-image: url("../imgs/tree-top4.png");
+    background-image: url("../imgs/tree-top-left.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    transform: rotateY(180deg);
 
 }
 .header .RightContent {
 
     /* Appearance */
-    background-image: url("../imgs/tree-top4.png");
+    background-image: url("../imgs/tree-top-right.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
 
@@ -266,12 +265,11 @@
 .header img {
 
     /* Size */
-    margin-right: 60%;
+    margin-right: 10%;
     width: 35%;
 
     /* Appearance */
     border-radius: 50%;
-    transform: rotateY(180deg);
     box-shadow: 5px 10px 10px  black;
 
 }
@@ -323,7 +321,7 @@
     .mediumGridRow {
     
         /* Behaviour */
-        grid-template-columns: [LLL] 5% [TL] 20% [TR] 30% [R] 30% [RR] 5% [RRR];
+        grid-template-columns: [LLL] 5% [TL] 20% [TR] 35% [R] 35% [RR] 5% [RRR];
         grid-template-rows: auto;
 
     }
@@ -441,7 +439,48 @@
 
     }
 
-    .header {
+    .header .LeftContent {
+
+        /* Appearance */
+        background-image: none;
+
+        /* Behaviour */
+        grid-column-start: TL;
+        grid-column-end: TR;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        z-index: 1;
+
+    }
+    .header .RightContent {
+    
+        /* Appearance */
+        background-image: none;
+    
+    }
+    .header img {
+    
+        /* Size */
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .header h1 {
+    
+        /* Size */
+        width: 80%;
+        
+    }
+    .header h3 {
+    
+        /* Size */
+        width: 80%;
+
+    }
+    .header h6 {
+    
+        /* Size */
+        width: 80%;
 
     }
     
