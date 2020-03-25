@@ -176,7 +176,7 @@
     font-family: LibreBaskerville-Regular;
 
 }
-.visibleRow {
+.visible {
     
     /* Appearance */
     opacity: 1;
@@ -185,7 +185,7 @@
     transition: opacity 1s linear;
 
 }
-.hiddenRow {
+.hidden {
 
     /* Appearance */
     opacity: 0;
@@ -202,7 +202,7 @@
     /* Behaviour */
     position: fixed;
     z-index: 999;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%,-50%);
     right: 3rem;
     display: flex;
