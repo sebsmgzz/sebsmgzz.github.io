@@ -243,32 +243,41 @@
 
     /* Size */
     margin-left: 1rem;
+    width: 100%;
 
     /* Appearance */
     font-size: 2.5rem;
     font-family: LibreBaskerville-Regular;
-    
+    background-color: RGBA(115, 55, 41, 0.8);
+    border-left: solid 2px black;
+    box-shadow: -10px 0 0 #053C05;
+
 }
 .header h3 {
 
     /* Size */
     margin-left: 1rem;
+    width: 100%;
 
     /* Appearance */
     font-size: 2rem;
     font-family: LibreBaskerville-Regular;
+    background-color: RGBA(115, 55, 41, 0.7);
+    border-left: solid 2px black;
+    box-shadow: -10px 0 0 #905515;
 
 }
 .header h6 {
 
     /* Size */
     margin-left: 1rem;
-
-    /* Appearance */
-    padding: 1rem 0;
+    width: 100%;
 
     /* Appearance */
     font-size: 2rem;
     font-family: LibreBaskerville-Regular;
+    background-color: RGBA(115, 55, 41, 0.6);
+    border-left: solid 2px black;
+    box-shadow: -10px 0 0 #AC8F3D;
 
 }
