@@ -7,16 +7,7 @@
     background-size: cover;
 
 }
-.smallGridRow {
 
-    /* Size */
-    width: 100%;
-
-    /* Behaviour */
-    display: grid;
-    grid-template-columns: [LLL] 5% [L] 45% [CL CR] 45% [R] 5% [RRR];
-
-}
 .mediumGridRow {
 
     /* Size */
@@ -25,8 +16,10 @@
     /* Behaviour */
     display: grid;
     grid-template-columns: [LLL] 5% [L] 40% [CL] 10% [CR] 40% [R] 5% [RRR];
+    grid-template-rows: auto;
 
 }
+
 .LeftContent {
 
     /* Size */
@@ -42,19 +35,15 @@
     align-items: flex-end;
 
 }
-.LeftContent .year {
+.LeftContent p {
 
     /* Size */
-    margin-bottom: 1px;
-    margin-right: 1rem;
-    padding-right: 0.5rem;
-    width: 20%;
-
+    width: 50%;
+    margin-right: 2rem;
+    
     /* Appearance */
-    font-family: Montserrat-Regular;
-    background-color: RGBA(116, 140, 28, 0.5);
-    border-right: solid 2px black;
-    box-shadow: 5px 0 0 #786900;
+    text-align: center;
+    font-family: LibreBaskerville-Regular;
 
 }
 .LeftContent .month {
@@ -71,15 +60,19 @@
     box-shadow: 5px 0 0 #A5941E;
 
 }
-.LeftContent p {
+.LeftContent .year {
 
     /* Size */
-    width: 50%;
-    margin-right: 2rem;
-    
+    margin-bottom: 1px;
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+    width: 20%;
+
     /* Appearance */
-    text-align: center;
-    font-family: LibreBaskerville-Regular;
+    font-family: Montserrat-Regular;
+    background-color: RGBA(116, 140, 28, 0.5);
+    border-right: solid 2px black;
+    box-shadow: 5px 0 0 #786900;
 
 }
 .CenterContent {
@@ -136,19 +129,15 @@
     align-items: flex-start;
 
 }
-.RightContent .year {
+.RightContent p {
 
     /* Size */
-    margin-bottom: 1px;
-    margin-left: 1rem;
-    padding-left: 0.5rem;
-    width: 20%;
+    width: 50%;
+    margin-left: 2rem;
 
     /* Appearance */
-    font-family: Montserrat-Regular;
-    background-color: RGBA(116, 140, 28, 0.5);
-    border-left: solid 2px black;
-    box-shadow: -5px 0 0 #786900;
+    text-align: center;
+    font-family: LibreBaskerville-Regular;
 
 }
 .RightContent .month {
@@ -165,17 +154,22 @@
     box-shadow: -5px 0 0 #A5941E;
 
 }
-.RightContent p {
+.RightContent .year {
 
     /* Size */
-    width: 50%;
-    margin-left: 2rem;
+    margin-bottom: 1px;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    width: 20%;
 
     /* Appearance */
-    text-align: center;
-    font-family: LibreBaskerville-Regular;
+    font-family: Montserrat-Regular;
+    background-color: RGBA(116, 140, 28, 0.5);
+    border-left: solid 2px black;
+    box-shadow: -5px 0 0 #786900;
 
 }
+
 .visible {
     
     /* Appearance */
@@ -194,7 +188,6 @@
     transition: opacity 1s linear;
     
 }
-
 
 .leaves1 {
 
@@ -250,7 +243,7 @@
 
     /* Size */
     width: 5.5rem;
-    
+
 }
 
 .header .LeftContent {
@@ -260,6 +253,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     transform: rotateY(180deg);
+
 }
 .header .RightContent {
 
@@ -322,4 +316,133 @@
     border-left: solid 2px black;
     box-shadow: -10px 0 0 #AC8F3D;
 
+}
+
+@media (max-width: 800px) {
+
+    .mediumGridRow {
+    
+        /* Behaviour */
+        grid-template-columns: [LLL] 5% [TL] 20% [TR] 30% [R] 30% [RR] 5% [RRR];
+        grid-template-rows: auto;
+
+    }
+
+    .LeftContent {
+
+        /* Appearance */
+        background-image: none;
+        text-align: center;
+
+        /* Behaviour */
+        grid-column-start: TR;
+        grid-column-end: RR;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-items: center;
+
+    }
+    .LeftContent p {
+
+        /* Size */
+        margin: 0;
+        width: 90%;
+        
+
+    }
+    .LeftContent .year {
+
+        /* Size */
+        margin: 0;
+        width: 80%;
+
+        /* Appearance */
+        border-right: none;
+        background-color: RGBA(116, 140, 28, 0.5);
+        border-left: solid 2px black;
+        box-shadow: -5px 0 0 #786900;
+
+    }
+    .LeftContent .month {
+
+        /* Size */
+        margin: 0;
+        width: 80%;
+
+        /* Appearance */
+        border-right: none;
+        background-color: RGBA(217, 126, 74, 0.4);
+        border-left: solid 2px black;
+        box-shadow: -5px 0 0 #A5941E;
+
+    }
+    .CenterContent {
+    
+        /* Behaviour */
+        grid-column-start: TL;
+        grid-column-end: TR;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+    }
+    .RightContent {
+
+        /* Appearance */
+        background-image: none;
+        text-align: center;
+
+        /* Behaviour */
+        grid-column-start: TR;
+        grid-column-end: RR;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-items: center;
+
+    }
+    .RightContent p {
+
+        /* Size */
+        margin: 0;
+        width: 90%;
+        
+
+    }
+    .RightContent .year {
+
+        /* Size */
+        margin: 0;
+        width: 80%;
+
+        /* Appearance */
+        border-right: none;
+        background-color: RGBA(116, 140, 28, 0.5);
+        border-left: solid 2px black;
+        box-shadow: -5px 0 0 #786900;
+
+    }
+    .RightContent .month {
+
+        /* Size */
+        margin: 0;
+        width: 80%;
+
+        /* Appearance */
+        border-right: none;
+        background-color: RGBA(217, 126, 74, 0.4);
+        border-left: solid 2px black;
+        box-shadow: -5px 0 0 #A5941E;
+
+    }
+
+    #scroller {
+
+        /* Behaviour */
+        display: none;
+
+    }
+
+    .header {
+
+    }
+    
 }
