@@ -3,6 +3,12 @@
     /* Position */
     /* Display */
     /* Behaviour */
+html {
+
+    /* Size */
+    height: 150%;
+
+}
 nav {
 
     /* Size */
@@ -12,12 +18,25 @@ nav {
     position: fixed;
     z-index: 900;
 }
+body {
+
+    /* Size */
+    height: 150%;
+
+}
 #main {
+
+    /* Size */
+    height: 150%;
 
     /* Position */
     position: relative;
     top: 40px;
-    
+    height: 100%;
+    background-image: url("../imgs/carousel2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .envelope {
@@ -57,7 +76,6 @@ nav {
 
     /* Appearance */
     list-style: none;
-    background: red;
 
     /* Position */
     position: static;
@@ -97,20 +115,22 @@ nav {
 
     /* Size */
     width: 24rem;
-    height: 10rem;
-    padding: 3.5rem;
+    height: 11.375rem;
+    padding: 3rem;
 
     /* Appearance */
     background-color: blue;
+    mix-blend-mode: exclusion;
 
     /* Position */
-    position: absolute;
-    transform: translateY(-20%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
     z-index: 500;
+    transform: translate(-50%,-50%);
 
 }
 
 @media (max-width: 750px) {
-    
 
 }
