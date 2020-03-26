@@ -6,9 +6,6 @@ const scrollerYear = document.querySelector("#scroller .year");
 const scrollerMonth = document.querySelector("#scroller .month");
 const rows = document.querySelectorAll("#main > div:not(:last-child)")
 
-// Local variables
-let scrollerRow = 1;
-
 // Event listeners
 window.addEventListener("load",windowLoaded)
 window.addEventListener("scroll", windowScrolled);
