@@ -47,7 +47,7 @@ body {
 .cover2 {
 
     /* Appearance */
-    background-image: url("../imgs/carousel2.jpg");
+    background-image: url("../imgs/carousel1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -55,7 +55,7 @@ body {
 .cover3 {
    
     /* Appearance */
-    background-image: url("../imgs/carousel3.jpg");
+    background-image: url("../imgs/carousel1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
      
@@ -63,13 +63,17 @@ body {
 .cover4 {
   
     /* Appearance */
-    background-image: url("../imgs/carousel4.jpg");
+    background-image: url("../imgs/carousel1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
       
 }
 
 .envelope {
+
+    /* Size */
+    width: 20rem;
+    height: auto;
 
     /* Position */
     position: fixed;
@@ -83,22 +87,86 @@ body {
     flex-direction: column;
     align-items: center;
 
+    /* Behaviour */
+    overflow: hidden;
+
 }
-.content {
+.titles {
 
     /* Size */
-    width: 20rem;
-    height: 6rem;
-    padding: 2rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0rem;
 
     /* Appearance */
-    background-color: violet;
+    font-size: 2.5rem;
+    background-color: palegreen;
     overflow: hidden;
+    text-align: center;
 
     /* Position */
     z-index: 700;
 
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
 }
+.title {
+
+    /* Size */
+    width: 100%;
+
+    /* Position */
+    position: absolute;
+
+}
+.contents {
+
+    /* Size */
+    width: 100%;
+    height: 9rem;
+    padding: 0rem;
+
+    /* Appearance */
+    background-color: violet;
+    overflow: hidden;
+    text-align: center;
+
+    /* Position */
+    position: relative;
+    z-index: 700;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
+}
+.content {
+
+    /* Size */
+    width: 100%;
+    height: 100%;
+
+    /* Position */
+    position: absolute;
+
+}
+
+.visible {
+
+    /* Position */
+    left: 0;
+
+}
+.hidden {
+
+    /* Position */
+    left: 0;
+    transform: translateX(100%);
+
+}
+
 .bullets {
 
     /* Size */
@@ -109,7 +177,7 @@ body {
 
     /* Position */
     position: static;
-    z-index: 600;
+    z-index: 700;
 
     /* Display */
     display: flex;
@@ -141,6 +209,7 @@ body {
     background-color: transparent;
 
 }
+
 .wrapper {
 
     /* Size */
@@ -158,5 +227,30 @@ body {
     left: 50%;
     z-index: 500;
     transform: translate(-50%,-50%);
+
+}
+
+.backgrounds {
+
+    /* Size */
+    width: 100%;
+    height: 100/;
+
+    /* Position */
+    position: absolute;
+    
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
+}
+.background {
+
+    /* Size */
+    width: 100%;
+    height: 100%;
+
+    /* Position */
+    position: absolute;
 
 }
