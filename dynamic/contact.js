@@ -30,28 +30,27 @@ function toggleBullet(bulletIndex) {
         bullets.children[i].classList.add("inactive");
     }
 
-    // Activate index
-    bullets.children[bulletIndex].classList.remove("inactive");
-    bullets.children[bulletIndex].classList.add("active");
-
-    // Updated background
-    let covertIndex = bulletIndex+1;
-    main.className = "cover" + covertIndex;
-
-}
-function carousel()
-{
-
-    // Update index for carousel
-    carouselIndex++;
+    // Verify index for carousel
+    carouselIndex = bulletIndex;
     if (carouselIndex >=  bullets.children.length) {
         carouselIndex = 0;
     }
 
-    // Apply update
-    toggleBullet(carouselIndex);
+    // Activate index
+    bullets.children[carouselIndex].classList.remove("inactive");
+    bullets.children[carouselIndex].classList.add("active");
 
+    // Updated carousel index
+    carouselIndex++;
+
+    // Updated background
+    main.className = "cover" + carouselIndex;
+
+}
+function toggleCarousel()
+{
+    toggleBullet(carouselIndex);
 }
 
 // Intervals
-setInterval(carousel, 2500);
+setInterval(toggleCarousel, 2500);
