@@ -1,9 +1,19 @@
-    /* Size */
-    /* Appearance */
+
+nav {
+
     /* Position */
-    /* Display */
-    /* Behaviour */
+    position: fixed;
+    width: 100%;
+    top: 0;  
+    z-index: 999;
+
+}
+
 #main {
+    
+    /* Position */
+    position: relative;
+    top: 40px;
 
     /* Appearance */
     background-image: url("../imgs/clouds.jpg");

@@ -1,31 +1,24 @@
-
+    /* Size */
+    /* Appearance */
+    /* Position */
+    /* Display */
+    /* Behaviour */
 nav {
 
+    /* Size */
+    width: 100%;
     /* Position */
     position: fixed;
-    width: 100%;
-    top: 0;  
-    z-index: 999;
-
-}
-footer {
-
-    /* Position */
-    position: absolute;
-    top: 40rem;
-    z-index: 999;
 
 }
 
-.wrapper {
+
+.content {
 
     /* Size */
-    width: 300px;
-    height: 100px;
-    padding: 20px;
-
-    /* Appearance */
-    background-color: blue;
+    width: 20rem;
+    height: 6rem;
+    padding: 2rem;
 
     /* Position */
     position: fixed;
@@ -33,18 +26,115 @@ footer {
     left: 50%;
     z-index: 998;
     transform: translate(-50%,-50%);
-}
-#carousel {
 
-    /* Size */
-    height: 100%;
-    width: 100%;
+    /* Appearance */
+    background-color: violet;
+    overflow: hidden;
+
+}
+.bullets {
+
+    /* Appearance */
+    list-style: none;
 
     /* Position */
     position: fixed;
-    top: 0px;
+    top: 65%;
+    left: 50%;
+    z-index: 997;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-50%);
+
+}
+.bullet {
+
+    /* Size */
+    width: 10px;
+    height: 10px;
+    margin: 5px;
 
     /* Appearance */
-    background-image: url(https://source.unsplash.com/1920x1080?nature);
+    border: solid 2px white;
+    border-radius: 100%;
+    cursor: pointer;
 
+}
+.active {
+
+    /* Appearance */
+    background-color: white;
+
+}
+.inactive {
+
+    /* Appearance */
+    background-color: transparent;
+
+}
+.wrapper {
+
+    /* Size */
+    width: 24rem;
+    height: 10rem;
+    padding: 3rem;
+
+    /* Appearance */
+    background-color: blue;
+    mix-blend-mode: difference;
+    overflow: hidden;
+
+    /* Position */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 996;
+    transform: translate(-50%,-50%);
+
+}
+.carousel {
+
+    /* Size */
+    width: 100%;
+    height: 100%;
+
+    /* Position */
+    position: relative;
+    top: 0;
+    z-index: -1;
+    
+}
+.image {
+    width: 100%;
+}
+
+.visible {
+
+    /* Position */
+    position: fixed;
+
+    /* Display */
+    display: inline-block;
+
+    /* Behaviour 
+    transition: left 4s cubic-bezier(.6,-0.28,.74,.05) 1s; */
+
+}
+.hidden {
+
+    /* Position */
+    position: fixed;
+
+    /* Display */
+    display: none;
+
+    /* Behaviour 
+    transition: left 4s cubic-bezier(.6,-0.28,.74,.05) 1s; */
+    
+}
+.image img {
+    width: 100%;
+    height: 100%;
 }
