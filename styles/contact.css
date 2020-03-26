@@ -10,9 +10,31 @@ nav {
 
     /* Position */
     position: fixed;
-    z-index: 999;
+    z-index: 900;
+}
+#main {
+
+    /* Position */
+    position: relative;
+    top: 40px;
+    
 }
 
+.envelope {
+
+    /* Position */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 800;
+    transform: translate(-50%,-50%);
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .content {
 
     /* Size */
@@ -20,33 +42,30 @@ nav {
     height: 6rem;
     padding: 2rem;
 
-    /* Position */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 998;
-    transform: translate(-50%,-50%);
-
     /* Appearance */
     background-color: violet;
     overflow: hidden;
 
+    /* Position */
+    z-index: 700;
+
 }
 .bullets {
 
+    /* Size */
+    margin: 0 auto;
+
     /* Appearance */
     list-style: none;
+    background: red;
 
     /* Position */
-    position: fixed;
-    top: 65%;
-    left: 50%;
-    z-index: 997;
+    position: static;
+    z-index: 600;
 
     /* Display */
     display: flex;
     flex-direction: row;
-    transform: translateX(-50%);
 
 }
 .bullet {
@@ -57,7 +76,7 @@ nav {
     margin: 5px;
 
     /* Appearance */
-    border: solid 2px white;
+    border: solid 1.5px white;
     border-radius: 100%;
     cursor: pointer;
 
@@ -83,80 +102,16 @@ nav {
 
     /* Appearance */
     background-color: blue;
-    mix-blend-mode: difference;
-    overflow: hidden;
 
     /* Position */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 996;
-    transform: translate(-50%,-50%);
-
-}
-.carousel {
-
-    /* Size */
-    width: 100%;
-    height: 100%;
-
-    /* Position */
-    position: relative;
-    top: 0;
-    z-index: -1;
-    
-}
-.image {
-
-    /* Size */
-    width: 100%;
-    height: auto;
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 500;
 
 }
 
-.visible {
-
-    /* Position */
-    position: fixed;
-
-    /* Appearance */
-    opacity: 1;
-
-    /* Display */
-    display: inline-block;
-
-    /* Behaviour */
-    transition: opacity 4s cubic-bezier(.6,-0.28,.74,.05) 1s; 
-    
-}
-.hidden {
-
-    /* Position */
-    position: fixed;
-
-    /* Appearance */
-    opacity: 1;
-    
-    /* Display */
-    display: none;
-
-    /* Behaviour */
-    transition: opacity 4s cubic-bezier(.6,-0.28,.74,.05) 1s; 
-    
-}
-.image img {
-    width: 100%;
-    height: 100%;
-}
 
 @media (max-width: 750px) {
     
-    .image {
-
-        /* Size */
-        width: auto;
-        height: 100%;
-    
-    }
 
 }
