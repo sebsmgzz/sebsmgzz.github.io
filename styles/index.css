@@ -1,4 +1,8 @@
-
+    /* Size */
+    /* Appearance */
+    /* Position */
+    /* Display */
+    /* Behaviour */
 #main {
 
     /* Appearance */
@@ -13,7 +17,7 @@
     /* Size */
     width: 100%;
 
-    /* Behaviour */
+    /* Display */
     display: grid;
     grid-template-columns: [LLL] 5% [L] 40% [CL] 10% [CR] 40% [R] 5% [RRR];
     grid-template-rows: auto;
@@ -25,8 +29,10 @@
     /* Size */
     padding: 1.5rem 0;
 
-    /* Behaviour */
+    /* Appearance */
     text-align: right;
+
+    /* Display */
     grid-column-start: L;
     grid-column-end: CL;
     display: flex;
@@ -84,9 +90,9 @@
     background-image: url(../imgs/tree-trunk.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-    /* Behaviour */
     text-align: center;
+
+    /* Display */
     grid-column-start: CL;
     grid-column-end: CR;
     display: flex;
@@ -119,8 +125,10 @@
     /* Size */
     padding: 1.5rem 0;
 
-    /* Behaviour */
+    /* Appearance */
     text-align: left;
+
+    /* Behaviour */
     grid-column-start: CR;
     grid-column-end: R;
     display: flex;
@@ -213,15 +221,16 @@
 
 #scroller {
 
-    /* Appearance */
-    text-align: center;
-
-    /* Behaviour */
+    /* Position */
     position: fixed;
     z-index: 999;
     top: 60%;
     transform: translate(-50%,-50%);
     right: 3rem;
+    /* Appearance */
+    text-align: center;
+
+    /* Behaviour */
     display: flex;
     flex-direction: column;
 
@@ -320,7 +329,7 @@
 
     .mediumGridRow {
     
-        /* Behaviour */
+        /* Display */
         grid-template-columns: [LLL] 5% [TL] 20% [TR] 35% [R] 35% [RR] 5% [RRR];
         grid-template-rows: auto;
 
@@ -332,7 +341,7 @@
         background-image: none;
         text-align: center;
 
-        /* Behaviour */
+        /* Display */
         grid-column-start: TR;
         grid-column-end: RR;
         grid-row-start: 1;
@@ -345,7 +354,6 @@
         /* Size */
         margin: 0;
         width: 90%;
-        
 
     }
     .LeftContent .year {
@@ -376,7 +384,7 @@
     }
     .CenterContent {
     
-        /* Behaviour */
+        /* Display */
         grid-column-start: TL;
         grid-column-end: TR;
         grid-row-start: 1;
@@ -389,7 +397,7 @@
         background-image: none;
         text-align: center;
 
-        /* Behaviour */
+        /* Display */
         grid-column-start: TR;
         grid-column-end: RR;
         grid-row-start: 2;
@@ -411,7 +419,7 @@
         margin: 0;
         width: 80%;
 
-        /* Appearance */
+        /* Display */
         border-right: none;
         background-color: RGBA(116, 140, 28, 0.5);
         border-left: solid 2px black;
@@ -424,7 +432,7 @@
         margin: 0;
         width: 80%;
 
-        /* Appearance */
+        /* Display */
         border-right: none;
         background-color: RGBA(217, 126, 74, 0.4);
         border-left: solid 2px black;
@@ -434,22 +442,24 @@
 
     #scroller {
 
-        /* Behaviour */
+        /* Display */
         display: none;
 
     }
 
     .header .LeftContent {
 
+        /* Position */
+        z-index: 1;
+
         /* Appearance */
         background-image: none;
 
-        /* Behaviour */
+        /* Display */
         grid-column-start: TL;
         grid-column-end: TR;
         grid-row-start: 1;
         grid-row-end: 3;
-        z-index: 1;
 
     }
     .header .RightContent {
@@ -490,7 +500,7 @@
 
     .mediumGridRow {
     
-        /* Behaviour */
+        /* Display */
         grid-template-columns: [LLL] 5% [TL] 30% [TR] 30% [R] 30% [RR] 5% [RRR];
         grid-template-rows: auto;
 
