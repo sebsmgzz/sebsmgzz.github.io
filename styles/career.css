@@ -57,16 +57,16 @@
     display: inline;
 
 }
-.on {
+.icons > i {
+
+    /* Display */
+    display: none;   
+
+}
+.icons > i.on {
 
     /* Display */
     display: inline;
-
-}
-.off {
-
-    /* Display */
-    display: none;
 
 }
 
@@ -74,7 +74,7 @@
 .section {
 
     /* Size */
-    padding: 0 1rem;
+    width: 100%;
 
     /* Appearance */
     background-color: white;
@@ -85,5 +85,8 @@
     /* Behaviour */
     overflow: hidden;
 
+}
+.active {
+    display: block;
 }
 

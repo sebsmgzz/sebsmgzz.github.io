@@ -12,7 +12,7 @@ window.addEventListener("scroll", windowScrolled);
 scrollerUp.addEventListener( "click", scrollerUpClick);
 scrollerDown.addEventListener( "click", scrollerDownClick);
 
-// Functions
+// Event functions
 function windowLoaded() {
     rowToggleClasses(1,"hidden","visible");
     scrollerUpdate(1);

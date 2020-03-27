@@ -7,7 +7,7 @@ const NavRight = document.querySelector(".NavRight");
 // Event listeners
 NavButton.addEventListener("click", navbarToggle);
 
-// Functions
+// Event functions
 function navbarToggle() {
     NavRight.className = (NavRight.className === "NavRight collapsed") ? "NavRight uncollapsed" : "NavRight collapsed";
 }
