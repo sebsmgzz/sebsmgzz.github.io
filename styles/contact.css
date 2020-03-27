@@ -1,8 +1,5 @@
-    /* Size */
-    /* Appearance */
-    /* Position */
-    /* Display */
-    /* Behaviour */
+
+/* Override */
 html {
 
     /* Size */
@@ -37,6 +34,7 @@ body {
     
 }
 
+/* Carousel */
 .envelope {
 
     /* Size */
@@ -159,6 +157,7 @@ body {
 
 }
 
+/* Hidden */
 .left {
 
     /* Position */
@@ -178,6 +177,7 @@ body {
 
 }
 
+/* Bullets */
 .bullets {
 
     /* Size */
@@ -221,6 +221,7 @@ body {
 
 }
 
+/* Blender */
 .wrapper {
 
     /* Size */
@@ -241,6 +242,7 @@ body {
 
 }
 
+/* Contents */
 .content > a {
 
     /* Size */
@@ -266,30 +268,25 @@ body {
 	
 }
 
+/* Colors */
 .title.mail {
     background-color: rgba(138,43,226,0.3);
 }
 .content.mail i {
     color: blueviolet;
 }
-
-/* Location */
 .title.location {
     background-color: rgba(255,0,0,0.3);
 }
 .content.location i {
     color: red;
 }
-
-/* Phone */
 .title.phone {
     background-color: rgba(0,128,0,0.3);
 }
 .content.phone i {
     color: green;
 }
-
-/* LinkedIn */
 .title.linkedin {
     background-color: rgba(0,0,255,0.3);
 }

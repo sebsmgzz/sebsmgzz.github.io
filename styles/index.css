@@ -1,4 +1,5 @@
 
+/* Override */
 nav {
 
     /* Position */
@@ -8,7 +9,6 @@ nav {
     z-index: 999;
 
 }
-
 #main {
     
     /* Position */
@@ -16,12 +16,13 @@ nav {
     top: 40px;
 
     /* Appearance */
-    background-image: url("../imgs/clouds.jpg");
+    background-image: url("../imgs/index/clouds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+/* Row */
 .mediumGridRow {
 
     /* Size */
@@ -34,6 +35,7 @@ nav {
 
 }
 
+/* General */
 .LeftContent {
 
     /* Size */
@@ -97,7 +99,7 @@ nav {
     padding: 1.5rem 0;
 
     /* Appearance */
-    background-image: url(../imgs/tree-trunk.jpg);
+    background-image: url(../imgs/index/tree-trunk.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -188,6 +190,7 @@ nav {
 
 }
 
+/* Disappearing */
 .visible {
     
     /* Appearance */
@@ -207,6 +210,7 @@ nav {
     
 }
 
+/* Background */
 .leaves1 {
 
     /* Appearance */
@@ -229,6 +233,7 @@ nav {
     
 }
 
+/* Scroller */
 #scroller {
 
     /* Position */
@@ -265,10 +270,11 @@ nav {
 
 }
 
+/* Header */
 .header .LeftContent {
 
     /* Appearance */
-    background-image: url("../imgs/tree-top-left.png");
+    background-image: url("../imgs/index/tree-top-left.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
 
@@ -276,7 +282,7 @@ nav {
 .header .RightContent {
 
     /* Appearance */
-    background-image: url("../imgs/tree-top-right.png");
+    background-image: url("../imgs/index/tree-top-right.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
 
@@ -335,8 +341,10 @@ nav {
 
 }
 
+/* Media */
 @media (max-width: 800px) {
 
+    /* Row */
     .mediumGridRow {
     
         /* Display */
@@ -345,6 +353,7 @@ nav {
 
     }
 
+    /* General */
     .LeftContent {
 
         /* Appearance */
@@ -450,6 +459,7 @@ nav {
 
     }
 
+    /* Scroller */
     #scroller {
 
         /* Display */
@@ -457,6 +467,7 @@ nav {
 
     }
 
+    /* Header */
     .header .LeftContent {
 
         /* Position */
@@ -505,9 +516,9 @@ nav {
     }
     
 }
-
 @media (max-width: 500px) {
 
+    /* Row */
     .mediumGridRow {
     
         /* Display */
@@ -516,6 +527,7 @@ nav {
 
     }
 
+    /* Header */
     .header h1 {
     
         /* Appearance */
