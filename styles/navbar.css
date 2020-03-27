@@ -1,0 +1,166 @@
+
+body > nav {
+
+    /* Size */
+    height: 2.5rem;
+
+    /* Appearance */
+    background-color: #343a40;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
+}
+.NavLeft {
+
+    /* Size */
+    height: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.NavLeft > a {
+
+    /* Size */
+    height: 100%;
+    padding: 0 1rem;
+
+    /* Appearance */
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+
+}
+.NavLeft > a > p {
+
+    /* Position */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.NavLeft > button {
+
+    /* Size */
+    width: 2rem;
+    margin: .25rem 1rem;
+
+    /* Appearance */
+    font-size: 1rem;
+    color: rgba(255,255,255,.5);
+    background-color: transparent;
+    border: solid 1px rgba(255,255,255,.1);
+    border-radius: .25rem;
+
+    /* Display */
+    display: none;
+
+}
+.NavLeft > button:hover {
+
+    /* Appearance */
+    background-color: rgba(255,255,255,.2);
+
+}
+.NavRight {
+
+    /* Size */
+    height: 100%;
+
+    /* Display */
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.NavRight > a {
+
+    /* Size */
+    height: 100%;
+    padding: 0 1rem;
+
+    /* Appearance */
+    color: #fff;
+    text-decoration: none;
+
+}
+.NavRight > a:hover {
+
+    /* Appearance */
+    background-color: rgba(255,255,255,.2);
+
+}
+.NavRight > a > p {
+
+    /* Position */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+@media (max-width: 800px) {
+    body > nav {
+
+        /* Size */
+        height: auto;
+
+        /* Display */
+        display: block;
+
+    }
+    .NavLeft {
+
+        /* Size */
+        height: 100%;
+        width: 100%;
+
+    }
+    .NavLeft > a {
+
+        /* Size */
+        height: 2.5rem;
+        padding: 0 1rem;
+    
+    }
+    .NavLeft > button {
+
+        /* Display */
+        display: inline;
+
+    }
+    .NavRight.collapsed {
+
+        /* Display */
+        display: none;
+        
+    }
+    .NavRight.uncollapsed {
+
+        /* Display */
+        display: flex;
+        flex-direction: column;
+
+    }
+    .NavRight.uncollapsed > a {
+
+        /* Size */
+        height: inherit;
+        padding: 0.25rem 1rem;
+    
+    }
+    .NavRight.uncollapsed > a > p {
+
+        /* Position */
+        position: static;
+        transform: none;
+        
+    }
+}

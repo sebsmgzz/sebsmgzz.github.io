@@ -1,0 +1,145 @@
+
+.FooterTop {
+
+    /* Size */
+    padding: 0 5%;
+
+    /* Appearance */
+    background-color: #1c2331;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+
+}
+.FooterTop > div {
+
+    /* Size */
+    padding: 0.5rem 1rem;
+
+    /* Display */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.FooterTop > div > h6 {
+
+    /* Appearance */
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: solid 0.125rem #7c4dff;
+
+}
+.FooterTop > div > ul {
+
+    /* Appearance */
+    list-style: none;
+    color: white;
+    
+}
+.FooterTop > div > ul > li {
+
+    /* Size */
+    margin: 0.5rem auto;
+
+}
+.FooterTop > div > ul > li > a {
+    
+    /* Appearance */
+    color: white;
+    text-decoration: none;
+
+}
+.FooterTop > div > ul > li > a:hover {
+    
+    /* Appearance */
+    color: #91B6FF;
+
+}
+.FooterBottom {
+
+    /* Size */
+    padding: 0 5rem;
+
+    /* Appearance */
+    background-color: #161c27;
+    color: white;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+.FooterBottom > blockquote {
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+.FooterBottom > blockquote > p {
+
+    /* Size */
+    margin-top: 1rem;
+
+    /* Appearance */
+    text-align: center;
+    font-family: EagleLake-Regular;
+    font-size: 1.20rem;
+    letter-spacing: 1px;
+
+}
+.FooterBottom > blockquote > cite {
+
+    /* Appearance */
+    text-align: center;
+    font-size: 1rem;
+
+}
+.FooterBottom > p {
+
+    /* Size */
+    margin: 1rem auto;
+
+    /* Appearance */
+    text-align: center;
+    font-size: 1rem;
+
+}
+@media (max-width: 650px) {
+    body > footer > div:first-child {
+
+        /* Display */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
+
+    }
+}
+@media (max-width: 520px) {
+    body > footer > div:first-child {
+
+        /* Display */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-columns: auto;
+
+    }
+    body > footer > div:first-child > div > h6 {
+
+        /* Appearance */
+        text-align: center;
+
+    }
+    body > footer > div:first-child > div > ul {
+
+        /* Appearance */
+        text-align: center;
+        
+    }
+}
