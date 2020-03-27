@@ -88,6 +88,9 @@ body {
     /* Position */
     position: absolute;
 
+    /* Behaviour */
+    transition: left 1s ease-in-out;
+
 }
 .contents {
 
@@ -119,6 +122,9 @@ body {
     /* Position */
     position: absolute;
 
+    /* Behaviour */
+    transition: left 1s ease-in-out;
+
 }
 .backgrounds {
 
@@ -148,18 +154,27 @@ body {
     /* Position */
     position: absolute;
 
+    /* Behaviour */
+    transition: left 1s ease-in-out;
+
 }
-.visible {
+
+.left {
+
+    /* Position */
+    left: -100%;
+
+}
+.center {
 
     /* Position */
     left: 0;
 
 }
-.hidden {
+.right {
 
     /* Position */
-    left: 0;
-    transform: translateX(100%);
+    left: 100%;
 
 }
 
