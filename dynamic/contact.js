@@ -87,6 +87,7 @@ function toggleCarousel(carouselIndex) {
 }
 
 // Intervals
+window.scrollTo(0,window.scrollMaxY);
 function nextCarouselBullet()
 {
 
@@ -95,7 +96,7 @@ function nextCarouselBullet()
 
     // Verify index for carousel
     if (globalIndex >=  bullets.length) {
-        carouselIndex = 0;
+        globalIndex = 0;
     }
 
     // Update
@@ -104,4 +105,4 @@ function nextCarouselBullet()
 
 }
 
-//setInterval(nextCarouselBullet, 2500);
+setInterval(nextCarouselBullet, 3000);

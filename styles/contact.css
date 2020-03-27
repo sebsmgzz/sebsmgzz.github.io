@@ -68,7 +68,7 @@ body {
 
     /* Appearance */
     font-size: 2.5rem;
-    background-color: palegreen;
+    background-color: transparent;
     overflow: hidden;
     text-align: center;
 
@@ -100,7 +100,7 @@ body {
     padding: 0rem;
 
     /* Appearance */
-    background-color: violet;
+    background-color: white;
     overflow: hidden;
     text-align: center;
 
@@ -120,7 +120,7 @@ body {
     height: 100%;
 
     /* Position */
-    position: absolute;
+    position: absolute;  
 
     /* Behaviour */
     transition: left 1s ease-in-out;
@@ -239,4 +239,60 @@ body {
     z-index: 500;
     transform: translate(-50%,-50%);
 
+}
+
+.content > a {
+
+    /* Size */
+    height: 100%;
+
+    /* Appearance */
+    color: black;
+    text-decoration: none;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
+}
+.content i {
+
+    /* Size */
+    margin-bottom: 1rem;
+
+    /* Appearance */
+	font-size: 3rem;
+	
+}
+
+.title.mail {
+    background-color: rgba(138,43,226,0.3);
+}
+.content.mail i {
+    color: blueviolet;
+}
+
+/* Location */
+.title.location {
+    background-color: rgba(255,0,0,0.3);
+}
+.content.location i {
+    color: red;
+}
+
+/* Phone */
+.title.phone {
+    background-color: rgba(0,128,0,0.3);
+}
+.content.phone i {
+    color: green;
+}
+
+/* LinkedIn */
+.title.linkedin {
+    background-color: rgba(0,0,255,0.3);
+}
+.content.linkedin i {
+    color: blue;
 }
