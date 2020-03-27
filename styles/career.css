@@ -79,15 +79,22 @@
     /* Appearance */
     background-color: white;
 
-    /* Display */
-    display: none;
+    /* Position */
+    position: relative;
+    transform: translateY(-100%);
+    z-index: 1;
 
     /* Behaviour */
     overflow: hidden;
+    transition: 0.4s;
 
 }
 .active {
-    display: block;
+
+    /* Position */
+    position: relative;
+    transform: translateY(0);
+
 }
 
 /* Backgrounds */
