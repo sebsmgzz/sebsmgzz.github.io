@@ -3,3 +3,87 @@
     /* Position */
     /* Display */
     /* Behaviour */
+
+/* Override */
+#main {
+
+    /* Appearance */
+    background-image: url("../imgs/career/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Dropdowns */
+.dropdown {
+
+    /* Size */
+    width: auto;
+    margin: 1rem 2rem;
+    padding: 1rem 5%;
+
+    /* Appearance */
+    background-color: #eee;
+    border-radius: 3rem;
+    color: #444;
+    text-align: left;
+    border: none;
+    outline: none;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* Behaviour */
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.dropdown:hover {
+
+    /* Appearance */
+    background-color: #ccc;
+    
+}
+.icons {
+
+    /* Display */
+    display: inline;
+
+}
+.on {
+
+    /* Display */
+    display: inline;
+
+}
+.off {
+
+    /* Display */
+    display: none;
+
+}
+
+/* Sections */
+.section {
+
+    /* Size */
+    padding: 0 1rem;
+
+    /* Appearance */
+    background-color: white;
+
+    /* Display */
+    display: none;
+
+    /* Behaviour */
+    overflow: hidden;
+
+}
+
