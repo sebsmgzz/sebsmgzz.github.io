@@ -1,11 +1,16 @@
-    /* Size */
-    /* Appearance */
-    /* Position */
-    /* Display */
-    /* Behaviour */
 
 /* Override */
+html, body {
+
+    /* Size */
+    height: 100%;
+
+}
 #main {
+
+    /* Size */
+    height: 100%;
+    width: 100%;
 
     /* Appearance */
     background-image: url("../imgs/career/main-background.jpg");
@@ -18,6 +23,7 @@
     flex-direction: column;
 
 }
+
 
 /* Dropdowns */
 .dropdown {
@@ -75,25 +81,72 @@
 
     /* Size */
     width: 100%;
+    height: 0;
 
+    /* Appearance */
+    background-color: white;
+
+    /* Behaviour */
+    overflow: hidden;
+    transition: height 0.4s;
+
+}
+.active {
+
+    /* Size */
+    height: 150px;
+
+}
+
+    /* Size */
+    /* Appearance */
+    /* Position */
+    /* Display */
+    /* Behaviour */
+
+/* Flippers */
+.content {
+
+    /* Size */
+    height: 80%;
+    width: auto;
+    margin: 0 1rem;
+
+    /* Position */
+    display: inline-block;
+    
     /* Appearance */
     background-color: white;
 
     /* Position */
     position: relative;
-    transform: translateY(-100%);
-    z-index: 1;
-
-    /* Behaviour */
-    overflow: hidden;
-    transition: 0.4s;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
-.active {
+.flipper {
 
-    /* Position */
-    position: relative;
-    transform: translateY(0);
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+}
+.content:hover .flipper {
+
+}
+.front {
+
+}
+.behind {
+
+}
+.flipper img {
+
+    /* Size */
+    width: 2rem;
+    height: 2rem;
+
+
 
 }
 
@@ -110,7 +163,7 @@
     background-size: cover;
     background-position-y: 100%;
 }
-.technology {
+.coding {
     background-image: url("../imgs/career/section3.jpg");
     background-repeat: no-repeat;
     background-size: cover;

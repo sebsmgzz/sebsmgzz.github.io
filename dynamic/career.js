@@ -39,4 +39,5 @@ function toggleSection(sectionIndex) {
     sections[sectionIndex].classList.toggle("active");
     plusIcons[sectionIndex].classList.toggle("on");
     minusIcons[sectionIndex].classList.toggle("on");
+
 }
