@@ -22,6 +22,7 @@
     font-family: Domine-Regular;
     letter-spacing: 0.5rem;
     font-size: 2.5rem;
+    padding: 0.5rem 0;
 }
 .header button {
     display: none;
@@ -82,22 +83,31 @@
 }
 
 @media (max-width: 800px) {
-.header button {
-	display: inline-block;
-	background-color: rgba(0,0,0,0.5);
-	border: none;
-	border-radius: 30px;
-	font-size: 1rem;
-	padding: 0.5rem 2rem;
-	font-family: RobotoMono-Regular;
-    margin: 1rem auto;
-    cursor: pointer;
-    transition: 0.5s;
+    .header button {
+        display: inline-block;
+        background-color: rgba(0,0,0,0.5);
+        border: none;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 0.5rem 2rem;
+        font-family: RobotoMono-Regular;
+        margin: 1rem auto;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .header button:hover, .header button:active {
+        background-color: rgba(0,0,0,0.2);
+    }
+    .header p {
+        transition: 1s ease-in-out;
+        max-height: 0;
+        opacity: 0;
+    }
+    .header p.show {
+        max-height: 800px;
+        opacity: 1;
+    }
 }
-.header button:hover {
-    background-color: rgba(0,0,0,0.2);
-}
-
 @media (max-width: 600px) {
     #main {
         grid-template-columns: [LLL] 2% [LL] 47% [LR] 2% [RL] 47% [RR] 2% [RRR];
