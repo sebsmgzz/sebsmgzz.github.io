@@ -25,6 +25,18 @@
     font-family: Montserrat-Regular;
     src: url("../fonts/Montserrat-Regular.ttf");
 }
+@font-face {
+    font-family: ComicNeue-Regular;
+    src: url("../fonts/ComicNeue-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoMono-Regular;
+    src: url("../fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+    font-family: Domine-Regular;
+    src: url("../fonts/Domine-Regular.ttf");
+}
 
 body {
 
