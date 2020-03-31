@@ -2,7 +2,7 @@
 #main {
     display: grid;
     grid-template-columns: [LLL] 2.5% [LL] 30% [LR] 2.5% [CL] 30% [CR] 2.5% [RL] 30% [RR] 2.5% [RRR];
-    grid-template-rows: 25% repeat(auto,2);
+    grid-template-rows: repeat(3,auto);
     grid-template-areas: 
         "header header header header header header header"
         "  .      A      .      B      .      C      .   "
@@ -58,7 +58,7 @@
     margin: 0 auto;
 }
 
-/* Individual sections*/
+/* Icons */
 .boxing {
     grid-area: A;
 }
@@ -76,4 +76,21 @@
 }
 .baking {
     grid-area: F;
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 600px) {
+    #main {
+        grid-template-columns: [LLL] 2% [LL] 47% [LR] 2% [RL] 47% [RR] 2% [RRR];
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+            "header header header header header"
+            "  .      A      .      B      .   "
+            "  .      C      .      D      .   "
+            "  .      E      .      F      .   ";
+            background-position-x: left;
+    }
 }
