@@ -38,6 +38,11 @@
     color: white;
     padding: 2rem 0;
 }
+.column img {
+    width: 10rem;
+    margin: 0 auto;
+}
+
 .content {
     visibility: hidden;
     opacity: 0;
