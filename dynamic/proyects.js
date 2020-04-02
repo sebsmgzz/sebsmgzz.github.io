@@ -1,17 +1,17 @@
 
 // DOM elements
-const columns = document.querySelectorAll(".column");
+const containers = document.querySelectorAll(".container");
 const contents = document.querySelectorAll(".contents");
 
 // Event listeners
-columns.forEach( (column) => column.addEventListener("click",columnClicked));
+containers.forEach( (container) => container.addEventListener("click",containerClicked));
 
 // Event functions
-function columnClicked() {
+function containerClicked() {
     this.classList.toggle("fullsize")
-    for(let i = 0; i < columns.length; i++) {
-        if (columns[i] != this) {
-            columns[i].classList.toggle("hidden");
+    for(let i = 0; i < containers.length; i++) {
+        if (containers[i] != this) {
+            containers[i].classList.toggle("hidden");
         } else {
             contents[i].classList.toggle("show")
         }

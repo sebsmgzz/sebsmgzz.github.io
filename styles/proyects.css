@@ -1,22 +1,16 @@
 
+/* Main should display 5 containers */
 #main {
     width: 100%;
+    min-height: 600px;
     display: flex;
     flex-direction: row;
-    min-height: 600px;
 }
-.column {
+
+/* Strip covers contianer when hovered */
+.container {
     width: 20%;
-    text-align: center;
-    overflow: hidden;
-    transition: 1s;
-}
-.column.fullsize {
-    width: 100%;
-}
-.column.hidden {
-    white-space: nowrap;
-    width: 0%;
+    transition: width 1s;
 }
 .strip {
     width: 100%;
@@ -24,69 +18,92 @@
     background-image: url("../imgs/proyects/strip.png");
     background-position: center;
     background-size: 100% 100%;
-    transition: 0.5s linear;
+    transition: background-size 0.5s linear;
+}
+.container:not(.fullsize) .strip:hover {
+    background-size: 200% 200%;
+}
+
+/* Appearances */
+.container {
     cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+.container:nth-of-type(1) {
+    background-color: #244f75;
+}
+.container:nth-of-type(2) {
+    background-color: #68c2c2;
+}
+.container:nth-of-type(3) {
+    background-color: #925484;
+}
+.container:nth-of-type(4) {
+    background-color: #f8be4d;
+}
+.container:nth-of-type(5) {
+    background-color: #f35454;
+}
+
+/* Container covers screen when clicked */
+.container.hidden {
+    width: 0;
+}
+.container.fullsize {
+    width: 100%;
+}
+
+/* Strip's main data should be displayed as column */
+.strip {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
 }
-.column:not(.fullsize) .strip:hover {
-    background-size: 200% 200%;
-}
-.column h2 {
-    font-family: Domine-Regular;
-    color: white;
+.strip h2 {
     padding: 2rem 0;
+    color: white;
+    font-family: Domine-Regular;
 }
-.column img {
+.strip img {
     width: 10rem;
     margin: 0 auto;
 }
 
+/* Contents should be displayed only when container is fullsize */
 .contents {
-    font-family: RobotoMono-Regular;
-    visibility: hidden;
-    opacity: 0;
     height: 0;
     max-height: 3rem;
-    transition: 1s;
-
+    visibility: hidden;
+    opacity: 0;
+    transition: height 1s;
+    transition: opacity 1s;
 }
 .contents.show {
+    height: auto;
     visibility: unset;
     opacity: 1;
-    height: auto;
+}
+
+/* Appearances */
+.contents {
+    font-family: RobotoMono-Regular;
 }
 .content {
     padding: 1rem 2rem;
+    list-style: none;
 }
 .content h4 {
+    width: 150px;
+    height: 100%;
 	display: table-cell;
-	height: 100%;
 	text-align: center;
-	width: 150px;
-	vertical-align: middle;
+    vertical-align: middle;
 }
 .content p {
+    padding-left: 1rem;
 	display: table-cell;
 	text-align: justify;
-	padding-left: 1rem;
-	vertical-align: middle;
-}
-
-.column:nth-of-type(1) {
-    background-color: #244f75;
-}
-.column:nth-of-type(2) {
-    background-color: #68c2c2;
-}
-.column:nth-of-type(3) {
-    background-color: #925484;
-}
-.column:nth-of-type(4) {
-    background-color: #f8be4d;
-}
-.column:nth-of-type(5) {
-    background-color: #f35454;
+    vertical-align: middle;
 }
