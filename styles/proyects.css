@@ -28,13 +28,14 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
 }
 .column:not(.fullsize) .strip:hover {
     background-size: 200% 200%;
 }
 .column h2 {
+    font-family: Domine-Regular;
     color: white;
     padding: 2rem 0;
 }
@@ -43,17 +44,35 @@
     margin: 0 auto;
 }
 
-.content {
+.contents {
+    font-family: RobotoMono-Regular;
     visibility: hidden;
     opacity: 0;
     height: 0;
     max-height: 3rem;
     transition: 1s;
+
 }
-.content.show {
+.contents.show {
     visibility: unset;
     opacity: 1;
     height: auto;
+}
+.content {
+    padding: 1rem 2rem;
+}
+.content h4 {
+	display: table-cell;
+	height: 100%;
+	text-align: center;
+	width: 150px;
+	vertical-align: middle;
+}
+.content p {
+	display: table-cell;
+	text-align: justify;
+	padding-left: 1rem;
+	vertical-align: middle;
 }
 
 .column:nth-of-type(1) {

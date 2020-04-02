@@ -1,7 +1,7 @@
 
 // DOM elements
 const columns = document.querySelectorAll(".column");
-const contents = document.querySelectorAll(".content");
+const contents = document.querySelectorAll(".contents");
 
 // Event listeners
 columns.forEach( (column) => column.addEventListener("click",columnClicked));
