@@ -1,27 +1,24 @@
 
-/* Main should display 5 containers */
+/* Main should display 5 columns */
 #main {
     width: 100%;
     min-height: 600px;
     display: flex;
     flex-direction: row;
 }
-
-/* Strip covers contianer when hovered */
 .container {
     width: 20%;
+}
+
+/* Container covers screen when clicked */
+.container {
     transition: width 1s;
 }
-.strip {
-    width: 100%;
-    height: 100%;
-    background-image: url("../imgs/proyects/strip.png");
-    background-position: center;
-    background-size: 100% 100%;
-    transition: background-size 0.5s linear;
+.container.hidden {
+    width: 0;
 }
-.container:not(.fullsize) .strip:hover {
-    background-size: 200% 200%;
+.container.fullsize {
+    width: 100%;
 }
 
 /* Appearances */
@@ -46,12 +43,17 @@
     background-color: #f35454;
 }
 
-/* Container covers screen when clicked */
-.container.hidden {
-    width: 0;
-}
-.container.fullsize {
+/* Strip covers contianer when hovered */
+.strip {
     width: 100%;
+    height: 100%;
+    background-image: url("../imgs/proyects/strip.png");
+    background-position: center;
+    background-size: 100% 100%;
+    transition: background-size 0.5s linear;
+}
+.container:not(.fullsize) .strip:hover {
+    background-size: 200% 200%;
 }
 
 /* Strip's main data should be displayed as column */
@@ -106,4 +108,46 @@
 	display: table-cell;
 	text-align: justify;
     vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    /* Main should display 5 rows */
+    #main {
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        height: 20%;
+    }
+
+    /* Container covers screen when clicked */
+    .container {
+        transition: height 1s;
+    }
+    .container.hidden {
+        width: 100%;
+        height: 0px;
+    }
+    .container.fullsize {
+        height: 1300px;
+    }
+
+    /* Appearances */
+    .content h4 {
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    .content p {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
 }
