@@ -7,7 +7,7 @@
         "header header header header header header header"
         "  .      A      .      B      .      C      .   "
         "  .      D      .      E      .      F      .   ";
-        background-image: url("../imgs/myself/background.jpg");
+        background-image: url("imgs/background.jpg");
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    background-image: url("../imgs/myself/triangle.png");
+    background-image: url("imgs/triangle.png");
     background-size: 100% 0;
     background-repeat: no-repeat;
     background-position: top;

@@ -13,7 +13,7 @@ html, body {
     width: 100%;
 
     /* Appearance */
-    background-image: url("../imgs/career/main-background.jpg");
+    background-image: url("imgs/main-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
@@ -207,25 +207,25 @@ html, body {
 
 /* Backgrounds */
 .education {
-    background-image: url("../imgs/career/section1.jpg");
+    background-image: url("imgs/section1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
 }
 .languages {
-    background-image: url("../imgs/career/section2.jpg");
+    background-image: url("imgs/section2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
 }
 .coding {
-    background-image: url("../imgs/career/section3.jpg");
+    background-image: url("imgs/section3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
 }
 .software {
-    background-image: url("../imgs/career/section4.jpg");
+    background-image: url("imgs/section4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;

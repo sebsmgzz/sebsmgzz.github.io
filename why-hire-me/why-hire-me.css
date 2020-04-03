@@ -1,8 +1,3 @@
-    /* Size */
-    /* Appearance */
-    /* Position */
-    /* Display */
-    /* Behaviour */
     
 /* Override */
 html {
@@ -104,14 +99,14 @@ footer {
 
 /* Individual */
 .image1 {
-    background-image: url("../imgs/why-hire-me/background1.jpg");
+    background-image: url("imgs/background1.jpg");
 }
 .image2 {
-    background-image: url("../imgs/why-hire-me/background2.jpg");
+    background-image: url("imgs/background2.jpg");
 }
 .image3 {
-    background-image: url("../imgs/why-hire-me/background3.jpg");
+    background-image: url("imgs/background3.jpg");
 }
 .image4 {
-    background-image: url("../imgs/why-hire-me/background4.jpg");
+    background-image: url("imgs/background4.jpg");
 }
