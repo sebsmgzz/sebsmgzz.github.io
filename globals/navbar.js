@@ -1,13 +1,13 @@
 
 // DOM elements
-const Nav = document.querySelector("body nav");
-const NavButton = document.querySelector("body nav div button");
-const NavRight = document.querySelector(".NavRight");
+const navbar = document.querySelector("#navbar");
+const button = document.querySelector("#navbar button");
+const navbarRight = document.querySelector(".navbar-right");
 
 // Event listeners
-NavButton.addEventListener("click", navbarToggle);
+button.addEventListener("click", buttonClicked);
 
 // Event functions
-function navbarToggle() {
-    NavRight.className = (NavRight.className === "NavRight collapsed") ? "NavRight uncollapsed" : "NavRight collapsed";
+function buttonClicked() {
+    navbarRight.classList.toggle("navbar-collapsed");
 }

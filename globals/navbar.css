@@ -1,169 +1,109 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body > nav {
 
-    /* Size */
-    height: 2.5rem;
-
-    /* Appearance */
-    background-color: #343a40;
-
-    /* Display */
+/* Whole Navbar */
+#navbar {
+    height: 3rem;
     display: flex;
     flex-direction: row;
-
+    background-color: #343a40;
 }
-.NavLeft {
 
-    /* Size */
+/* Left Navbar */
+.navbar-left {
     height: 100%;
-
-    /* Display */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-.NavLeft > a {
-
-    /* Size */
-    height: 100%;
-    padding: 0 1rem;
-
-    /* Appearance */
-    font-size: 1.25rem;
+.navbar-left a {
+    padding: 0.75rem 0;
+    width: 3rem;
+    height: auto;
     color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
     text-decoration: none;
-
 }
-.NavLeft > a > p {
-
-    /* Position */
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-.NavLeft > button {
-
-    /* Size */
-    width: 2rem;
+.navbar-left button {
     margin: .25rem 1rem;
-
-    /* Appearance */
-    font-size: 1rem;
-    color: rgba(255,255,255,.5);
-    background-color: transparent;
     border: solid 1px rgba(255,255,255,.1);
     border-radius: .25rem;
-
-    /* Display */
+    width: 2rem;
     display: none;
-
+    background-color: transparent;
+    color: rgba(255,255,255,.5);
+    font-size: 1rem;
+    cursor: pointer;
 }
-.NavLeft > button:hover {
-
-    /* Appearance */
+.navbar-left button:hover {
     background-color: rgba(255,255,255,.2);
-
 }
-.NavRight {
 
-    /* Size */
+/* Right Navbar */
+.navbar-right {
     height: 100%;
-
-    /* Display */
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-
 }
-.NavRight > a {
-
-    /* Size */
-    height: 100%;
+.navbar-right a {
     padding: 0 1rem;
-
-    /* Appearance */
+    height: 100%;
     color: #fff;
     text-decoration: none;
-
 }
-.NavRight > a:hover {
-
-    /* Appearance */
+.navbar-right a:hover {
     background-color: rgba(255,255,255,.2);
-
 }
-.NavRight > a > p {
-
-    /* Position */
+.navbar-right p {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
+
+/* Responsive */
 @media (max-width: 800px) {
-    body > nav {
 
-        /* Size */
-        height: auto;
-
-        /* Display */
+    /* Whole Navbar */
+    #navbar {
         display: block;
-
+        height: auto;
     }
-    .NavLeft {
 
-        /* Size */
-        height: 100%;
+    /* Left Navbar */
+    .navbar-left {
         width: 100%;
-
+        height: 100%;
     }
-    .NavLeft > a {
-
-        /* Size */
-        height: 2.5rem;
-        padding: 0 1rem;
-    
-    }
-    .NavLeft > button {
-
-        /* Display */
+    .navbar-left button {
         display: inline;
-
     }
-    .NavRight.collapsed {
-
-        /* Display */
-        display: none;
-        
-    }
-    .NavRight.uncollapsed {
-
-        /* Display */
+    /* Right Navbar */
+    .navbar-right {
+        overflow: hidden;
         display: flex;
         flex-direction: column;
-
+        flex-wrap: nowrap;
+        justify-content: stretch;
+        align-content: flex-start;
+        height: 15rem;
+        transition: height 0.5s;
     }
-    .NavRight.uncollapsed > a {
-
-        /* Size */
-        height: inherit;
-        padding: 0.25rem 1rem;
-    
+    .navbar-right a {
+        padding: 0.5rem 1.5rem;
+        width: auto;
+        height: 1.5rem;
     }
-    .NavRight.uncollapsed > a > p {
-
-        /* Position */
-        position: static;
-        transform: none;
-        
+    .navbar-right p {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
+    .navbar-collapsed {
+        height: 0;
+    }
+
 }
