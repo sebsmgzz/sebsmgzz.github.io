@@ -1,10 +1,4 @@
 
-/* Overwrite */
-#main {
-    position: static;
-    top: 0;
-}
-
 /* Carousel */
 .envelope {
     position: fixed;

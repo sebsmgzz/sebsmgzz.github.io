@@ -1,0 +1,17 @@
+
+/* Template 
+    Navbar fixed
+    Main full page
+    Footer none
+*/
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+#footer {
+    display: none;
+}
