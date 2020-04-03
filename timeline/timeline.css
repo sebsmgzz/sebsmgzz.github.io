@@ -13,7 +13,7 @@ nav {
     
     /* Position */
     position: relative;
-    top: 40px;
+    top: 3rem;
 
     /* Appearance */
     background-image: url("imgs/clouds.jpg");
@@ -21,7 +21,10 @@ nav {
     background-size: cover;
 
 }
-
+footer {
+    position: relative;
+    top: 3rem;
+}
 /* Row */
 .mediumGridRow {
 
