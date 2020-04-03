@@ -1,18 +1,19 @@
 
-/* Main should display 5 columns */
+/* Overwrite */
 #main {
-    width: 100%;
-    min-height: 600px;
     display: flex;
     flex-direction: row;
-}
-.container {
-    width: 20%;
+    width: 100%;
+    min-height: 600px;
 }
 
-/* Container covers screen when clicked */
+/* Containers */
 .container {
+    overflow: hidden;
     transition: width 1s;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
 }
 .container.hidden {
     width: 0;
@@ -21,12 +22,7 @@
     width: 100%;
 }
 
-/* Appearances */
-.container {
-    cursor: pointer;
-    overflow: hidden;
-    text-align: center;
-}
+/* Colors */
 .container:nth-of-type(1) {
     background-color: #244f75;
 }
@@ -43,25 +39,21 @@
     background-color: #f35454;
 }
 
-/* Strip covers contianer when hovered */
-.strip {
-    width: 100%;
-    height: 100%;
-    background-image: url("imgs/strip.png");
-    background-position: center;
-    background-size: 100% 100%;
-    transition: background-size 0.5s linear;
-}
-.container:not(.fullsize) .strip:hover {
-    background-size: 200% 200%;
-}
-
-/* Strip's main data should be displayed as column */
+/* Strips */
 .strip {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    width: 100%;
+    height: 100%;
+    transition: background-size 0.5s linear;
+    background-image: url("imgs/strip.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+.container:not(.fullsize) .strip:hover {
+    background-size: 200% 200%;
 }
 .strip h2 {
     padding: 2rem 0;
@@ -73,60 +65,52 @@
     margin: 0 auto;
 }
 
-/* Contents should be displayed only when container is fullsize */
+/* Contents */
 .contents {
+    padding: 1rem 2rem;
     height: 0;
     max-height: 3rem;
-    visibility: hidden;
-    opacity: 0;
     transition: height 1s;
     transition: opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    font-family: RobotoMono-Regular;
 }
 .contents.show {
     height: auto;
     visibility: unset;
     opacity: 1;
 }
-
-/* Appearances */
-.contents {
-    font-family: RobotoMono-Regular;
-}
-.content {
-    padding: 1rem 2rem;
-    list-style: none;
-}
 .content h4 {
-    width: 150px;
-    height: 100%;
 	display: table-cell;
 	text-align: center;
     vertical-align: middle;
+    width: 150px;
+    height: 100%;
 }
 .content p {
-    padding-left: 1rem;
 	display: table-cell;
 	text-align: justify;
     vertical-align: middle;
+    padding-left: 1rem;
 }
 
 /* Responsive */
 @media (max-width: 800px) {
 
-    /* Main should display 5 rows */
+    /* Overwrite*/
     #main {
-        width: 100%;
-        height: 1300px;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 1300px;
     }
+
+    /* Containers */
     .container {
         width: 100%;
         height: 20%;
-    }
-
-    /* Container covers screen when clicked */
-    .container {
         transition: height 1s;
     }
     .container.hidden {
@@ -137,16 +121,16 @@
         height: 1300px;
     }
 
-    /* Appearances */
+    /* Contents */
     .content h4 {
+        display: block;
         width: 100%;
         height: auto;
-        display: block;
         text-align: center;
     }
     .content p {
-        padding: 0;
         display: block;
+        padding: 0;
         text-align: center;
     }
 

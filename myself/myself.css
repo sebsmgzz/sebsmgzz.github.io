@@ -1,4 +1,5 @@
 
+/* Overwrite */
 #main {
     display: grid;
     grid-template-columns: [LLL] 2.5% [LL] 30% [LR] 2.5% [CL] 30% [CR] 2.5% [RL] 30% [RR] 2.5% [RRR];
@@ -7,11 +8,14 @@
         "header header header header header header header"
         "  .      A      .      B      .      C      .   "
         "  .      D      .      E      .      F      .   ";
-        background-image: url("imgs/background.jpg");
-        background-position: bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
+    height: auto;
+    background-image: url("imgs/background.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/* Header */
 .header {
     padding: 2rem 2.5%;
     text-align: center;
@@ -31,6 +35,8 @@
 .header p {
     font-family: RobotoMono-Regular;
 }
+
+/* Boxes */
 .box {
     margin: 2rem 0;
     text-align: center;
@@ -45,7 +51,7 @@
     transition: 0.5s ease-in-out;
 }
 .box:hover {
-    background-size: 100% 210px;
+    background-size: 100% 100%;
 }
 .box div {
     margin: 1rem 0;
@@ -63,7 +69,7 @@
     margin: 0 auto;
 }
 
-/* Icons */
+/* Positioning */
 .boxing {
     grid-area: A;
 }
@@ -83,33 +89,41 @@
     grid-area: F;
 }
 
+/* Responsive */
 @media (max-width: 800px) {
+
+    /* Header */
     .header button {
         display: inline-block;
-        background-color: rgba(0,0,0,0.5);
         border: none;
-        border-radius: 30px;
-        font-size: 14px;
-        padding: 0.5rem 2rem;
-        font-family: RobotoMono-Regular;
         margin: 1rem auto;
-        cursor: pointer;
+        border-radius: 30px;
+        padding: 0.5rem 2rem;
         transition: 0.5s;
+        font-size: 14px;
+        font-family: RobotoMono-Regular;
+        background-color: rgba(0,0,0,0.5);
+        cursor: pointer; 
     }
     .header button:hover, .header button:active {
         background-color: rgba(0,0,0,0.2);
     }
     .header p {
-        transition: 1s ease-in-out;
         max-height: 0;
+        transition: 1s ease-in-out;
         opacity: 0;
     }
     .header p.show {
         max-height: 800px;
         opacity: 1;
     }
+
 }
+
+/* Responsive */
 @media (max-width: 600px) {
+
+    /* Overwrite */
     #main {
         grid-template-columns: [LLL] 2% [LL] 47% [LR] 2% [RL] 47% [RR] 2% [RRR];
         grid-template-rows: repeat(4,auto);
@@ -118,6 +132,7 @@
             "  .      A      .      B      .   "
             "  .      C      .      D      .   "
             "  .      E      .      F      .   ";
-            background-position-x: left;
+        background-position-x: left;
     }
+
 }

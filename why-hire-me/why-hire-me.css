@@ -1,103 +1,53 @@
-    
-/* Override */
-html {
 
-    /* Size */
-    height: 100%;
-
-}
-body {
-
-    /* Size */
-    height: 100%;
-
-}
+/* Overwrite */
 #main {
-
-    /* Size */
-
-    width: 100%;
-
-    /* Position */
-    position: static;
-
-}
-footer {
-
-    /* Size */
-    width: 100%;
-
+    height: auto;
 }
 
-/* Main structure */
+/* Backgrounds */
 .background {
-
-    /* Size */
+    position: relative;
     height: 60rem;
     min-height: 100%;
-
-    /* Appearance */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-
-    /* Position */
-    position: relative;
-
 }
 .title {
-
-    /* Size */
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
     margin: 0 auto;
     padding: 1.5rem 1rem;
-
-    /* Appearance */
+    width: 100%;
     color: rgba(208, 235, 242, 1);
     background-color: RGBA(38, 29, 30, 1);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-
-    /* Position */
-    position: absolute;
-    top: 50%;
-    left: 0;
-
 }
 
-/* Text content */
+/* Content */
 .content {
-
-    /* Size */
     height: auto;
     padding: 1rem 3rem;
-
-    /* Appearance */
     background-color: rgba(242, 215, 208, 0.5);
-
 }
 .content h2 {
-
-    /* Appearance */
     color: RGBA(38, 37, 36, 1);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     font-weight: unset;
-
 }
 .content p {
-
-    /* Appearance */
     color: RGBA(115, 115, 115, 1);
     text-align: justify;
     letter-spacing: 0.2rem;
-
 }
 
-/* Individual */
+/* Backgrounds */
 .image1 {
     background-image: url("imgs/background1.jpg");
 }

@@ -1,271 +1,138 @@
 
-/* Override */
-html {
-
-    /* Size */
-    height: 150%;
-
-}
-nav {
-
-    /* Size */
-    width: 100%;
-
-    /* Position */
-    position: fixed;
-    z-index: 900;
-
-}
-body {
-
-    /* Size */
-    height: 150%;
-
-}
+/* Overwrite */
 #main {
-
-    /* Size */
-    height: 150%;
-
-    /* Position */
-    position: relative;
-    top: 40px;
-    height: 100%;
-    
+    position: static;
+    top: 0;
 }
 
 /* Carousel */
 .envelope {
-
-    /* Size */
-    width: 20rem;
-    height: auto;
-
-    /* Position */
     position: fixed;
     top: 50%;
     left: 50%;
     z-index: 800;
     transform: translate(-50%,-50%);
-
-    /* Display */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* Behaviour */
-    overflow: hidden;
-
+    width: 20rem;
+    height: auto;
 }
 .titles {
-
-    /* Size */
+    z-index: 700;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 2.5rem;
     padding: 0rem;
-
-    /* Appearance */
     font-size: 2.5rem;
     background-color: transparent;
     overflow: hidden;
     text-align: center;
-
-    /* Position */
-    z-index: 700;
-
-    /* Display */
-    display: flex;
-    flex-direction: row;
-
 }
 .title {
-
-    /* Size */
-    width: 100%;
-
-    /* Position */
     position: absolute;
-
-    /* Behaviour */
     transition: left 1s ease-in-out;
-
+    width: 100%;
 }
 .contents {
-
-    /* Size */
+    position: relative;
+    z-index: 700;
+    display: flex;
+    flex-direction: row;
+    padding: 0rem;
     width: 100%;
     height: 9rem;
-    padding: 0rem;
-
-    /* Appearance */
     background-color: white;
     overflow: hidden;
     text-align: center;
-
-    /* Position */
-    position: relative;
-    z-index: 700;
-
-    /* Display */
-    display: flex;
-    flex-direction: row;
-
 }
 .content {
-
-    /* Size */
+    position: absolute;  
+    transition: left 1s ease-in-out;
     width: 100%;
     height: 100%;
-
-    /* Position */
-    position: absolute;  
-
-    /* Behaviour */
-    transition: left 1s ease-in-out;
-
 }
 .backgrounds {
-
-    /* Size */
-    width: 100%;
-    height: 100%;
-
-    /* Appearance */
-    overflow: hidden;
-
-    /* Position */
     position: relative;
     top: 0;
     z-index: 100;
-
-    /* Display */
+    overflow: hidden;
     display: flex;
     flex-direction: row;
-
-}
-.background {
-
-    /* Size */
     width: 100%;
     height: 100%;
-
-    /* Position */
+}
+.background {
     position: absolute;
-
-    /* Behaviour */
     transition: left 1s ease-in-out;
-
+    width: 100%;
+    height: 100%;
 }
 
 /* Hidden */
 .left {
-
-    /* Position */
     left: -100%;
-
 }
 .center {
-
-    /* Position */
     left: 0;
-
 }
 .right {
-
-    /* Position */
     left: 100%;
-
 }
 
 /* Bullets */
 .bullets {
-
-    /* Size */
-    margin: 0 auto;
-
-    /* Appearance */
-    list-style: none;
-
-    /* Position */
     position: static;
     z-index: 700;
-
-    /* Display */
     display: flex;
     flex-direction: row;
-
+    margin: 0 auto;
+    list-style: none;
 }
 .bullet {
-
-    /* Size */
     width: 10px;
     height: 10px;
     margin: 5px;
-
-    /* Appearance */
     border: solid 1.5px white;
     border-radius: 100%;
     cursor: pointer;
-
 }
 .active {
-
-    /* Appearance */
     background-color: white;
-
 }
 .inactive {
-
-    /* Appearance */
     background-color: transparent;
-
 }
 
 /* Blender */
 .wrapper {
-
-    /* Size */
-    width: 24rem;
-    height: 11.375rem;
-    padding: 3rem;
-
-    /* Appearance */
-    background-color: blue;
-    mix-blend-mode: exclusion;
-
-    /* Position */
     position: fixed;
     top: 50%;
     left: 50%;
     z-index: 500;
     transform: translate(-50%,-50%);
-
+    width: 24rem;
+    height: 11.375rem;
+    padding: 3rem;
+    background-color: blue;
+    mix-blend-mode: exclusion;
 }
 
 /* Contents */
 .content > a {
-
-    /* Size */
-    height: 100%;
-
-    /* Appearance */
-    color: black;
-    text-decoration: none;
-
-    /* Display */
     display: flex;
     flex-direction: column;
     justify-content: center;  
-
+    height: 100%;
+    color: black;
+    text-decoration: none;
 }
 .content i {
-
-    /* Size */
     margin-bottom: 1rem;
-
-    /* Appearance */
 	font-size: 3rem;
-	
+
 }
 
 /* Colors */

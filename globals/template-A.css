@@ -1,0 +1,21 @@
+
+/* Template
+    Navbar fixed to top of screen
+    Main with auto height
+    Footer static
+*/
+
+nav {
+    position: fixed;
+    top: 0;  
+    z-index: 999;
+    width: 100%;
+}
+#main {
+    position: relative;
+    top: 3rem;
+}
+footer {
+    position: relative;
+    top: 3rem;
+}
