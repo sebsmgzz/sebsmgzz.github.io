@@ -9,6 +9,5 @@ anchores.forEach( (anchore) => anchore.addEventListener("mouseenter",anchoreHove
 // Event functions
 function anchoreHovered() {
     const icon = this.querySelector(".icon");
-    console.log(icon);
     icon.classList.toggle("hovered");
 }
