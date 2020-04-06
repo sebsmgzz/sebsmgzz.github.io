@@ -87,7 +87,6 @@
 
 /* Boxes */
 .box {
-    overflow: hidden;
 	perspective: 500px;
 	display: inline-block;
 	height: 10rem;
