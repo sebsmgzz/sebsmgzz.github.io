@@ -8,12 +8,12 @@ containers.forEach( (container) => container.addEventListener("click",containerC
 
 // Event functions
 function containerClicked() {
-    this.classList.toggle("fullsize")
+    this.classList.toggle("fullsize");
     for(let i = 0; i < containers.length; i++) {
         if (containers[i] != this) {
             containers[i].classList.toggle("hidden");
         } else {
-            contents[i].classList.toggle("show")
+            contents[i].classList.toggle("show");
         }
     }
 }
