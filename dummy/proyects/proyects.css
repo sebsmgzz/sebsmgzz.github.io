@@ -11,7 +11,7 @@
 .container {
     overflow: hidden;
     transition: width 1s;
-    width: 25%;
+    width: 20%;
     text-align: center;
     cursor: pointer;
 }
@@ -30,9 +30,12 @@
     background-color: #68c2c2;
 }
 .container:nth-of-type(3) {
-    background-color: #f8be4d;
+    background-color: #925484;
 }
 .container:nth-of-type(4) {
+    background-color: #f8be4d;
+}
+.container:nth-of-type(5) {
     background-color: #f35454;
 }
 
