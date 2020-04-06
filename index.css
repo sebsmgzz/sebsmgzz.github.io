@@ -23,13 +23,13 @@
 
 /* Backgrounds */
 .top.left  {
-    background-image: url("globals/imgs/backB.jpg");
+    background-image: url("globals/imgs/backC.jpg");
 }
 .top.right {
     background-image: url("globals/imgs/backA.jpg");
 }
 .bottom.left {
-    background-image: url("globals/imgs/backC.jpg");
+    background-image: url("globals/imgs/backB.jpg");
 }
 .bottom.right {
     background-image: url("globals/imgs/backD.jpg");
@@ -113,7 +113,7 @@ a {
     text-decoration: none;
 }
 a:hover, a:active {
-    color: #8AD2FF;
+    color: white;
 }
 a .icon {
     padding: 0 1rem;
@@ -134,7 +134,9 @@ a .icon {
         width: 100%;
         padding: 2rem 0;
         height: auto;
-        background-position: bottom;
+        background-size: 200%;
+        background-position-x: left;
+        background-position-y: bottom;
     }
 
     /* Contents */
@@ -144,7 +146,18 @@ a .icon {
         padding: 0;
         width: 100%;
         height: 100%;
-        text-align: center !important;
+    }
+    .top.right .content a {
+        padding-left: 20%;
+        text-align: left;
+    }
+    .bottom.left .content a {
+        padding-right: 20%;
+        text-align: right;
+    }
+    .bottom.right .content a {
+        padding-left: 20%;
+        text-align: left;
     }
 
     /* Titles */
