@@ -87,7 +87,7 @@ h1 {
 }
 .title h1:last-of-type {
     font-family: initial;
-    font-size 0.75rem;
+    font-size: 2rem;
 	letter-spacing: normal;
 }
 .content > img {
