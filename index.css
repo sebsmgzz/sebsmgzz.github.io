@@ -125,6 +125,10 @@ a .icon {
 .icon.hovered {
     transform: rotateY(360deg);
 }
+a span {
+    display: inline-block;
+    transform: translateY(-50%);
+}
 
 /* Responsive */
 @media (max-width: 600px) {
