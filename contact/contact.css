@@ -129,28 +129,42 @@
 
 }
 
-/* Colors */
+/* Titles */
 .title.mail {
     background-color: rgba(138,43,226,0.3);
-}
-.content.mail i {
-    color: blueviolet;
 }
 .title.location {
     background-color: rgba(255,0,0,0.3);
 }
-.content.location i {
-    color: red;
-}
 .title.phone {
     background-color: rgba(0,128,0,0.3);
-}
-.content.phone i {
-    color: green;
 }
 .title.linkedin {
     background-color: rgba(0,0,255,0.3);
 }
+.title.github {
+    background-color: rgba(1,1,1,0.3);
+}
+.title.curriculum {
+    background-color: rgba(255,0,0,0.3);
+}
+
+/* Contents Colors */
+.content.mail i {
+    color: rgb(138, 43, 226);
+}
+.content.location i {
+    color: rgb(255, 0, 0);
+}
+.content.phone i {
+    color: rgb(0, 128, 0);
+}
 .content.linkedin i {
-    color: blue;
+    color: rgb(0, 0, 255);
+}
+.content.github i {
+    color: rgb(0, 0, 0);
+}
+.content.curriculum i {
+    color: rgb(255, 0, 0);
 }

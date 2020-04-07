@@ -105,4 +105,4 @@ function nextCarouselBullet()
 
 }
 
-setInterval(nextCarouselBullet, 3000);
+setInterval(nextCarouselBullet, 4000);
