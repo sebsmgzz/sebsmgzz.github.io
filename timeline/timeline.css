@@ -136,7 +136,7 @@
 }
 
 /* Scroller */
-#scroller {
+.scroller {
     position: fixed;
     top: 60%;
     right: 3rem;
@@ -146,12 +146,15 @@
     flex-direction: column;
     text-align: center;
 }
-#scroller button {
+.scroller button {
     border: none;
     background-color: transparent;
-    font-size: 2rem;
+    cursor: pointer;
 }
-#scroller .month {
+.scroller img {
+    width: 2rem;
+}
+.scroller .month {
     width: 5.5rem;
 }
 

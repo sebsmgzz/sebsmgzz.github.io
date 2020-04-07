@@ -1,9 +1,9 @@
 
 // DOM elements
-const scrollerUp = document.querySelector("#scroller button:first-child");
-const scrollerDown = document.querySelector("#scroller button:last-child");
-const scrollerYear = document.querySelector("#scroller .year");
-const scrollerMonth = document.querySelector("#scroller .month");
+const scrollerUp = document.querySelector(".scroller button:first-child");
+const scrollerDown = document.querySelector(".scroller button:last-child");
+const scrollerYear = document.querySelector(".scroller .year");
+const scrollerMonth = document.querySelector(".scroller .month");
 const rows = document.querySelectorAll("#main > div:not(:last-child)")
 
 // Event listeners
@@ -92,6 +92,8 @@ function scrollerDownClick() {
     }
 
 }
+
+// Inner functions
 function scrollerUpdate(rowIndexReference) {
 
     // Declare DOM elements
