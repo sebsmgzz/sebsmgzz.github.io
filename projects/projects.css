@@ -1,22 +1,30 @@
 
 /* Overwrite */
 #main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 90%;
     background-image: url("imgs/main-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Dropdowns */
 .dropdown {
-    border-radius: 3rem;
-    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 1rem auto;
     width: 90%;
+    height: auto;
+    max-height: 3rem;
     background-color: #eee;
     color: #444;
-    transition: 0.4s;
+    transition: max-height 1s ease-in-out;
+}
+.dropdown.open {
+    max-height: 20rem;
 }
 .dropdown:hover {
     background-color: #ccc;
@@ -25,10 +33,12 @@
 /* Clicker */
 .clicker {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
     border: inherit;
     width: 95%;
+    transition: margin 1s;
     font-size: 1rem;
+    line-height: 1rem;
     background: inherit;
 }
 .clicker .title {
@@ -42,3 +52,24 @@
     width: 50%;
     text-align: right;
 }
+
+/* Icons */
+.dropdown .fa-plus-square{
+    display: unset;
+}
+.dropdown .fa-minus-square {
+    display: none;
+}
+.dropdown.open .fa-plus-square{
+    display: none;
+}
+.dropdown.open .fa-minus-square {
+    display: unset;
+}
+
+/* Contents */
+.contents {
+    padding: 2rem;
+    list-style: none;
+}
+
