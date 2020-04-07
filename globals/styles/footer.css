@@ -35,6 +35,7 @@
 }
 .footer-icon {
     height: 1rem;
+    filter: invert(1);
 }
 
 /* Footer Bottom */

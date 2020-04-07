@@ -1,25 +1,25 @@
 
 @font-face {
     font-family: EagleLake-Regular;
-    src: url("fonts/EagleLake-Regular.ttf");
+    src: url("../fonts/EagleLake-Regular.ttf");
 }
 @font-face {
     font-family: LibreBaskerville-Regular;
-    src: url("fonts/LibreBaskerville-Regular.ttf");
+    src: url("../fonts/LibreBaskerville-Regular.ttf");
 }
 @font-face {
     font-family: Montserrat-Regular;
-    src: url("fonts/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat-Regular.ttf");
 }
 @font-face {
     font-family: ComicNeue-Regular;
-    src: url("fonts/ComicNeue-Regular.ttf");
+    src: url("../fonts/ComicNeue-Regular.ttf");
 }
 @font-face {
     font-family: RobotoMono-Regular;
-    src: url("fonts/RobotoMono-Regular.ttf");
+    src: url("../fonts/RobotoMono-Regular.ttf");
 }
 @font-face {
     font-family: Domine-Regular;
-    src: url("fonts/Domine-Regular.ttf");
+    src: url("../fonts/Domine-Regular.ttf");
 }
