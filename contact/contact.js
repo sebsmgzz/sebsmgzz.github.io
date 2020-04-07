@@ -7,6 +7,7 @@ const backgrounds = document.querySelectorAll(".background");
 const bullets = document.querySelectorAll(".bullet");
 
 // Locals
+let autoCarousel = true;
 let globalIndex = 0;
 
 // Event listeners
@@ -14,6 +15,9 @@ bullets.forEach( (bullet) => bullet.addEventListener("click",bulletClicked));
 
 // Event functions
 function bulletClicked() {
+
+    // Disable timed function
+    autoCarousel = false;
 
     // Find my index
     for (let i = 0; i < bullets.length; i++) {
@@ -87,9 +91,13 @@ function toggleCarousel(carouselIndex) {
 }
 
 // Intervals
-window.scrollTo(0,window.scrollMaxY);
 function nextCarouselBullet()
 {
+
+    // Verfiy
+    if (!autoCarousel) {
+        return;
+    }
 
     // Get next carousel index
     ++globalIndex;
@@ -105,4 +113,6 @@ function nextCarouselBullet()
 
 }
 
+// Once in ejecution
+window.scrollTo(0,window.scrollMaxY);
 setInterval(nextCarouselBullet, 4000);
