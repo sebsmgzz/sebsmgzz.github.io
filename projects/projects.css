@@ -14,7 +14,7 @@
 /* Dropdowns */
 .dropdown {
     overflow: hidden;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     margin: 1rem auto;
     width: 90%;
     height: auto;
@@ -36,7 +36,7 @@
     display: block;
     margin: 1rem auto;
     border: inherit;
-    width: 95%;
+    width: 90%;
     transition: margin 1s;
     font-size: 1rem;
     line-height: 1rem;
@@ -73,4 +73,30 @@
     padding: 2rem;
     list-style: none;
 }
+.content {
+    padding-bottom: 0.5rem;
+    text-align: justify;
+}
+.content h4 {
+    font-size: 22px;
+}
+.content p {
+    font-size: 20px;
+    text-indent: 3rem;
+}
 
+@media (max-width: 950px) {
+    .dropdown.open {
+        max-height: 22rem;
+    }
+}
+@media (max-width: 800px) {
+    .dropdown.open {
+        max-height: 26rem;
+    }
+}
+@media (max-width: 500px) {
+    .dropdown.open {
+        max-height: 40rem;
+    }
+}
