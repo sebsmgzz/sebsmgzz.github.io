@@ -1,9 +1,6 @@
 
 // DOM elements
 const dropdowns = document.querySelectorAll(".dropdown");
-const contents = document.querySelectorAll(".contents");
-const plusIcons = document.querySelectorAll(".icons > i.fa-plus-square");
-const minusIcons = document.querySelectorAll(".icons > i.fa-minus-square");
 
 // Event listeners
 dropdowns.forEach( (dropdown) => dropdown.addEventListener("click", dropdownClicked));
@@ -12,5 +9,11 @@ dropdowns.forEach( (dropdown) => dropdown.addEventListener("click", dropdownClic
 function dropdownClicked() {
     
     this.classList.toggle("open");
+
+    for(let i = 0; i < dropdowns.length; i++) {
+        if(dropdowns[i] != this) {
+            dropdowns[i].classList.remove("open");
+        }
+    }
 
 }

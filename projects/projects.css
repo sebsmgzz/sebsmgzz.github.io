@@ -21,10 +21,11 @@
     max-height: 3rem;
     background-color: #eee;
     color: #444;
-    transition: max-height 1s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 }
 .dropdown.open {
     max-height: 20rem;
+    transition: max-height 1s;
 }
 .dropdown:hover {
     background-color: #ccc;
@@ -44,12 +45,12 @@
 .clicker .title {
     display: inline-block;
     border-radius: inherit;
-    width: 50%;
+    width: 70%;
     text-align: left;
 }
 .clicker .icons {
     float: right;
-    width: 50%;
+    width: 30%;
     text-align: right;
 }
 
