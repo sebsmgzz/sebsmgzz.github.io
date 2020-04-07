@@ -33,6 +33,9 @@
 .footer-crumbs a:hover {
     color: #91B6FF;
 }
+.footer-icon {
+    height: 1rem;
+}
 
 /* Footer Bottom */
 .footer-bottom {

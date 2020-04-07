@@ -23,16 +23,16 @@
 
 /* Backgrounds */
 .top.left  {
-    background-image: url("globals/imgs/backC.jpg");
+    background-image: url("globals/imgs/backgrounds/backC.jpg");
 }
 .top.right {
-    background-image: url("globals/imgs/backA.jpg");
+    background-image: url("globals/imgs/backgrounds/backA.jpg");
 }
 .bottom.left {
-    background-image: url("globals/imgs/backB.jpg");
+    background-image: url("globals/imgs/backgrounds/backB.jpg");
 }
 .bottom.right {
-    background-image: url("globals/imgs/backD.jpg");
+    background-image: url("globals/imgs/backgrounds/backD.jpg");
 }
 
 /* Contents */
