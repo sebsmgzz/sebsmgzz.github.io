@@ -1,4 +1,10 @@
 
+/* Footer */
+#footer {
+    position: relative;
+    z-index: 900;
+}
+
 /* Footer Top */
 .footer-top {
     display: flex;

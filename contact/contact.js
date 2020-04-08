@@ -114,5 +114,4 @@ function nextCarouselBullet()
 }
 
 // Once in ejecution
-window.scrollTo(0,window.scrollMaxY);
 setInterval(nextCarouselBullet, 4000);

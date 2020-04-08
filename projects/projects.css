@@ -1,9 +1,12 @@
 
-/* Overwrite */
+/* Main */
 #main {
+    position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: auto;
+    min-width: 100%;
     min-height: 90%;
     background-image: url("imgs/main-background.jpg");
     background-repeat: no-repeat;

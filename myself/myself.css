@@ -1,6 +1,7 @@
 
 /* Overwrite */
 #main {
+    position: relative;
     display: grid;
     grid-template-columns: [LLL] 2.5% [LL] 30% [LR] 2.5% [CL] 30% [CR] 2.5% [RL] 30% [RR] 2.5% [RRR];
     grid-template-rows: repeat(3,auto);
@@ -8,7 +9,10 @@
         "header header header header header header header"
         "  .      A      .      B      .      C      .   "
         "  .      D      .      E      .      F      .   ";
+    width: 100%;
     height: auto;
+    min-width: 100%;
+    min-height: 100%;
     background-image: url("imgs/background.jpg");
     background-position: bottom;
     background-size: cover;

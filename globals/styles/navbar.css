@@ -1,11 +1,13 @@
 
 /* Whole Navbar */
 #navbar {
-    width: 100%;
-    height: 3rem;
+    position: relative;
+    z-index: 900;
     display: flex;
     flex-direction: row;
     background-color: #343a40;
+    width: 100%;
+    height: 3rem;
 }
 
 /* Left Navbar */
@@ -37,6 +39,9 @@
 }
 .navbar-left button:hover {
     background-color: rgba(255,255,255,.2);
+}
+.navbar-icon {
+    width: 1.5rem;
 }
 
 /* Right Navbar */
