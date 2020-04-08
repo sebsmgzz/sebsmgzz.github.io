@@ -1,10 +1,11 @@
 
 // DOM elements
+const leavesContainer = document.querySelector(".leaves-container");
 const scrollerUp = document.querySelector(".scroller button:first-child");
 const scrollerDown = document.querySelector(".scroller button:last-child");
 const scrollerYear = document.querySelector(".scroller .year");
 const scrollerMonth = document.querySelector(".scroller .month");
-const rows = document.querySelectorAll("#main > div:not(:last-child)")
+const rows = document.querySelectorAll(".grid-row:not(.header)")
 
 // Event listeners
 window.addEventListener("load",windowLoaded)
@@ -14,8 +15,9 @@ scrollerDown.addEventListener( "click", scrollerDownClick);
 
 // Event functions
 function windowLoaded() {
-    rowToggleClasses(1,"hidden","visible");
-    scrollerUpdate(1);
+    generateLeaves();
+    rowToggleClasses(0,"hidden","visible");
+    scrollerUpdate(0);
 }
 function windowScrolled() {
 
@@ -24,7 +26,7 @@ function windowScrolled() {
     let thresholdBottom = window.scrollY + window.innerHeight;
 
     // Iterate per row element
-    for (let i = 1; i < rows.length; i++ ) {
+    for (let i = 0; i < rows.length; i++ ) {
 
         // Define row attributes
         let rowTopPosition = rows[i].offsetTop;
@@ -94,6 +96,12 @@ function scrollerDownClick() {
 }
 
 // Inner functions
+function generateLeaves() {
+    const AMOUNT_LEAVES = 100;
+    for (let i = 0; i < AMOUNT_LEAVES; i++) {
+        leavesContainer.appendChild(generateLeaf());
+    }
+}
 function scrollerUpdate(rowIndexReference) {
 
     // Declare DOM elements
@@ -120,4 +128,46 @@ function rowToggleClasses(rowIndex, classToRemove, classToAdd) {
     rowRightContent.classList.add(classToAdd);
     rowImage.classList.add(classToAdd);
 
+}
+function generateLeaf() {
+    
+    // Define animation variables
+    let style;
+    
+    // Div element
+    let leafDiv = document.createElement("div");
+    leafDiv.classList.add("leaf");
+
+    // Div style
+    style = leafDiv.style;
+    style.position = "absolute";
+    style.top = "-100px";
+    style.left = `${randomInteger(0,100)}%`;
+    style.animationName = "falling";
+    style.animationDuration = `${randomInteger(15,20)}s`;
+    style.animationDelay = `${randomInteger(0,15)}s`;
+    style.animationIterationCount = "infinite";
+    style.animationTimingFunction = "ease-in-out";
+    style.width = "100px";
+
+    // Image element
+    let leafImg = document.createElement("img");
+    leafImg.src = "imgs/leaf" + randomInteger(1,6) + ".png";
+
+    // Image style
+    style = leafImg.style;
+    style.transformOrigin = "50% -100%";
+    style.animationName = (randomInteger(1,100) > 50)? "spinLeft" : "spinRight";
+    style.animationDuration = `${randomInteger(4,8)}s`;
+    style.animationIterationCount = "infinite";
+    style.animationTimingFunction = "ease-in-out"; 
+    style.width = "100%";
+
+    // Return
+    leafDiv.appendChild(leafImg);
+    return leafDiv;
+
+}
+function randomInteger(low, high) {
+    return low + Math.floor(Math.random() * (high - low));
 }
