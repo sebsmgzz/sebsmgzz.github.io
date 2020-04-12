@@ -1,14 +1,15 @@
 
 // Contents
 const INDEX_HREF = "../index.html";
-const HOME_SRC = "../globals/imgs/navbar/home.png";
-const MENU_SRC = "../globals/imgs/navbar/menu.png";
+const HOME_SRC = "../globals/navbar/imgs/home.png";
+const MENU_SRC = "../globals/navbar/imgs/menu.png";
 const PAGES_HREFS = [ 
     "../timeline/timeline.html",
     "../career/career.html",
     "../projects/projects.html",
+    "../myself/myself.html",
     "../why-hire-me/why-hire-me.html",
-    "../myself/myself.html"
+    "../contact/contact.html"
 ]
 const PAGES_CONTENTS = [
     "Timeline",
@@ -22,9 +23,9 @@ const PAGES_CONTENTS = [
 // DOM elements
 const navbar = document.querySelector("#navbar");
 
-// Construct
-window.addEventListener("load",windowLoaded);
-function windowLoaded() {
+// Constructor
+window.addEventListener("load",navbarBuild);
+function navbarBuild() {
 
     // Define elements
     let navbarLeft = LeftSide();
