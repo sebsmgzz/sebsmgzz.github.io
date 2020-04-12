@@ -1,6 +1,5 @@
 
 // DOM elements
-const navbar = document.querySelector("#navbar");
 const button = document.querySelector("#navbar button");
 const navbarRight = document.querySelector(".navbar-right");
 
