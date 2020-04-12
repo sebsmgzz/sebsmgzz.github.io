@@ -28,102 +28,84 @@ window.addEventListener("load",navbarBuild);
 function navbarBuild() {
 
     // Define elements
-    let navbarLeft = LeftSide();
-    let navbarRight = RightSide();
+    let leftNavbar = LeftNavbar();
+    let rightNavbar = RightNavbar();
 
     // Group
-    navbar.appendChild(navbarLeft);
-    navbar.appendChild(navbarRight);
+    navbar.appendChild(leftNavbar);
+    navbar.appendChild(rightNavbar);
 
 }
 
 // Left Side
-function LeftSide() {
+function LeftNavbar() {
+    let element =  document.createElement("div");
+    element.classList.add("navbar-left");
 
     // Define elements
-    let navbarLeft =  document.createElement("div");
-    let homeAnchore = IndexReference();
-    let menuButton = ResponsiveMenu();
+    let anchore = Anchore();
+    let button = Button();
 
-    // Define atributes
-    navbarLeft.classList.add("navbar-left");
+    // Append
+    element.appendChild(anchore);
+    element.appendChild(button);
+    return element;
+
+}
+function Anchore() {
+    let element = document.createElement("a");
+    element.href = INDEX_HREF;
+
+    // Image
+    let image = document.createElement("img");
+    image.classList.add("navbar-icon");
+    image.src = HOME_SRC;
+
+    // Group and return
+    element.appendChild(image);
+    return element;
+
+}
+function Button() {
+    let element = document.createElement("button");
+    element.type = "button";
+
+    // Image
+    let image = document.createElement("img");
+    image.classList.add("navbar-icon");
+    image.src = MENU_SRC;
+
+    // Append
+    element.appendChild(image);
+    return element;
+
+}
+
+// Right Side
+function RightNavbar() {
+    let element = document.createElement("div");
+    element.classList.add("navbar-right");
+    element.classList.add("navbar-collapsed");
     
-    // Group and return
-    navbarLeft.appendChild(homeAnchore);
-    navbarLeft.appendChild(menuButton);
-    return navbarLeft;
-
-}
-function IndexReference() {
-
-    // Define elements
-    let homeAnchore = document.createElement("a");
-    let homeImg = document.createElement("img");
-
-    // Define atributes
-    homeAnchore.href = INDEX_HREF;
-    homeImg.classList.add("navbar-icon");
-    homeImg.src = HOME_SRC;
-
-    // Group and return
-    homeAnchore.appendChild(homeImg);
-    return homeAnchore;
-
-}
-function ResponsiveMenu() {
-
-    // Define elements
-    let menuButton = document.createElement("button");
-    let menuImage = document.createElement("img");
-
-    // Define atributes
-    menuButton.type = "button";
-    menuImage.classList.add("navbar-icon");
-    menuImage.src = MENU_SRC;
-
-    // Group and return
-    menuButton.appendChild(menuImage);
-    return menuButton;
-
-}
-
-// RightSide
-function RightSide() {
-
-    // Define elements
-    let navbarRight = document.createElement("div");
-    let pagesAnchores = PagesReferences();
-
-    // Define atributes
-    navbarRight.classList.add("navbar-right");
-    navbarRight.classList.add("navbar-collapsed");
-
-    // Group and return
-    pagesAnchores.forEach(page => {
-        navbarRight.appendChild(page);
-    });
-    return navbarRight;
-    
-}
-function PagesReferences() {
-
-    let references = [];
+    // Define and append each list item
     for(let i = 0; i < PAGES_HREFS.length; i++) {
-
-        // Define elements
-        let refAnchore = document.createElement("a");
-        let refContent = document.createElement("p");
-
-        // Define atributes
-        refAnchore.classList.add("navbar-crumb");
-        refAnchore.href = PAGES_HREFS[i];
-        refContent.innerText = PAGES_CONTENTS[i];
-
-        // Group
-        refAnchore.appendChild(refContent);
-        references.push(refAnchore);
-
+        let listAnchore = ListAnchore(i);
+        element.appendChild(listAnchore);
     }
-    return references;
+    return element;
+    
+}
+function ListAnchore(index) {
+    let element = document.createElement("a");
+    element.classList.add("navbar-crumb");
+    element.href = PAGES_HREFS[index];
+
+    // Content
+    let content = document.createElement("p");
+    content.innerText = PAGES_CONTENTS[index];
+
+    // Append
+    element.appendChild(content);
+    return element;
 
 }

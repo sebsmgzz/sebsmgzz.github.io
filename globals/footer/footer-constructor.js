@@ -28,7 +28,7 @@ const LINKS_HREFS = [
         "https://goo.gl/maps/YS5nEty3iU1VmN5V6"
     ]
 ]
-const LINKS_SRCS = [
+const IMGS_SRCS = [
     [
         "../globals/footer/imgs/value.png",
         "../globals/footer/imgs/experience.png",
@@ -57,21 +57,32 @@ const LINKS_CONTENTS = [
         "How to manage several activities?"
     ],
     [
-        "Designer",
-        "Financial",
-        "Medical"
+        " Designer",
+        " Financial",
+        " Medical"
     ],
     [
-        "LinkedIn",
-        "GitHub",
-        "Download my CV"
+        " LinkedIn",
+        " GitHub",
+        " Download my CV"
     ],
     [
-        "sebastian.mgzz@outlook.com",
-        "+52 1 826 261 5753",
-        "Monterrey, Nuevo León, MX"
+        " sebastian.mgzz@outlook.com",
+        " +52 1 826 261 5753",
+        " Monterrey, Nuevo León, MX"
     ]
 ]
+const QUOTES = [
+    [
+        "We can only see a short distance ahead, but we can see plenty there that needs to be done",
+        "Alan Turing"
+    ],
+    [
+        "I am just a child who has never grown up. I still keep asking these ‘how’ and ‘why’ questions. Occasionally, I find an answer.",
+        "Stephen Hawking"
+    ]
+]
+const LAST_UPDATE = "April 2020"
 
 // DOM elements
 const footer = document.querySelector("#footer");
@@ -148,7 +159,7 @@ function ListItem(columnIndex,rowIndex) {
     // Define atributes
     anchore.href = LINKS_HREFS[columnIndex][rowIndex];
     image.classList.add("footer-icon");
-    image.src = LINKS_SRCS[columnIndex][rowIndex];
+    image.src = IMGS_SRCS[columnIndex][rowIndex];
 
     // Append
     if(columnIndex != 0) {
@@ -162,5 +173,50 @@ function ListItem(columnIndex,rowIndex) {
 
 // Bottom footer
 function BottomFooter() {
+    let element = document.createElement("div");
+    element.classList.add("footer-bottom");
 
+    // Define and append each quote
+    for(let i = 0; i < QUOTES.length; i++ ) {
+        let blockquote = Blockquote(i);
+        element.appendChild(blockquote);
+    }
+
+    // Last update
+    let lastUpdate = LastUpdate();
+    element.appendChild(lastUpdate);
+    return element;
+
+}
+function Blockquote(index) {
+    let element = document.createElement("blockquote");
+    
+    // Quote
+    let quote = document.createElement("p");
+    quote.innerText = QUOTES[index][0];
+
+    // Author
+    let author = document.createElement("cite");
+    author.title = "Source Title";
+    author.innerText = ` - ${QUOTES[index][1]}`;
+
+    // Append
+    element.appendChild(quote);
+    element.appendChild(author);
+    return element;
+    
+}
+function LastUpdate() {
+    let element = document.createElement("p");
+
+    // Time
+    let time = document.createElement("time");
+    time.datetime = "2020-03";
+    time.innerText = LAST_UPDATE;
+
+    // Append
+    element.innerText = "Last update: ";
+    element.appendChild(time);
+    return element;
+    
 }
