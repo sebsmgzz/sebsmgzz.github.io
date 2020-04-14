@@ -62,9 +62,12 @@ body {
 .content p {
     color: RGBA(115, 115, 115, 1);
     text-align: justify;
+    text-indent: 3.5rem;
     letter-spacing: 0.2rem;
 }
-
+.content p span{
+    text-decoration: line-through;
+}
 /* Backgrounds */
 .image1 {
     background-image: url("imgs/background1.jpg");

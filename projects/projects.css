@@ -27,7 +27,7 @@
     transition: max-height 0.5s ease-in-out;
 }
 .dropdown.open {
-    max-height: 20rem;
+    max-height: 25rem;
     transition: max-height 1s;
 }
 .dropdown:hover {
@@ -36,14 +36,20 @@
 
 /* Clicker */
 .clicker {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
-    margin: 1rem auto;
+    padding: 1rem 5%;
     border: inherit;
-    width: 90%;
+    width: 100%;
     transition: margin 1s;
     font-size: 1rem;
     line-height: 1rem;
     background: inherit;
+}
+.clicker:hover {
+    cursor: pointer;
 }
 .clicker .title {
     display: inline-block;

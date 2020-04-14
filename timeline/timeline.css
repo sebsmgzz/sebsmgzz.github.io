@@ -1,5 +1,12 @@
 
 /* Main */
+body {
+    height: auto;
+}
+#navbar {
+    position: sticky;
+    top: 0;
+}
 #main {
     position: relative;
     width: 100%;
