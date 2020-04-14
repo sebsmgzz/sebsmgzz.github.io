@@ -20,12 +20,10 @@ const PAGES_CONTENTS = [
     "Contact"
 ]
 
-// DOM elements
-const navbar = document.querySelector("#navbar");
-
 // Constructor
-window.addEventListener("load",navbarBuild);
-function navbarBuild() {
+const navbar = document.querySelector("#navbar");
+navbarConstructor();
+function navbarConstructor() {
 
     // Define elements
     let leftNavbar = LeftNavbar();
@@ -37,7 +35,7 @@ function navbarBuild() {
 
 }
 
-// Left Side
+// Left Side constructors
 function LeftNavbar() {
     let element =  document.createElement("div");
     element.classList.add("navbar-left");
@@ -81,7 +79,7 @@ function Button() {
 
 }
 
-// Right Side
+// Right Side Constructors
 function RightNavbar() {
     let element = document.createElement("div");
     element.classList.add("navbar-right");
