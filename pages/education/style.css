@@ -1,0 +1,16 @@
+
+/* #education */
+
+#education .card {
+    height: 100%;
+}
+
+#education img {
+    height: 10rem;
+    width: auto;
+    margin: auto;
+}
+
+#education .card-text a {
+    display: block;
+}
