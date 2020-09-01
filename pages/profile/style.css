@@ -12,3 +12,9 @@
 #profile .jumbotron {
     margin-bottom: 0;
 }
+
+#profile .title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
