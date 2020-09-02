@@ -59,7 +59,7 @@ function getContact() {
         carouselInner.appendChild(item);
         // item caption
         let itemCaption = document.createElement("div");
-        itemCaption.classList = "carousel-caption d-none d-md-block";
+        itemCaption.classList = "carousel-caption d-md-block";
         item.appendChild(itemCaption);
         // title
         let title = document.createElement("h5");
