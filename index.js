@@ -22,6 +22,7 @@ function setCurrentPage(index) {
         pages[currentPage].classList.toggle("hidden-content");
         pages[index].classList.toggle("hidden-content");
         currentPage = index;
+        $(".navbar-collapse").collapse('hide');
         return true;
     }
     return false;
