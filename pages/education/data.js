@@ -8,11 +8,11 @@ var educationData = [
         issuers: [
             {
                 name: "University of Colorado",
-                refence: "https://www.colorado.edu/"
+                reference: "https://www.colorado.edu/"
             },
             {
                 name: "Coursera",
-                refence: "https://www.coursera.org/"
+                reference: "https://www.coursera.org/"
             }
         ]
     },
@@ -25,7 +25,7 @@ var educationData = [
         issuers: [
             {
                 name: "Instituto Tecnologico de Estudios Superiores de Monterrey",
-                refence: "https://tec.mx/es"
+                reference: "https://tec.mx/es"
             }
         ]
     },
@@ -38,11 +38,11 @@ var educationData = [
         issuers: [
             {
                 name: "IBM",
-                refence: "https://www.ibm.com"
+                reference: "https://www.ibm.com"
             },
             {
                 name: "Coursera",
-                refence: "https://www.coursera.org/"
+                reference: "https://www.coursera.org/"
             }
         ]
     },
@@ -55,11 +55,11 @@ var educationData = [
         issuers: [
             {
                 name: "University of Michigan",
-                refence: "https://umich.edu/"
+                reference: "https://umich.edu/"
             },
             {
                 name: "Coursera",
-                refence: "https://www.coursera.org/"
+                reference: "https://www.coursera.org/"
             }
         ]
     },
@@ -72,7 +72,7 @@ var educationData = [
         issuers: [
             {
                 name: "Tec Gurus",
-                refence: "https://www.tecgurus.net/"
+                reference: "https://www.tecgurus.net/"
             }
         ]
     },
@@ -85,7 +85,7 @@ var educationData = [
         issuers: [
             {
                 name: "Tec Gurus",
-                refence: "https://www.tecgurus.net/"
+                reference: "https://www.tecgurus.net/"
             }
         ]
     }
