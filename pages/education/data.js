@@ -21,7 +21,7 @@ var educationData = [
         date: "June 2020",
         imagePath: "images/logos/itesm.png",
         imageText: "...",
-        reference: "#",
+        reference: "https://certificados.tec.mx/certificate/69ccbba2f58e5df9b67df73f2f6d57a9",
         issuers: [
             {
                 name: "Instituto Tecnologico de Estudios Superiores de Monterrey",
