@@ -38,16 +38,21 @@ function getCareer() {
         title.classList = "card-title";
         title.innerText = careerData[i].position;
         cardButton.appendChild(title);
+        // subtitle anchor
+        let anchor = document.createElement("a");
+        anchor.href = careerData[i].companyPath;
+        anchor.target = "_blank";
+        cardHeader.appendChild(anchor);
         // subtitle
         let subtitle = document.createElement("h6");
         subtitle.classList = "card-subtitle mb-2 text-muted";
         subtitle.innerText = careerData[i].company;
-        cardButton.appendChild(subtitle);
+        anchor.appendChild(subtitle);
         // detail
         let detail = document.createElement("small");
         detail.classList = "text-muted";
         detail.innerText = careerData[i].dates;
-        cardButton.appendChild(detail);
+        cardHeader.appendChild(detail);
         // body
         let cardBody = document.createElement("div");
         cardBody.id = `careerAccordionCardBody${i}`;
