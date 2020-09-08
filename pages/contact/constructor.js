@@ -1,6 +1,6 @@
 /* 
     <summary>
-        Constructs the DOM element for the contact content, from the 'contactData' variable.
+        Constructs the DOM element for the contact content, from the 'contacts' variable in data/contacts.js
     </summary>
 */
 
@@ -49,7 +49,7 @@ nextControlText.classList = "sr-only";
 nextControlText.innerText = "Next";
 nextControl.appendChild(nextControlText);
 //  items
-for (let i = 0; i < contactData.length; i++) {
+for (let i = 0; i < contacts.length; i++) {
     // carousel item
     let item = document.createElement("div");
     item.classList = "carousel-item";
@@ -63,21 +63,21 @@ for (let i = 0; i < contactData.length; i++) {
     item.appendChild(itemCaption);
     // title
     let title = document.createElement("h5");
-    title.innerText = contactData[i].title;
+    title.innerText = contacts[i].title;
     itemCaption.appendChild(title);
     // content
     let content = document.createElement("p");
-    content.innerText = contactData[i].content;
+    content.innerText = contacts[i].content;
     itemCaption.appendChild(content);
     // anchor
     let anchor = document.createElement("a");
-    anchor.href = contactData[i].anchorReference;
+    anchor.href = contacts[i].anchorReference;
     anchor.target = "_blank";
     itemCaption.appendChild(anchor);
     // image
     let image = document.createElement("img");
-    image.src = contactData[i].imagePath;
-    image.alt = contactData[i].imageText;
+    image.src = contacts[i].imagePath;
+    image.alt = contacts[i].imageText;
     anchor.appendChild(image);
     // indicator
     let indicator = document.createElement("li");

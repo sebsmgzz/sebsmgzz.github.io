@@ -1,4 +1,4 @@
-var skillsData = [
+var skills = [
     {
         name: "Spanish native",
         imagePath: "images/flags/spanish.png",

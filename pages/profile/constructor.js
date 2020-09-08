@@ -1,6 +1,6 @@
 /* 
     <summary>
-        Constructs the DOM node for the profile content, from the 'profileData' variable.
+        Constructs the DOM node for the profile content, from the 'profile' variable in data/profile.js
     </summary>
 */
 
@@ -14,8 +14,8 @@ leftCol.classList = "col-sm";
 jumbotron.appendChild(leftCol);
 // image
 let image = document.createElement("img");
-image.src = profileData.imagePath;
-image.alt = profileData.imageText;
+image.src = profile.imagePath;
+image.alt = profile.imageText;
 image.classList = "d-block mx-auto";
 leftCol.appendChild(image);
 // right column
@@ -25,12 +25,12 @@ jumbotron.appendChild(rightCol);
 // name
 let name = document.createElement("h1");
 name.classList = "display-4";
-name.innerText = profileData.name;
+name.innerText = profile.name;
 rightCol.appendChild(name);
 // titles
-for(let i = 0; i < profileData.titles.length; i++) {
+for(let i = 0; i < profile.titles.length; i++) {
     let title = document.createElement("p");
     title.classList = "lead";
-    title.innerText = profileData.titles[i];
+    title.innerText = profile.titles[i];
     rightCol.appendChild(title);
 }

@@ -1,5 +1,5 @@
 
-var careerData = [
+var experiences = [
     {
         position: "Electric Harness Designer",
         company: "John Deere",

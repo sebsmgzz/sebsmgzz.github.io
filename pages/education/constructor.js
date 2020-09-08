@@ -1,13 +1,13 @@
 /* 
     <summary>
-        Constructs the DOM element for the education content, from the 'educationData' variable.
+        Constructs the DOM element for the education content, from the 'certificates' variable in data/certificates.js
     </summary>
 */
 
 let deck = document.createElement("div");
 deck.classList = "card-deck row row-cols-1 row-cols-md-3";
 document.querySelector("#education").appendChild(deck);
-for(let i = 0; i < educationData.length; i++) {
+for(let i = 0; i < certificates.length; i++) {
     // column
     let col = document.createElement("div");
     col.classList = "col my-2";
@@ -18,8 +18,8 @@ for(let i = 0; i < educationData.length; i++) {
     col.appendChild(card);
     // image
     let image = document.createElement("img");
-    image.src = educationData[i].imagePath;
-    image.alt = educationData[i].imageText;
+    image.src = certificates[i].logoPath;
+    image.alt = certificates[i].logoText;
     card.appendChild(image);
     // card body
     let cardBody = document.createElement("div");
@@ -27,17 +27,17 @@ for(let i = 0; i < educationData.length; i++) {
     card.appendChild(cardBody);
     // title
     let cardTitle = document.createElement("h5");
-    cardTitle.innerText = educationData[i].title;
+    cardTitle.innerText = certificates[i].name;
     cardTitle.classList = "card-title";
     cardBody.appendChild(cardTitle);
     // subtitle
     let cardSubtitle = document.createElement("div");
     cardSubtitle.classList = "card-subtitle mb-2 text-muted";
-    cardSubtitle.innerText = educationData[i].date;
+    cardSubtitle.innerText = certificates[i].dateIssued;
     cardBody.appendChild(cardTitle);
     // anchor
     let cardAnchor = document.createElement("a");
-    cardAnchor.href = educationData[i].reference;
+    cardAnchor.href = certificates[i].credentialPath;
     cardAnchor.target = "_blank";
     cardAnchor.innerText = "View credential";
     cardAnchor.classList = "card-link";
@@ -48,10 +48,10 @@ for(let i = 0; i < educationData.length; i++) {
     issuers.innerText = "Issueres:";
     cardBody.appendChild(issuers);
     // issuers anchor
-    for(let j = 0; j < educationData[i].issuers.length; j++) {
+    for(let j = 0; j < certificates[i].issuers.length; j++) {
         let issuer = document.createElement("a");
-        issuer.href = educationData[i].issuers[j].reference;
-        issuer.innerText = educationData[i].issuers[j].name;
+        issuer.href = certificates[i].issuers[j].referencePath;
+        issuer.innerText = certificates[i].issuers[j].name;
         issuer.target = "_blank";
         issuers.appendChild(issuer);
     }

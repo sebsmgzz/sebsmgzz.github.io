@@ -1,5 +1,5 @@
 
-var contactData = [
+var contacts = [
     {
         title: "Email",
         content: "sebastian.mgzz@outlook.com",

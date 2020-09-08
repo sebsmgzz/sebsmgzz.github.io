@@ -1,6 +1,6 @@
 /* 
     <summary>
-        Constructs the DOM element for the career content, from the 'careerData' variable.
+        Constructs the DOM element for the career content, from the 'experiences' variable in data/experiences.js
     </summary>
 */
 
@@ -10,7 +10,7 @@ accordion.classList = "accordion";
 accordion.id = "careerAccordion";
 document.querySelector("#career").appendChild(accordion);
 // cards
-for(let i = 0; i < careerData.length; i++) {
+for(let i = 0; i < experiences.length; i++) {
     // card
     let card = document.createElement("div");
     card.classList.add("card");
@@ -36,22 +36,22 @@ for(let i = 0; i < careerData.length; i++) {
     // title
     let title = document.createElement("h5");
     title.classList = "card-title";
-    title.innerText = careerData[i].position;
+    title.innerText = experiences[i].position;
     cardButton.appendChild(title);
     // subtitle anchor
     let anchor = document.createElement("a");
-    anchor.href = careerData[i].companyPath;
+    anchor.href = experiences[i].companyPath;
     anchor.target = "_blank";
     cardHeader.appendChild(anchor);
     // subtitle
     let subtitle = document.createElement("h6");
     subtitle.classList = "card-subtitle mb-2 text-muted";
-    subtitle.innerText = careerData[i].company;
+    subtitle.innerText = experiences[i].company;
     anchor.appendChild(subtitle);
     // detail
     let detail = document.createElement("small");
     detail.classList = "text-muted";
-    detail.innerText = careerData[i].dates;
+    detail.innerText = experiences[i].dates;
     cardHeader.appendChild(detail);
     // body
     let cardBody = document.createElement("div");
@@ -63,6 +63,6 @@ for(let i = 0; i < careerData.length; i++) {
     // content
     let cardBodyContent = document.createElement("div");
     cardBodyContent.classList = "card-body";
-    cardBodyContent.innerText = careerData[i].description;
+    cardBodyContent.innerText = experiences[i].description;
     cardBody.appendChild(cardBodyContent);
 }
