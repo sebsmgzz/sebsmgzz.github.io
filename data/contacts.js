@@ -1,4 +1,8 @@
-
+/*
+    <param name="contacts" type="ContactMethodModel[]">
+        Records all contact data
+    </params>
+*/
 var contacts = [
     {
         title: "Email",

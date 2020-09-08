@@ -1,3 +1,8 @@
+/*
+    <param name="certificates" type="CertificateModel[]">
+        Records all certificates data
+    </params>
+*/
 var certificates = [
     {
         name: "C# Programming for Unity Game Development Specialization",

@@ -1,4 +1,8 @@
-
+/*
+    <param name="experiences" type="ExperienceModel[]">
+        Records all experiences data
+    </params>
+*/
 var experiences = [
     {
         position: "Electric Harness Designer",

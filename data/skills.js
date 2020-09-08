@@ -1,3 +1,8 @@
+/*
+    <param name="skills" type="SkillModel">
+        Records all the skills data
+    </params>
+*/
 var skills = [
     {
         name: "Spanish native",

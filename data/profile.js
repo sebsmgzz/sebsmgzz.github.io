@@ -1,3 +1,8 @@
+/*
+    <param name="profile" type="ProfileModel">
+        Records the profile information
+    </params>
+*/
 var profile = {
     name: "Sebastián Maroñas González",
     imagePath: "images/me.png",
