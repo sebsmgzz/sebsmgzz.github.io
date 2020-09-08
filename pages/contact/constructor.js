@@ -63,7 +63,7 @@ for (let i = 0; i < contacts.length; i++) {
     item.appendChild(itemCaption);
     // title
     let title = document.createElement("h5");
-    title.innerText = contacts[i].title;
+    title.innerText = contacts[i].methodName;
     itemCaption.appendChild(title);
     // content
     let content = document.createElement("p");
@@ -71,7 +71,7 @@ for (let i = 0; i < contacts.length; i++) {
     itemCaption.appendChild(content);
     // anchor
     let anchor = document.createElement("a");
-    anchor.href = contacts[i].anchorReference;
+    anchor.href = contacts[i].reference;
     anchor.target = "_blank";
     itemCaption.appendChild(anchor);
     // image
