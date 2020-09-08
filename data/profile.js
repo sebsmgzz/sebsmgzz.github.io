@@ -1,7 +1,5 @@
 /*
-    <param name="profile" type="ProfileModel">
-        Records the profile information
-    </params>
+    <profile: ProfileModel> Records the profile information
 */
 var profile = {
     name: "Sebastián Maroñas González",

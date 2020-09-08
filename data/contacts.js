@@ -1,7 +1,5 @@
 /*
-    <param name="contacts" type="ContactMethodModel[]">
-        Records all contact data
-    </params>
+    <contacts: ContactMethodModel[]> Records all contact data
 */
 var contacts = [
     {

@@ -1,7 +1,5 @@
 /*
-    <param name="experiences" type="ExperienceModel[]">
-        Records all experiences data
-    </params>
+    <experiences: ExperienceModel[]> Records all experiences data
 */
 var experiences = [
     {

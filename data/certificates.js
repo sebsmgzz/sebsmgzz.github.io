@@ -1,7 +1,5 @@
 /*
-    <param name="certificates" type="CertificateModel[]">
-        Records all certificates data
-    </params>
+    <certificates: CertificateModel[]> Records all certificates data
 */
 var certificates = [
     {

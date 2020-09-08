@@ -1,7 +1,5 @@
 /*
-    <param name="skills" type="SkillModel">
-        Records all the skills data
-    </params>
+    <skills: SkillModel> Records all the skills data
 */
 var skills = [
     {
