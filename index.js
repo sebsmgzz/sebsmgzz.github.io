@@ -9,14 +9,6 @@ var pages = [
 ];
 
 // Functions
-function initializePage() {
-    pages[0].appendChild(getProfile());
-    pages[1].appendChild(getEducation());
-    pages[2].appendChild(getCareer());
-    pages[3].appendChild(getSkills());
-    pages[4].appendChild(getContact());
-    // TODO: remove spinner
-}
 function setCurrentPage(index) {
     if(-1 < index && index < pages.length) {
         pages[currentPage].classList.toggle("hidden-content");
@@ -27,6 +19,3 @@ function setCurrentPage(index) {
     }
     return false;
 }
-
-// Listeners
-document.addEventListener("DOMContentLoaded", initializePage);
