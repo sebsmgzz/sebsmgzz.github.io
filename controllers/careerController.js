@@ -5,19 +5,23 @@ for(let i = 0; i < experiences.length; i++) {
         <div class="card">
             <div class="card-header" id="careerAccordionHeader${i}">
                 <h2 class="mb-0"></h2>
-                <button 
-                    class="btn btn-link btn-block text-left"
+                <a target="_blank" class="col-fluid" href="${experiences[i].companyPath}">
+                    <img
+                        class="d-block mx-auto" 
+                        alt="${experiences[i].logoText}"
+                        src="${experiences[i].logoPath}" />
+                </a>
+                <a 
+                    class="col btn btn-link btn-block"
                     type="button"
                     data-toggle="collapse"
                     data-target="#careerAccordionCardBody${i}"
                     aria-expanded="true"
                     aria-controls="careerAccordionCardBody${i}">
                     <h5 class="card-title">${experiences[i].position}</h5>
-                </button>
-                <a href="${experiences[i].companyPath}" target="_blank">
                     <h6 class="card-subtitle mb-2 text-muted">${experiences[i].company}</h6>
+                    <small class="text-muted">${experiences[i].dates}</small>
                 </a>
-                <small class="text-muted">${experiences[i].dates}</small>
             </div>
             <div
                 id="careerAccordionCardBody${i}"
