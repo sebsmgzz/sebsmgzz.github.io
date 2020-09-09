@@ -1,0 +1,99 @@
+
+/* JS utility */
+.hidden-content {
+    display: none;
+}
+
+/* body */
+body {
+	padding-top: 3.5rem;
+}
+
+/* navbar */
+nav a:hover {
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+footer img {
+    height: 1rem;
+}
+footer a {
+    display: inline-block;
+}
+
+/* profile */
+#profile {
+    text-align: center;
+}
+#profile img {
+    border-radius: 50%;
+}
+#profile .jumbotron {
+    margin-bottom: 0;
+}
+#profile .title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* #education */
+#education .card {
+    height: 100%;
+}
+#education img {
+    height: 10rem;
+    max-width: 100%;
+    margin: auto;
+}
+#education .card-text a {
+    display: block;
+}
+
+/* career */
+#career button {
+    padding-left: 0;
+}
+
+/* skills */
+#skills img {
+    height: 3rem;
+}
+
+/* contact */
+#contact .carousel-caption img {
+    width: 10rem;
+}
+#contact .carousel-caption {
+    position: static;
+    color: black;
+}
+#contact .carousel-control-prev, 
+#contact .carousel-control-next {
+    filter: invert(1);
+    opacity: 1;
+}
+#contact .carousel-indicators li {
+    background-color: black;
+}
+#contact .carousel-indicators {
+    position: static;
+}
+
+/* Media rules */
+@media (min-width: 600px) {
+    /* footer */
+    footer blockquote {
+        text-align: left;
+        text-indent:  3rem;
+    }
+    /* profile */
+    #profile {
+        text-align: left;
+    }
+}
