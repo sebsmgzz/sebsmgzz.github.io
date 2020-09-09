@@ -1,7 +1,7 @@
 /*
     <contacts: ContactMethodModel[]> Records all contact data
 */
-var contacts = [
+var contactMethods = [
     {
         title: "Email",
         content: "sebastian.mgzz@outlook.com",

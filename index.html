@@ -5,7 +5,7 @@
 
         <meta charset="UTF-8">
         <meta name="description" content="Sebastián Maroñas González CV Portafolio">
-        <meta name="keywords" content="Sebastián,Maroñas,CV,Portafolio">
+        <meta name="keywords" content="Sebastián,Maroñas,González,CV,Portafolio">
         <meta name="author" content="Sebastián M. Gzz.">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
@@ -23,10 +23,13 @@
         <link rel="stylesheet" href="styles/skillsPage.css">
         <link rel="stylesheet" href="styles/contactPage.css">
     
+        <!--Here you should call all models scripts to be available in the html
+        However there are not required as I am not using TS yet-->
+
     </head>
 
     <body class="d-flex flex-column min-vh-100">
-
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
             <a class="navbar-brand mb-0 h1" onclick="setCurrentPage(0)">
@@ -63,11 +66,32 @@
         </nav>
 
         <main class="container-fluid" role="main">
-            <div id="profile"></div>
-            <div id="education" class="hidden-content"></div>
-            <div id="career" class="hidden-content"></div>
-            <div id="skills" class="hidden-content"></div>
-            <div id="contact" class="hidden-content"></div>
+
+            <div id="profile">
+                <script src="assets/profile.js"></script>
+                <script src="controllers/profileController.js"></script>
+            </div>
+
+            <div id="education" class="hidden-content">
+                <script src="assets/certificates.js"></script>
+                <script src="controllers/educationController.js"></script>
+            </div>
+
+            <div id="career" class="hidden-content">
+                <script src="assets/experiences.js"></script>
+                <script src="controllers/careerController.js"></script>
+            </div>
+
+            <div id="skills" class="hidden-content">
+                <script src="assets/skills.js"></script>
+                <script src="controllers/skillsController.js"></script>
+            </div>
+
+            <div id="contact" class="hidden-content">
+                <script src="assets/contactMethods.js"></script>
+                <script src="controllers/contactController.js"></script>
+            </div>
+
         </main>
 
         <footer class="mt-auto">
@@ -143,21 +167,6 @@
 
         <script src="packages/jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>
         <script src="packages/bootstrap-4.5.2-dist/js/bootstrap.js"></script>
-
-        <script src="data/profile.js"></script>
-        <script src="pages/profile/constructor.js"></script>
-
-        <script src="data/certificates.js"></script>
-        <script src="pages/education/constructor.js"></script>
-
-        <script src="data/experiences.js"></script>
-        <script src="pages/career/constructor.js"></script>
-
-        <script src="data/skills.js"></script>
-        <script src="pages/skills/constructor.js"></script>
-
-        <script src="data/contacts.js"></script>
-        <script src="pages/contact/constructor.js"></script>
 
         <script src="index.js"></script>
 
