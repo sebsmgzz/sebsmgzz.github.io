@@ -1,12 +1,4 @@
 
-function mergeItemsAs(list, method) {
-    let answer = "";
-    for(let i = 0; i < list.length; i++) {
-        answer += method(list[i]);
-    }
-    return answer;
-}
-
 document.write(`
     <div class="row jumbotron jumbotron-fluid">
         <div class="col-sm">
