@@ -24,7 +24,7 @@ var experiences = [
         position: "BMES volunteer and main collaborator",
         company: "BMES - BioMedial Engineer Society",
         companyPath: "https://www.bmes.org/",
-        logoPath: "images/logos/bmes.jfif",
+        logoPath: "images/logos/bmes.png",
         logoText: "alt",
         dates: "January 2019 - June 2019",
         description: "During the volunteer, I was the main collaborator and my role included networking and providing human resources for the society in order to develop stand up events. These was achieved through my contacts network and by investigating and getting in touch with different volunteers from other societies."
@@ -33,7 +33,7 @@ var experiences = [
         position: "Process engineer intern",
         company: "EMIS - Medical and Wellness Sciences Shcool",
         companyPath: "http://escuelademedicina.tec.mx/",
-        logoPath: "images/logos/emis.jfif",
+        logoPath: "images/logos/emis.png",
         logoText: "alt",
         dates: "January 2019 - June 2019",
         description: "As a process engineer intern, I was assigned to a team to help determine and optimize the working parameters of a 3D printer. The printer was working with a new type of polymer previously designed by another team for innovative solution in the protesis manufacture area. The printing optimization of the polymer was achieved through extensive testing for data gathering to develop a mathematic model for each parameter. After the models were obtained, the point of optimization was easily obtained."
@@ -42,7 +42,7 @@ var experiences = [
         position: "Dron design international competition",
         company: "International Design & Engineering Education Association",
         companyPath: "https://ideea.network/",
-        logoPath: "images/logos/ideea.jfif",
+        logoPath: "images/logos/ideea.png",
         logoText: "alt",
         dates: "January 2019 - June 2019",
         description: "The competition consisted on a conceptual design of a drone to solve a given problematic (Search & Rescue). The design was done through the 'Design Thinking' process, and the separation of concers was achieved through separation of tasks among members of the team and mocking up the best ideas each teammate had. These decisions were made through argumentation and during online meetings of the team."
@@ -60,7 +60,7 @@ var experiences = [
         position: "Data Analysis Developer",
         company: "Negocio 360",
         companyPath: "https://www.facebook.com/Negocio360",
-        logoPath: "images/logos/negocio360.jfif",
+        logoPath: "images/logos/negocio360.png",
         logoText: "alt",
         dates: "May 2018 - August 2018",
         description: "As a data analysis developer, I was assigned the task of reestructuring a current data on a model the company already had for estimating the amount of sales to be done the next month. This was based on a set of data of previous records from the company. The implementation of the solution included the design of an interface to input the data and choose between different types of estimations (Linear, polynomial, exponential, etc), to determine a more accurate approach. This was done through VB6."
@@ -96,7 +96,7 @@ var experiences = [
         position: "General mechanic",
         company: "DIMEX",
         companyPath: "https://www.pinterest.com.mx/dimexmty/",
-        logoPath: "images/logos/dimex.jfif",
+        logoPath: "images/logos/dimex.png",
         logoText: "alt",
         dates: "May 2017 - July 2017",
         description: "As a general mechanic, I had hands-on tasks such as air filter and oil replacement in several machinery such as: Air compressors, generators, tractors, etc. I also had to deal with problem solving without knowing the cause of the problem, which included a lot of critical thinking."
@@ -105,7 +105,7 @@ var experiences = [
         position: "CVA Computer teacher volunteer",
         company: "CVA - Virtual Learning Center",
         companyPath: "http://www.centroscomunitariosdeaprendizaje.org.mx/",
-        logoPath: "images/logos/cva.jpg",
+        logoPath: "images/logos/cva.png",
         logoText: "alt",
         dates: "July 2016 - December 2016",
         description: "As a computer teacher volunteer, I provided support in teaching about computer and technology usage to adults of age above 40s that struggled to learn about these resources. The knowledge aquired help them organize their virtual documents, understand the technological terms as well as learning how to use these technologies. Mostly to get in touch with their family and friends."

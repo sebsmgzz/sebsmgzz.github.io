@@ -60,7 +60,7 @@ footer a {
     padding-left: 0;
 }
 #career img {
-    width: 10rem;
+    max-width: 10rem;
 }
 #career .card-header {
     display: flex;
