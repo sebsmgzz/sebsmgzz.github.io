@@ -93,6 +93,9 @@ footer a {
         text-indent:  3rem;
     }
     /* profile */
+    #profile img {
+        margin-right: 5% !important;
+    }
     #profile {
         text-align: left;
     }
