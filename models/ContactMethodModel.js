@@ -1,10 +1,10 @@
-/*
-    <summary> Represents a contact method
-    <methodName: String> The name of the certificate
-    <content: String> The information content for contact
-    <reference: String> The referenced path for further information about the contact
-    <imagePath: String> The path for the image representing the contact method
-    <imageText: String> The alternative text for the image
+/**
+*    @class Represents a contact method
+*    @param methodName {String} The name of the certificate
+*    @param content {String} The information content for contact
+*    @param reference {String} The referenced path for further information about the contact
+*    @param imagePath {String} The path for the image representing the contact method
+*    @param imageText {String} The alternative text for the image
 */
 class ContactMethodModel {
 

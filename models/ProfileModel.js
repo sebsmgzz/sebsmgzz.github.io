@@ -1,9 +1,9 @@
-/*
-    <summary> Represents the profile data
-    <name: String> The name of the profile
-    <imagePath: String> The path of the profile image
-    <imagePath: String> The alternative text of the profile image
-    <titles: String[]> A list of title hold
+/**
+*    @class Represents the profile data
+*    @param name {String} The name of the profile
+*    @param imagePath {String} The path of the profile image
+*    @param imagePath {String} The alternative text of the profile image
+*    @param titles {String[]} A list of title hold
 */
 class ProfileModel {
 
