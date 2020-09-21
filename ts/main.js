@@ -1,0 +1,25 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var ProfileView_1 = __importDefault(require("./Views/ProfileView"));
+var CareerView_1 = __importDefault(require("./Views/CareerView"));
+var ContactView_1 = __importDefault(require("./Views/ContactView"));
+var EducationView_1 = __importDefault(require("./Views/EducationView"));
+var SkillsView_1 = __importDefault(require("./Views/SkillsView"));
+var profileElement = document.querySelector("main div:nth-of-type(1)");
+var profileView = new ProfileView_1.default();
+profileView.render(profileElement);
+var educationElement = document.querySelector("main div:nth-of-type(2)");
+var educationView = new EducationView_1.default();
+educationView.render(educationElement);
+var careerElement = document.querySelector("main div:nth-of-type(3)");
+var careerView = new CareerView_1.default();
+careerView.render(careerElement);
+var skillsElement = document.querySelector("main div:nth-of-type(4)");
+var skillsView = new SkillsView_1.default();
+skillsView.render(skillsElement);
+var contactElement = document.querySelector("main div:nth-of-type(5)");
+var contactView = new ContactView_1.default();
+contactView.render(contactElement);
