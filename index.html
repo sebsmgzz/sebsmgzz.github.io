@@ -9,7 +9,7 @@
         <meta name="author" content="Sebastián M. Gzz.">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-        <link rel="icon" href="images/icons/brand.png">
+        <link rel="icon" href="public/images/icons/brand.png">
     
         <title>Sebastián M. Gzz.</title>
     
@@ -17,21 +17,16 @@
 
         <link rel="stylesheet" href="styles.css">
 
-        <script src="utilities/functions.js"></script>
-        
-        <!--Here you should call all models scripts to be available in the html
-        However there are not required as I am not using TS yet-->
-
     </head>
 
     <body class="d-flex flex-column min-vh-100">
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-            <a class="navbar-brand mb-0 h1" onclick="setCurrentPage(0)">
+            <a class="navbar-brand mb-0 h1" onclick="Utilities.setCurrentPage(0)">
                 <img
                     class="d-inline-block align-top"
-                    src="images/icons/brand.png"
+                    src="public/images/icons/brand.png"
                     width="30"
                     height="30"
                     alt=""
@@ -52,10 +47,10 @@
 
             <div class="collapse navbar-collapse" id="navbarControlElements">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#" onclick="setCurrentPage(1)">Education</a>
-                    <a class="nav-link" href="#" onclick="setCurrentPage(2)">Career</a>
-                    <a class="nav-link" href="#" onclick="setCurrentPage(3)">Skills</a>
-                    <a class="nav-link" href="#" onclick="setCurrentPage(4)">Contact</a>
+                    <a class="nav-link" href="#" onclick="Utilities.setCurrentPage(1)">Education</a>
+                    <a class="nav-link" href="#" onclick="Utilities.setCurrentPage(2)">Career</a>
+                    <a class="nav-link" href="#" onclick="Utilities.setCurrentPage(3)">Skills</a>
+                    <a class="nav-link" href="#" onclick="Utilities.setCurrentPage(4)">Contact</a>
                 </div>
             </div>
 
@@ -63,30 +58,11 @@
 
         <main class="container-fluid" role="main">
 
-            <div id="profile">
-                <script src="assets/profile.js"></script>
-                <script src="Views/ProfileView.js"></script>
-            </div>
-
-            <div id="education" class="hidden-content">
-                <script src="assets/certificates.js"></script>
-                <script src="Views/EducationView.js"></script>
-            </div>
-
-            <div id="career" class="hidden-content">
-                <script src="assets/experiences.js"></script>
-                <script src="Views/CareerView.js"></script>
-            </div>
-
-            <div id="skills" class="hidden-content">
-                <script src="assets/skills.js"></script>
-                <script src="Views/SkillsView.js"></script>
-            </div>
-
-            <div id="contact" class="hidden-content">
-                <script src="assets/contactMethods.js"></script>
-                <script src="Views/ContactView.js"></script>
-            </div>
+            <div id="profile"></div>
+            <div id="education" class="hidden-content"></div>
+            <div id="career" class="hidden-content"></div>
+            <div id="skills" class="hidden-content"></div>
+            <div id="contact" class="hidden-content"></div>
 
         </main>
 
@@ -166,5 +142,35 @@
 
     <script src="packages/jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>
     <script src="packages/bootstrap-4.5.2-dist/js/bootstrap.js"></script>
+
+    <script src="Database/Tables/CertificatesTable.js"></script>
+    <script src="Database/Tables/ExperiencesTable.js"></script>
+    <script src="Database/Tables/ImagesTable.js"></script>
+    <script src="Database/Tables/OrganizationsTable.js"></script>
+    <script src="Database/Tables/PersonalDataTable.js"></script>
+    <script src="Database/Tables/SkillsTable.js"></script>
+    <script src="Database/StoredProcedures.js"></script>
+
+    <script src="Models/ImageModel.js"></script>
+    <script src="Models/CertificateModel.js"></script>
+    <script src="Models/ExperienceModel.js"></script>
+    <script src="Models/OrganizationModel.js"></script>
+    <script src="Models/PersonalDataModel.js"></script>
+    <script src="Models/SkillModel.js"></script>
+
+    <script src="Controllers/CareerController.js"></script>
+    <script src="Controllers/ContactController.js"></script>
+    <script src="Controllers/EducationController.js"></script>
+    <script src="Controllers/ProfileController.js"></script>
+    <script src="Controllers/SkillsController.js"></script>
+
+    <script src="Views/CareerView.js"></script>
+    <script src="Views/ContactView.js"></script>
+    <script src="Views/EducationView.js"></script>
+    <script src="Views/ProfileView.js"></script>
+    <script src="Views/SkillsView.js"></script>
+
+    <script src="utilities.js"></script>
+    <script src="main.js"></script>
 
 </html>
