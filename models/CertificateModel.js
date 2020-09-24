@@ -2,7 +2,7 @@
 /** @class Represents an educational certificate. */
 class CertificateModel {
 
-    //#region Properties
+    //#region Properties 
 
     /** @property {string} "" - The name of the certificate. */
     _name;
