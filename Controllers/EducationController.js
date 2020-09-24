@@ -2,7 +2,7 @@
 /** @class Controls the interactions between the education view and models. */
 class EducationController {
 
-    //#region Fields
+    //#region Fields 
 
     /** @field {CertificateModel} - The certificate model of the controller. */
     _certificate = new CertificateModel();
