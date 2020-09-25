@@ -2,7 +2,7 @@
 /** @class Represents a career experience. */
 class ExperienceModel{
 
-    //#region Properties 
+    //#region Properties
 
     /** @property {string} - The position hold during the experience. */
     _position;

@@ -2,7 +2,7 @@
 /** @class Represents a skill. */
 class SkillModel {
 
-    //#region Properties 
+    //#region Properties
 
     /** @property {string} - The name representing the skill. */
     _name;
