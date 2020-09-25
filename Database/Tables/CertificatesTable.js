@@ -3,7 +3,7 @@ const certificates = [
     {
         name: "C# Programming for Unity Game Development Specialization",
         date: new Date(2020, 8), // August
-        path: "documents/unity-specialization-credential.pdf",
+        path: "public/documents/unity-specialization-credential.pdf",
         image_id: 0,
         issuers_id: [ 0, 1 ]
     },
@@ -17,28 +17,28 @@ const certificates = [
     {
         name: "IT Fundamentals for Cybersecurity Specialization",
         date: new Date(2020, 6), // June
-        path: "documents/cybersecurity-specialization-credential.pdf",
+        path: "public/documents/cybersecurity-specialization-credential.pdf",
         image_id: 2,
         issuers_id: [ 3, 1 ]
     },
     {
         name: "Python for Everbody Specialization",
         date: new Date(2020, 5), // May
-        path: "documents/python-specialization-credential.pdf",
+        path: "public/documents/python-specialization-credential.pdf",
         image_id: 3,
         issuers_id: [ 4, 1 ]
     },
     {
         name: "PHP Course",
-        date: new Date(2020, 3), // March
-        path: "documents/php-credential.pdf",
+        date: new Date(2020, 5), // May
+        path: "public/documents/php-credential.pdf",
         image_id: 4,
         issuers_id: [ 5 ]
     },
     {
         name: "Web Design Course",
         date: new Date(2020, 3), // March
-        path: "documents/web-design-credential.pdf",
+        path: "public/documents/web-design-credential.pdf",
         image_id: 4,
         issuers_id: [ 5 ]
     }
