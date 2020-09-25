@@ -10,7 +10,7 @@ const certificates = [
     {
         name: "Mechanic Electrics Bachelor Degree",
         date: new Date(2020, 6), // June
-        path: "https://certificados.tec.mx/certificate/69ccbba2f58e5df9b67df73f2f6d57a9",
+        path: "https://certificados.tec.mx/certificate/79f3d4311a675d24acf4f6eea9f290ce",
         image_id: 1,
         issuers_id: [ 2 ]
     },
