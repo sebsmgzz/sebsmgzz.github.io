@@ -47,6 +47,11 @@ class EducationController {
         return this._certificate.count;
     }
 
+    /** @property {Date} - The date the credential was issued. */
+    get credentialDate() {
+        return this._certificate.date;
+    }
+
     //#endregion
 
     //#region Methods

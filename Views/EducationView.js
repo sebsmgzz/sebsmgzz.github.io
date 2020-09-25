@@ -41,6 +41,9 @@ class EducationView{
                             <h5 class='card-title'>
                                 ${this._controller.credentialName}
                             </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                ${EducationView.formatDate(this._controller.credentialDate)}
+                            </h6>
                             <a
                                 href='${this._controller.credentialPath}'
                                 target='_blank'
@@ -75,6 +78,13 @@ class EducationView{
             `);
         }
         return component;
+    }
+
+    /** Formats a date to be visible attractive.
+     * @param date The date to give format.
+     */
+    static formatDate(date) {
+        return `${Utilities.getMonthName(date.getMonth())} ${date.getFullYear()}`;
     }
 
     //#endregion
