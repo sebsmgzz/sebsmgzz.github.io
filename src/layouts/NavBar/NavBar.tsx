@@ -20,6 +20,7 @@ export const NavBar = function(props: NavBarProps) {
             </Link>
 
             <button className="navbar-toggler collapsed mx-3 px-2"
+                onBlur={(e) => e.target.dispatchEvent(new Event("click"))}
                 data-bs-toggle="collapse" 
                 data-bs-target="#navbarControlElements" 
                 aria-controls="navbarControlElements" 
