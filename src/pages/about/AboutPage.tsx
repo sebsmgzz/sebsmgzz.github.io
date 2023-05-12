@@ -1,3 +1,4 @@
+import "./AboutPage.scss";
 
 export type AboutPageProps = {
 

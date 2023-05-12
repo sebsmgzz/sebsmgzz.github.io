@@ -1,3 +1,4 @@
+import "./Header.scss";
 
 export type HeaderProps = {
 

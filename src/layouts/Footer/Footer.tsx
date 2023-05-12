@@ -1,3 +1,4 @@
+import "./Footer.scss";
 
 export type FooterProps = {
 
