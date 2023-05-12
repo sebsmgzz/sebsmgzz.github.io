@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Solidworks",
+        "percentage": 70,
+        "imagePath": "/imgs/3d/solidworks.png"
+    },
+    {
+        "name": "CREO",
+        "percentage": 60,
+        "imagePath": "/imgs/3d/creo.png"
+    },
+    {
+        "name": "MatLab",
+        "percentage": 50,
+        "imagePath": "/imgs/misc/matlab.png"
+    }
+]

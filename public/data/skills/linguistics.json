@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Spanish",
+        "level": "Native",
+        "imagePath": "/imgs/flags/mexico.png"
+    },
+    {
+        "name": "Proficient",
+        "level": "Advanced",
+        "imagePath": "/imgs/flags/usa.png"
+    },
+    {
+        "name": "Italian",
+        "level": "Basic",
+        "imagePath": "/imgs/flags/italy.png"
+    },
+    {
+        "name": "German",
+        "level": "Basic",
+        "imagePath": "/imgs/flags/germany.png"
+    }
+]

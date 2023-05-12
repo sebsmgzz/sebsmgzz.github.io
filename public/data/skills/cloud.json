@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Azure",
+        "percentage": 90,
+        "imagePath": "/imgs/cloud/azure.png"
+    },
+    {
+        "name": "AWS",
+        "percentage": 80,
+        "imagePath": "/imgs/cloud/aws.png"
+    },
+    {
+        "name": "GCP",
+        "percentage": 70,
+        "imagePath": "/imgs/cloud/gcp.png"
+    }
+]

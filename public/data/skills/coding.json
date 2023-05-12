@@ -1,0 +1,85 @@
+[
+    {
+        "name": "C#",
+        "percentage": 90,
+        "imagePath": "/imgs/coding/csharp.png",
+        "items": [
+            ".NET Core",
+            "WPF",
+            "Xamarin",
+            "Unity",
+            "VB.NET"
+        ]
+    },
+    {
+        "name": "Javascript",
+        "percentage": 90,
+        "imagePath": "/imgs/coding/js.png",
+        "items": [
+            "React",
+            "Vue",
+            "Node.js"
+        ]
+    },
+    {
+        "name": "Java",
+        "percentage": 85,
+        "imagePath": "/imgs/coding/java.png",
+        "items": [
+            "JavaFX",
+            "Android"
+        ]
+    },
+    {
+        "name": "Kotlin",
+        "percentage": 80,
+        "imagePath": "/imgs/coding/kotlin.png",
+        "items": [
+            "Jetpack compose"
+        ]
+    },
+    {
+        "name": "Python",
+        "percentage": 85,
+        "imagePath": "/imgs/coding/python.png",
+        "items": [
+            "Flask",
+            "Django"
+        ]
+    },
+    {
+        "name": "HTML",
+        "percentage": 85,
+        "imagePath": "/imgs/coding/html.png",
+        "items": [ ]
+    },
+    {
+        "name": "CSS",
+        "percentage": 80,
+        "imagePath": "/imgs/coding/css.png",
+        "items": [
+            "Bootstrap"
+        ]
+    },
+    {
+        "name": "Docker",
+        "percentage": 90,
+        "imagePath": "/imgs/coding/docker.png",
+        "items": [
+            "Compose",
+            "Kubernetes"
+        ]
+    },
+    {
+        "name": "Powershell",
+        "percentage": 90,
+        "imagePath": "/imgs/coding/powershell.png",
+        "items": [ ]
+    },
+    {
+        "name": "Bash",
+        "percentage": 80,
+        "imagePath": "/imgs/coding/bash.png",
+        "items": [ ]
+    }
+]

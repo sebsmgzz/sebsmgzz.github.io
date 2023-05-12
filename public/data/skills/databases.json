@@ -1,0 +1,18 @@
+[
+    {
+        "name": "SQL",
+        "imagePath": "/imgs/dbs/sql.png"
+    },
+    {
+        "name": "Cosmos",
+        "imagePath": "/imgs/dbs/cosmos.png"
+    },
+    {
+        "name": "Postgres",
+        "imagePath": "/imgs/dbs/postgres.png"
+    },
+    {
+        "name": "Sqlite",
+        "imagePath": "/imgs/dbs/sqlited.png"
+    }
+]
