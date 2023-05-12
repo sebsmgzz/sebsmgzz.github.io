@@ -6,9 +6,9 @@ export type MainProps = {
 
 export const Main = function(props: MainProps) {
     return (
-        <div>
+        <main>
             <Outlet />
-        </div>
+        </main>
     );
 }
 

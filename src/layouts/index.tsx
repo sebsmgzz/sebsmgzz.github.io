@@ -13,3 +13,5 @@ export const Layout = function() {
         </Fragment>
     );
 }
+
+export default Layout;

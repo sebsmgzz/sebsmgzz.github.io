@@ -5,9 +5,9 @@ export type HeaderProps = {
 
 export const Header = function(props: HeaderProps) {
     return (
-        <div>
+        <header>
             Header
-        </div>
+        </header>
     );
 }
 

@@ -5,9 +5,9 @@ export type FooterProps = {
 
 export const Footer = function(props: FooterProps) {
     return (
-        <div>
+        <footer>
             Footer
-        </div>
+        </footer>
     );
 }
 

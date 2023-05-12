@@ -1,11 +1,8 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import logo from './logo.svg';
-import './App.css';
-import HomePage from '../pages/home/HomePage';
-import AboutPage from '../pages/about/AboutPage';
-import { Layout } from '../layouts';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "pages/home/HomePage";
+import AboutPage from "pages/about/AboutPage";
+import Layout from "layouts";
+import "./App.css";
 
 export const App = function() {
 	return (
