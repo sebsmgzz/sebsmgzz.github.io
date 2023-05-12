@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ContactPage from "pages/contact/ContactPage";
+import EducationPage from "pages/education/EducationPage";
 import HomePage from "pages/home/HomePage";
-import AboutPage from "pages/about/AboutPage";
+import ProjectsPage from "pages/projects/ProjectsPage";
+import SkillsPage from "pages/skills/SkillsPage";
 import Layout from "layouts";
 import "./App.scss";
 
@@ -10,7 +13,10 @@ export const App = function() {
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route path="/" element={<HomePage />} />
-					<Route path="about" element={<AboutPage />} />
+					<Route path="/contact" element={<ContactPage />} />
+					<Route path="/education" element={<EducationPage />} />
+					<Route path="/projects" element={<ProjectsPage />} />
+					<Route path="/skills" element={<SkillsPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

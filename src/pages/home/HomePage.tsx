@@ -18,6 +18,7 @@ export const HomePage = function(props: HomePageProps) {
                 <div className="col-lg-6">
                     <h1 className="display-5 fw-bold lh-1 mb-3 text-center">Sebastián M. Gzz.</h1>
                     <p className="lead text-center">Cloud architect</p>
+                    <p className="lead text-center">Technical consultor</p>
                     <p className="lead text-center">Full stack developer</p>
                     <p className="lead text-center">Electric engineer</p>
                 </div>
