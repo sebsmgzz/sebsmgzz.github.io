@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 
 export type MainProps = {
 
@@ -6,8 +7,9 @@ export type MainProps = {
 export const Main = function(props: MainProps) {
     return (
         <div>
-            Main
-        </div>);
+            <Outlet />
+        </div>
+    );
 }
 
 export default Main;

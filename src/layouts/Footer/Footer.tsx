@@ -7,7 +7,8 @@ export const Footer = function(props: FooterProps) {
     return (
         <div>
             Footer
-        </div>);
+        </div>
+    );
 }
 
 export default Footer;

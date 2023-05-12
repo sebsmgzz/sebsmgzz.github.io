@@ -7,7 +7,8 @@ export const Header = function(props: HeaderProps) {
     return (
         <div>
             Header
-        </div>);
+        </div>
+    );
 }
 
 export default Header;
