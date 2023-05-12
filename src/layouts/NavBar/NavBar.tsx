@@ -3,6 +3,7 @@ import { endpoints } from "global/constants";
 import "./NavBar.scss";
 
 export type NavBarProps = {
+    id: string
 }
 
 export const NavBar = function(props: NavBarProps) {
@@ -20,7 +21,12 @@ export const NavBar = function(props: NavBarProps) {
             </Link>
 
             <button className="navbar-toggler collapsed mx-3 px-2"
-                onBlur={(e) => e.target.dispatchEvent(new Event("click"))}
+                onBlur={(e) => {
+                    const div = document.querySelector("#navbarControlElements") as HTMLDivElement;
+                    if (div.className.includes("show")) {
+                        e.target.dispatchEvent(new Event("click"));
+                    }
+                }}
                 data-bs-toggle="collapse" 
                 data-bs-target="#navbarControlElements" 
                 aria-controls="navbarControlElements" 
@@ -43,6 +49,10 @@ export const NavBar = function(props: NavBarProps) {
 
         </nav>
     );
+}
+
+NavBar.defaultProps = {
+    id: 42
 }
 
 export default NavBar;
