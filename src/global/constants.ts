@@ -7,3 +7,9 @@ export const endpoints = {
     skillsPage: "/skills",
     contactPage: "/contact"
 } as const;
+
+// Socials
+export const socials = {
+    linkedin: "https://linkedin.com/in/sebastian-mgzz",
+    github: "https://github.com/sebsmgzz"
+}
