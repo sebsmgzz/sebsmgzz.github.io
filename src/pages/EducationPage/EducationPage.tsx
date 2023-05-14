@@ -2,7 +2,7 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import { Fragment, useState } from "react";
 
-import { Card, CardSink } from "components";
+import { Card, CardSink, Spinner } from "components";
 import { fetchCertificates, fetchOrganizations } from "apis/public";
 
 import { Certificate, EducationPageProps } from "./EducationPage.d";
@@ -42,7 +42,7 @@ export const EducationPage = function(props: EducationPageProps) {
 
     if (isLoading) {
         return (
-            <div>Loading...</div>
+            <Spinner />
         );
     }
 
@@ -79,4 +79,5 @@ export const EducationPage = function(props: EducationPageProps) {
             </section>
         </Fragment>
     );
+    
 }
