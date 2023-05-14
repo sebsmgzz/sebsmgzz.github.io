@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { endpoints } from "global/constants";
 import { v4 } from "uuid";
-import "./NavBar.scss";
 
-export type NavBarProps = {
-    id: string
-}
+import { NavBarProps } from "./NavBar.d";
+import "./NavBar.scss";
 
 export const NavBar = function(props: NavBarProps) {
     return (
@@ -55,5 +53,3 @@ export const NavBar = function(props: NavBarProps) {
 NavBar.defaultProps = {
     id: v4()
 }
-
-export default NavBar;

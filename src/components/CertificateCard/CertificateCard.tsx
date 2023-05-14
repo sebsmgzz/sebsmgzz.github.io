@@ -1,18 +1,8 @@
-import moment from "moment";
-import "./CertificateCard.scss";
 import { Link } from "react-router-dom";
+import moment from "moment";
 
-export type CertificateCardProps = {
-    title: string,
-    src: string,
-    issuers: CertificateIssuer[],
-    issuedAt: Date
-}
-
-export type CertificateIssuer = {
-    name: string,
-    url: string
-}
+import { CertificateCardProps } from "./CertificateCard.d";
+import "./CertificateCard.scss";
 
 export const CertificateCard = function(props: CertificateCardProps) {
     const issuedAt = moment(props.issuedAt).format("MMMM YYYY");
@@ -48,5 +38,3 @@ export const CertificateCard = function(props: CertificateCardProps) {
 CertificateCard.defaultProps = {
     issuers: []
 };
-
-export default CertificateCard;

@@ -1,9 +1,7 @@
 import { Outlet } from "react-router-dom";
+
+import { MainProps } from "./Main.d";
 import "./Main.scss";
-
-export type MainProps = {
-
-}
 
 export const Main = function(props: MainProps) {
     return (
@@ -12,5 +10,3 @@ export const Main = function(props: MainProps) {
         </main>
     );
 }
-
-export default Main;

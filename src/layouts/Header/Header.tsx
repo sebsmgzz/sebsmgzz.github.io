@@ -1,8 +1,7 @@
-import NavBar from "layouts/NavBar/NavBar";
-import "./Header.scss";
 
-export type HeaderProps = {
-}
+import { NavBar } from "layouts";
+import { HeaderProps } from "./Header.d";
+import "./Header.scss";
 
 export const Header = function(props: HeaderProps) {
     return (
@@ -11,5 +10,3 @@ export const Header = function(props: HeaderProps) {
         </header>
     );
 }
-
-export default Header;

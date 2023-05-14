@@ -1,8 +1,6 @@
+
+import { SkillsPageProps } from "./SkillsPage.d";
 import "./SkillsPage.scss";
-
-export type SkillsPageProps = {
-
-}
 
 export const SkillsPage = function(props: SkillsPageProps) {
     return (
@@ -11,5 +9,3 @@ export const SkillsPage = function(props: SkillsPageProps) {
         </div>
     );
 }
-
-export default SkillsPage;

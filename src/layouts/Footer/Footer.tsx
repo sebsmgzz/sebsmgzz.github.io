@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
+
 import { socials } from "global/constants";
+import { FooterProps } from "./Footer.d";
 import "./Footer.scss";
-
-export type FooterProps = {
-
-}
 
 export const Footer = function(props: FooterProps) {
     return (
@@ -34,5 +32,3 @@ export const Footer = function(props: FooterProps) {
         </footer>
     );
 }
-
-export default Footer;

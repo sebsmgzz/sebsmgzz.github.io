@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import { endpoints } from "global/constants";
-import Layout from "layouts";
+import { Layout } from "layouts";
 import * as pages from "pages";
+
 import "./App.scss";
 
 export const App = function() {
@@ -29,5 +31,3 @@ export const App = function() {
 		</BrowserRouter>
 	);
 }
-
-export default App;

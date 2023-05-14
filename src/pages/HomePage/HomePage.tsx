@@ -1,9 +1,8 @@
+
 import myself from "resources/images/myself.png";
+
+import { HomePageProps } from "./HomePage.d";
 import "./HomePage.scss";
-
-export type HomePageProps = {
-
-}
 
 export const HomePage = function(props: HomePageProps) {
     return (
@@ -26,5 +25,3 @@ export const HomePage = function(props: HomePageProps) {
         </div>
     );
 }
-
-export default HomePage;

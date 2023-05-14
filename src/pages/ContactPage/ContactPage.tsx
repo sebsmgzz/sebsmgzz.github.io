@@ -1,8 +1,6 @@
+
+import { ContactPageProps } from "./ContactPage.d";
 import "./ContactPage.scss";
-
-export type ContactPageProps = {
-
-}
 
 export const ContactPage = function(props: ContactPageProps) {
     return (
@@ -11,5 +9,3 @@ export const ContactPage = function(props: ContactPageProps) {
         </div>
     );
 }
-
-export default ContactPage;

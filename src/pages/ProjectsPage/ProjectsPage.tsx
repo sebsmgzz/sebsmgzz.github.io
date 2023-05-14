@@ -1,8 +1,6 @@
+
+import { ProjectsPageProps } from "./ProjectsPage.d";
 import "./ProjectsPage.scss";
-
-export type ProjectsPageProps = {
-
-}
 
 export const ProjectsPage = function(props: ProjectsPageProps) {
     return (
@@ -11,5 +9,3 @@ export const ProjectsPage = function(props: ProjectsPageProps) {
         </div>
     );
 }
-
-export default ProjectsPage;

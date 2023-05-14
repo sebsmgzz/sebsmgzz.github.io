@@ -1,6 +1,8 @@
-import { CertificateCard } from "components";
 import { Fragment, useState } from "react";
+
+import { CertificateCard } from "components";
 import { fetchCertificates, fetchOrganizations } from "apis/public";
+
 import { Certificate, EducationPageProps } from "./EducationPage.d";
 import "./EducationPage.scss";
 
@@ -67,5 +69,3 @@ export const EducationPage = function(props: EducationPageProps) {
         </Fragment>
     );
 }
-
-export default EducationPage;
