@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { endpoints } from "global/constants";
+import { v4 } from "uuid";
 import "./NavBar.scss";
 
 export type NavBarProps = {
@@ -22,14 +23,14 @@ export const NavBar = function(props: NavBarProps) {
 
             <button className="navbar-toggler collapsed mx-3 px-2"
                 onBlur={(e) => {
-                    const div = document.querySelector("#navbarControlElements") as HTMLDivElement;
+                    const div = document.querySelector(`#${props.id}`) as HTMLDivElement;
                     if (div.className.includes("show")) {
                         e.target.dispatchEvent(new Event("click"));
                     }
                 }}
                 data-bs-toggle="collapse" 
-                data-bs-target="#navbarControlElements" 
-                aria-controls="navbarControlElements" 
+                data-bs-target={`#${props.id}`} 
+                aria-controls={`${props.id}`} 
                 aria-expanded="false" 
                 aria-label="Toggle navigation"
                 type="button">
@@ -38,7 +39,7 @@ export const NavBar = function(props: NavBarProps) {
                 </span>
             </button>
 
-            <div className="navbar-collapse collapse" id="navbarControlElements">
+            <div className="navbar-collapse collapse" id={props.id}>
                 <div className="navbar-nav">
                     <Link className="nav-link mx-3" to={endpoints.educationPage}>Education</Link>
                     <Link className="nav-link mx-3" to={endpoints.projectsPage}>Projects</Link>
@@ -52,7 +53,7 @@ export const NavBar = function(props: NavBarProps) {
 }
 
 NavBar.defaultProps = {
-    id: 42
+    id: v4()
 }
 
 export default NavBar;
