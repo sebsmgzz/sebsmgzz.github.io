@@ -1,0 +1,62 @@
+{
+    "wpf": {
+        "name": "WPF",
+        "language": "csharp"
+    },
+    "xamarin": {
+        "name": "Xamarin",
+        "language": "csharp"
+    },
+    "unity": {
+        "name": "Unity",
+        "language": "csharp"
+    },
+    "entityFramework": {
+        "name": "Entity framework",
+        "language": "csharp"
+    },
+    "dapper": {
+        "name": "Dapper",
+        "language": "csharp"
+    },
+    "node": {
+        "name": "Node.js",
+        "language": "js"
+    },
+    "react": {
+        "name": "React",
+        "language": "js"
+    },
+    "vue": {
+        "name": "Vue.js",
+        "language": "js"
+    },
+    "angular": {
+        "name": "Angular",
+        "language": "js"
+    },
+    "javafx": {
+        "name": "JavaFX",
+        "language": "java"
+    },
+    "android": {
+        "name": "Android",
+        "language": "java"
+    },
+    "jetpack": {
+        "name": "Jetpack compose",
+        "language": "kotlin"
+    },
+    "flask": {
+        "name": "Flask",
+        "language": "python"
+    },
+    "django": {
+        "name": "Django",
+        "language": "python"
+    },
+    "bootstrap": {
+        "name": "Bootstrap",
+        "language": "css"
+    }
+}

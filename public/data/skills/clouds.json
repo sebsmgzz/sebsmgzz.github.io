@@ -1,0 +1,17 @@
+{
+    "azure": {
+        "name": "Azure",
+        "url": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/",
+        "imagePath": "/imgs/clouds/azure.png"
+    },
+    "aws": {
+        "name": "AWS",
+        "url": "https://aws.amazon.com/what-is-aws/",
+        "imagePath": "/imgs/clouds/aws.png"
+    },
+    "gcp": {
+        "name": "GCP",
+        "url": "https://cloud.google.com/gcp/?hl=en",
+        "imagePath": "/imgs/clouds/gcp.png"
+    }
+}

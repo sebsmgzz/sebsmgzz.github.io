@@ -1,22 +1,18 @@
-[
-    {
+{
+    "spanish": {
         "name": "Spanish",
-        "level": "Native",
-        "imagePath": "/imgs/flags/mexico.png"
+        "imagePath": "/imgs/linguistics/mexico.png"
     },
-    {
+    "english": {
         "name": "Proficient",
-        "level": "Advanced",
-        "imagePath": "/imgs/flags/usa.png"
+        "imagePath": "/imgs/linguistics/usa.png"
     },
-    {
+    "italian": {
         "name": "Italian",
-        "level": "Basic",
-        "imagePath": "/imgs/flags/italy.png"
+        "imagePath": "/imgs/linguistics/italy.png"
     },
-    {
+    "german": {
         "name": "German",
-        "level": "Basic",
-        "imagePath": "/imgs/flags/germany.png"
+        "imagePath": "/imgs/linguistics/germany.png"
     }
-]
+}

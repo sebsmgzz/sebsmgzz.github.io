@@ -1,104 +1,87 @@
-[
-    {
-        "id": 0,
+{
+    "uoc": {
         "name": "University of Colorado",
         "url": "https://www.colorado.edu/",
         "imagePath": "/imgs/orgs/uni-of-colorado.png"
     },
-    {
-        "id": 1,
+    "coursera": {
         "name": "Coursera",
         "url": "https://www.coursera.org/",
         "imagePath": "/imgs/orgs/coursera.png"
     },
-    {
-        "id": 2,
+    "itesm": {
         "name": "Instituto Tecnologico de Estudios Superiores de Monterrey",
         "url": "https://tec.mx/en",
         "imagePath": "/imgs/orgs/itesm.png"
     },
-    {
-        "id": 3,
+    "ibm": {
         "name": "IBM",
         "url": "https://www.ibm.com",
         "imagePath": "/imgs/orgs/ibm.png"
     },
-    {
-        "id": 4,
+    "uom": {
         "name": "University of Michigan",
         "url": "https://umich.edu/",
         "imagePath": "/imgs/orgs/uni-of-michigan.png"
     },
-    {
-        "id": 5,
+    "tecGurus": {
         "name": "Tec Gurus",
         "url": "https://www.tecgurus.net/",
         "imagePath": "/imgs/orgs/tecgurus.png"
     },
-    {
-        "id": 6,
+    "jd": {
         "name": "John Deere",
         "url": "https://www.deere.com/en/index.html",
         "imagePath": "/imgs/orgs/john-deere.png"
     },
-    {
-        "id": 7,
+    "bioana": {
         "name": "Bioana",
         "url": "http://www.bioana.com.mx/",
         "imagePath": "/imgs/orgs/bioana.png"
     },
-    {
-        "id": 8,
+    "bmes": {
         "name": "BioMedial Engineer Society",
         "url": "https://www.bmes.org/",
         "imagePath": "/imgs/orgs/bmes.png"
     },
-    {
-        "id": 9,
+    "tecsalud": {
         "name": "Medical and Wellness Sciences Shcool",
         "url": "http://escuelademedicina.tec.mx/",
         "imagePath": "/imgs/orgs/tec-salud.png"
     },
-    {
-        "id": 10,
+    "ideea": {
         "name": "International Design & Engineering Education Association",
         "url": "https://ideea.network/",
         "imagePath": "/imgs/orgs/ideea.png"
     },
-    {
-        "id": 11,
+    "prepanet": {
         "name": "PrepaNet @NET",
         "url": "http://sitios.itesm.mx/prepanet/",
         "imagePath": "/imgs/orgs/prepanet.png"
     },
-    {
-        "id": 12,
+    "n360": {
         "name": "Negocio 360",
         "url": "https://www.facebook.com/Negocio360",
         "imagePath": "/imgs/orgs/negocio360.png"
     },
-    {
-        "id": 13,
+    "clinicasAzure": {
         "name": "Clinicas del azucar (Sugar clinics)",
         "url": "https://www.clinicasdelazucar.com/",
         "imagePath": "/imgs/orgs/clinicas-del-azucar.png"
     },
-    {
-        "id": 14,
+    "iknextia": {
         "name": "IKNEXTIA",
         "url": "https://www.facebook.com/iknextia",
         "imagePath": "/imgs/orgs/iknextia.png"
     },
-    {
-        "id": 15,
+    "dimex": {
         "name": "DIMEX",
         "url": "https://www.pinterest.com.mx/dimexmty/",
         "imagePath": "/imgs/orgs/dimex.png"
     },
-    {
-        "id": 16,
+    "cva": {
         "name": "CVA - Virtual Learning Center",
         "url": "http://www.centroscomunitariosdeaprendizaje.org.mx/",
         "imagePath": "/imgs/orgs/cva.png"
     }
-]
+}
