@@ -51,5 +51,5 @@ export const NavBar = function(props: NavBarProps) {
 }
 
 NavBar.defaultProps = {
-    id: v4()
+    id: `${NavBar.name}-${v4()}`
 }
