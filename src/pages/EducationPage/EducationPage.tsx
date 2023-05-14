@@ -1,6 +1,8 @@
+import moment from "moment";
+import { Link } from "react-router-dom";
 import { Fragment, useState } from "react";
 
-import { CertificateCard } from "components";
+import { Card, CardSink } from "components";
 import { fetchCertificates, fetchOrganizations } from "apis/public";
 
 import { Certificate, EducationPageProps } from "./EducationPage.d";
@@ -16,7 +18,7 @@ const fetchData = async function(): Promise<Array<Certificate>> {
             certificatePath: cert.certificatePath,
             issuers: organizations
                 .filter(org => cert.issuers.includes(org.id))
-                .sort((left, right) => left.id == "coursera"? 1 : 0)
+                .sort((left, right) => left.id === "coursera"? 1 : 0)
                 .map(org => ({
                     name: org.name,
                     url: org.url,
@@ -38,6 +40,12 @@ export const EducationPage = function(props: EducationPageProps) {
             .finally(() => setIsLoading(false));
     }
 
+    if (isLoading) {
+        return (
+            <div>Loading...</div>
+        );
+    }
+
     return (
         <Fragment>
             <section className="py-5 text-center container">
@@ -50,19 +58,22 @@ export const EducationPage = function(props: EducationPageProps) {
             <section className="container-fluid py-5 px-3 bg-light">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {
-                    isLoading?
-                    <div>Loading...</div>
-                    :
-                    certificates?.map(certificate => 
-                        <CertificateCard 
-                            title={certificate.name} 
-                            issuedAt={certificate.issuedDate} 
-                            src={certificate.issuers[0].imagePath} 
-                            issuers={certificate.issuers.map(i => ({
-                                name: i.name,
-                                url: i.url.toString()
-                            }))}/>
-                    )
+                    certificates?.map(certificate => (
+                        <Card
+                            title={certificate.name}
+                            subtitle={moment(certificate.issuedDate).format("MMMM YYYY")}
+                            src={certificate.issuers[0].imagePath}>
+                            <CardSink>
+                            {
+                                certificate.issuers.map(issuer => (
+                                    <Link to={issuer.url} target="_blank">
+                                        {issuer.name}
+                                    </Link>
+                                ))
+                            }
+                            </CardSink>
+                        </Card>
+                    ))
                 }
                 </div>
             </section>

@@ -1,4 +1,4 @@
-import * as types from "./types";
+import * as types from "./index.d";
 
 export const fetchCertificates = async function(): Promise<Array<types.Certificate>> {
     const res = await fetchSuccess("data/certificates.json");

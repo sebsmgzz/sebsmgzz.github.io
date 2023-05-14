@@ -1,4 +1,5 @@
 
-export { CarouselItem } from "./CarouselItem/CarouselItem";
+export { Card } from "./Card/Card";
+export { CardSink } from "./CardSink/CardSink";
 export { Carousel } from "./Carousel/Carousel";
-export { CertificateCard } from "./CertificateCard/CertificateCard";
+export { CarouselItem } from "./CarouselItem/CarouselItem";
