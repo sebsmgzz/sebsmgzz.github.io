@@ -19,9 +19,9 @@
         "url": "https://maven.apache.org/",
         "imagePath": "/imgs/feeds/maven.png"
     },
-    "graddle": {
-        "name": "Graddle",
+    "gradle": {
+        "name": "Gradle",
         "url": "https://gradle.org/",
-        "imagePath": "/imgs/feeds/graddle.png"
+        "imagePath": "/imgs/feeds/gradle.png"
     }
 }

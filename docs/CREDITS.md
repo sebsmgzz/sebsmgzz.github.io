@@ -20,7 +20,7 @@ Images
 
 ### Databases
 - cosmos
-- postgres
+- <a href="https://www.flaticon.com/free-icons/postgre" title="postgre icons">Postgre icons created by Freepik - Flaticon</a>
 - sql
 - sqlite
 
@@ -28,7 +28,7 @@ Images
 - nuget
 - npm
 - maven
-- graddle
+- gradle
 
 ### Flags
 - <a href="https://www.flaticon.com/free-icons/germany" title="germany icons">Germany icons created by Freepik - Flaticon</a>

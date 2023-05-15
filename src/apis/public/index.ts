@@ -3,11 +3,8 @@ import * as types from "./index.d";
 export const fetchCertificates = async function(): Promise<Array<types.Certificate>> {
     const res = await fetchSuccess("data/certificates.json");
     const json = await res.json() as Array<any>;
-    return json.map(val => ({
-        name: val["name"],
-        issuedDate: new Date(val["issuedDate"]),
-        certificatePath: val["certificatePath"],
-        issuers: val.issuers
+    return json.map(val => Object.assign(val, {
+        issuedDate: new Date(val["issuedDate"])
     }));
 }
 
@@ -16,12 +13,9 @@ export const fetchOrganizations = async function(): Promise<Array<types.Organiza
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -30,12 +24,9 @@ export const fetchClouds = async function(): Promise<Array<types.Cloud>> {
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -44,26 +35,20 @@ export const fetchDatabases = async function(): Promise<Array<types.Database>> {
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
 export const fetchFeeds = async function(): Promise<Array<types.Feed>> {
-    const res = await fetchSuccess("data/skills/databases.json");
+    const res = await fetchSuccess("data/skills/feeds.json");
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -72,10 +57,9 @@ export const fetchFrameworks = async function(): Promise<Array<types.Framework>>
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -84,12 +68,9 @@ export const fetchLanguages = async function(): Promise<Array<types.Language>> {
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -98,11 +79,9 @@ export const fetchLinguistics = async function(): Promise<Array<types.Linguistic
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -111,12 +90,9 @@ export const fetchSoftwares = async function(): Promise<Array<types.Software>> {
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 
@@ -125,12 +101,9 @@ export const fetchVersionControlSystems = async function(): Promise<Array<types.
     const json = await res.json();
     return Object.keys(json).map(key => {
         const value = json[key];
-        return {
-            id: key,
-            name: value["name"],
-            url: new URL(value["url"]),
-            imagePath: value["imagePath"]
-        };
+        return Object.assign(value, {
+            id: key
+        });
     });
 }
 

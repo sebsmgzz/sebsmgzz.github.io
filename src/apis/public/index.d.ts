@@ -36,7 +36,8 @@ export type Feed = {
 
 export type Framework = {
     id: string,
-    name: string
+    name: string,
+    imagePath: string
 }
 
 export type Language = {

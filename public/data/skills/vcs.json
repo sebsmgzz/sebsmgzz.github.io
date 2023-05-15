@@ -7,7 +7,7 @@
     "github": {
         "name": "GitHub",
         "url": "https://github.com/",
-        "imagePath": "/imgs/vcs/github.png"
+        "imagePath": "/imgs/vcs/gh.png"
     },
     "gitlab": {
         "name": "GitLab",

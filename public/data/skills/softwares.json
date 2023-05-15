@@ -15,7 +15,7 @@
         "name": "Visual Studio Code",
         "type": "ides",
         "url": "https://code.visualstudio.com/",
-        "imagePath": "/imgs/softwares/vscode.png"
+        "imagePath": "/imgs/softwares/vsc.png"
     },
     "postman": {
         "name": "Postman",
