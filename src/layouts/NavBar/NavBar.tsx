@@ -7,7 +7,7 @@ import "./NavBar.scss";
 
 export const NavBar = function(props: NavBarProps) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav className="navbar px-3 py-0 navbar-expand-lg navbar-dark bg-dark fixed-top">
 
             <Link className="navbar-brand mb-0 h1 px-1" to={endpoints.homePage}>
                 <img className="d-inline-block align-top" 
