@@ -48,7 +48,7 @@ export const SkillsPage = function(props: SkillsPageProps) {
     console.log(data?.feeds);
     return (
         <Fragment>
-            <section className="SkillsPageSection py-5 text-center container">
+            <section className="SkillsPageSection py-5 text-center container-fluid">
                 <div className="row py-lg">
                     <div className="col mx-auto">
                         <h1 className="fw-light">Skills, talents, expertise, and other knwoledgable areas</h1>

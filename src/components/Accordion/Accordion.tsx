@@ -12,9 +12,9 @@ export const Accordion = function(props: AccordionProps) {
 
     return (
         <AccordionContext.Provider value={{ accordionId: id }}>
-            <div className="container-fluid">
+            <div className="Accordion">
                 <div className="accordion" id={id}>
-                {props.children}
+                    {props.children}
                 </div>
             </div>
         </AccordionContext.Provider>

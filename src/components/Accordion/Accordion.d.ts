@@ -1,7 +1,7 @@
 import { AccordionItemProps } from "components";
 
 export type AccordionProps = {
-    children: AccordionItemProps[]
+    children: ReactElement<AccordionItemProps> | ReactElement<AccordionItemProps>[];
 }
 
 export type AccordionContextProps = {

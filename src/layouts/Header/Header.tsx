@@ -5,7 +5,7 @@ import "./Header.scss";
 
 export const Header = function(props: HeaderProps) {
     return (
-        <header className="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <header className="container-fluid d-flex flex-wrap justify-content-center my-3 border-bottom">
             <NavBar />
         </header>
     );

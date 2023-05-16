@@ -19,7 +19,7 @@ export const AccordionItem = function(props: AccordionItemProps) {
             bodyId: bodyId,
             headerId: headerId
         }}>
-            <div className="accordion-item">
+            <div className="AccordionItem accordion-item">
                 {props.children}
             </div>
         </AccordionItemContext.Provider>

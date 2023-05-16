@@ -9,7 +9,7 @@ export const AccordionHeader = function(props: AccordionHeaderProps) {
     const context = useContext(AccordionItemContext);
 
     return (
-        <h2 className="accordion-header" id={context.headerId}>
+        <h2 className="AccordionHeader accordion-header" id={context.headerId}>
             <button
                 className="accordion-button collapsed"
                 type="button"
@@ -17,11 +17,11 @@ export const AccordionHeader = function(props: AccordionHeaderProps) {
                 data-bs-target={`#${context.bodyId}`}
                 aria-expanded="false"
                 aria-controls={context.bodyId}>
-                <span>Accordion Item #2</span>
-                <div className="badges">
-                    <span className="badge rounded-pill bg-primary">Primary</span>
-                    <span className="badge rounded-pill bg-primary">Primary</span>
-                    <span className="badge rounded-pill bg-primary">Primary</span>
+                <div className="flex flex-column flex-grow-1 text-center">
+                    <div className="my-1">{props.title}</div>
+                    <div className="">
+                        {props.children}
+                    </div>
                 </div>
             </button>
         </h2>

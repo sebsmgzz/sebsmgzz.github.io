@@ -42,7 +42,7 @@ export const EducationPage = function(props: EducationPageProps) {
 
     return (
         <Fragment>
-            <section className="py-5 text-center container">
+            <section className="py-5 text-center container-fluid">
                 <div className="row py-lg">
                     <div className="col mx-auto">
                         <h1 className="fw-light">Certificates, degrees, badges and other diplomas</h1>

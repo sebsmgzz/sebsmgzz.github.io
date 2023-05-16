@@ -1,0 +1,70 @@
+
+.ProjectsPageSection .badge {
+    margin: 0 0.25rem;
+    --bs-bg-opacity: 1;
+    background-color: black;
+}
+
+.ProjectsPageSection .badge {
+    &.stack-python {
+        border-width: 10px;
+        border-color: #ffd03c;
+        background-color: #3472a4;
+    }
+    &.stack-csharp {
+        background-color: #5e2977;
+    }
+    &.stack-azure {
+        background-color: #0072c6;
+    }
+    &.stack-node {
+        background-color: #5eaf47;
+    }
+    &.stack-js {
+        background-color: #f0db4f;
+    }
+    &.stack-dotnet-core {
+        background-color: #ac99ea;
+    }
+    &.stack-docker {
+        background-color: #0091e2;
+    }
+    &.stack-kubernetes {
+        background-color: #316ce6;
+    }
+    &.stack-rabbit-mq  {
+        background-color: #ff6600;
+    }
+    &.stack-github  {
+        background-color: #323131;
+        color: white;
+    }    
+    &.stack-xamarin {
+        background-color: #3199dc;
+    }
+    &.stack-ai {
+        background-color: #572f5f;
+    }
+    &.stack-java {
+        background-color: #e66a00;
+    }
+    &.stack-cosmos {
+        background-color: #99cae3;
+    }
+    &.stack-gcp {
+        background-color: #34a853;
+    }
+    &.stack-react {
+        background-color: #52c3f2;
+    }
+    &.stack-powerbi {
+        background-color: #f1c911;
+    }
+    &.stack-cpp {
+        background-color: #00599d;
+    }
+}
+
+.ProjectsPageSection .text-justify {
+    text-align: justify;
+}
