@@ -66,3 +66,11 @@ export type VersionControlSystem = {
     url: URL,
     imagePath: string
 }
+
+export type Project = {
+    name: string,
+    useCase: string,
+    description: string,
+    startDate: Date,
+    stacks: string[]
+}

@@ -107,6 +107,14 @@ export const fetchVersionControlSystems = async function(): Promise<Array<types.
     });
 }
 
+export const fetchProjects = async function(): Promise<Array<types.Project>> {
+    const res = await fetchSuccess("data/projects.json");
+    const json = await res.json() as Array<any>;
+    return json.map(val => Object.assign(val, {
+        startDate: new Date(val["startDate"])
+    }));
+}
+
 const fetchSuccess = async function(url: string, status: number = 200): Promise<Response> {    
     const response = await fetch(url);
     if (response.status !== status) {
