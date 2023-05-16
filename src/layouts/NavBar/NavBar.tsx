@@ -18,9 +18,6 @@ export const NavBar = function(props: NavBarProps) {
                     src="favicon.ico" 
                     alt="" loading="lazy" 
                     width="30" height="30" />
-                <span className="px-1 align-middle">
-                    Home
-                </span>
             </Link>
 
             <button className="navbar-toggler collapsed mx-3 px-2"

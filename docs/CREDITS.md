@@ -1,6 +1,7 @@
 
 Images
 ------
+<a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
 
 ### Cloud
 - aws
