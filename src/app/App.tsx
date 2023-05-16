@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { endpoints } from "global/constants";
-import { Layout } from "layouts";
+import * as routes from "global/routes";
 import * as pages from "pages";
+import { Layout } from "layouts";
 
 import "./App.scss";
 
@@ -10,21 +10,21 @@ export const App = function() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path={endpoints.homePage} element={<Layout />}>
+				<Route path={routes.homePage} element={<Layout />}>
 					<Route 
-						path={endpoints.homePage} 
+						path={routes.homePage} 
 						element={<pages.HomePage />} />
 					<Route 
-						path={endpoints.contactPage} 
+						path={routes.contactPage} 
 						element={<pages.ContactPage />} />
 					<Route 
-						path={endpoints.educationPage} 
+						path={routes.educationPage} 
 						element={<pages.EducationPage />} />
 					<Route 
-						path={endpoints.projectsPage}
+						path={routes.projectsPage}
 						element={<pages.ProjectsPage />} />
 					<Route 
-						path={endpoints.skillsPage} 
+						path={routes.skillsPage} 
 						element={<pages.SkillsPage />} />
 				</Route>
 			</Routes>
