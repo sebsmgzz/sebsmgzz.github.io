@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import { Fragment } from "react";
 
 import * as routes from "global/routes";
-import { urls } from "global/constants";
+import { my, urls } from "global/constants";
 import { Header, Main, Footer, NavBar, NavBarLink } from "layouts";
 import { LayoutProps } from "./Layout.d";
 import "./Layout.scss";
@@ -22,20 +21,12 @@ export const Layout = function(props: LayoutProps) {
 
             <Main />
 
-            <Footer copyright="© 2023 Sebastián M. Gzz.">
-                <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li className="ms-3">
-                        <Link to={urls.linkedin} className="linkedin" target="_blank">
-                            <i className="bi bi-linkedin"></i>
-                        </Link>
-                    </li>
-                    <li className="ms-3">
-                        <Link to={urls.github} className="github" target="_blank">
-                            <i className="bi bi-github"></i>
-                        </Link>
-                    </li>
-                </ul>
-            </Footer>
+            <Footer 
+                copyright={`© 2023 ${my.shortName}`} 
+                phoneNumber={my.phoneNumber}
+                email={my.email}
+                linkedin={urls.linkedin}
+                github={urls.github}/>
 
         </Fragment>
     );
