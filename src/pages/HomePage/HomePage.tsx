@@ -15,12 +15,24 @@ export const HomePage = function(props: HomePageProps) {
                         alt="Bootstrap Themes" 
                         loading="lazy" />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 d-flex flex-column align-items-center">
                     <h1 className="display-5 fw-bold lh-1 mb-3 text-center">Sebastián M. Gzz.</h1>
                     <p className="lead text-center">Cloud architect</p>
                     <p className="lead text-center">Technical consultor</p>
                     <p className="lead text-center">Full stack developer</p>
                     <p className="lead text-center">Electric engineer</p>
+
+                    <div className="d-flex flex-row justify-content-evenly w-100">
+                        <button className="btn btn-outline-primary" type="button" >
+                            <span className="px-2">Download CV</span>
+                            <i className="bi bi-file-earmark-arrow-down-fill"></i>
+                        </button>
+                        <button className="btn btn-outline-success" type="button" >
+                            <span className="px-2">Hire me</span>
+                            <i className="bi bi-arrow-up-right-square"></i>
+                        </button>
+                    </div>
+                    
                 </div>
                 
             </div>
