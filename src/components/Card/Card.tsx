@@ -1,6 +1,4 @@
 
-import { CardSink } from "components";
-
 import { CardProps } from "./Card.d";
 import "./Card.scss";
 
@@ -12,9 +10,8 @@ export const Card = function(props: CardProps) {
                 <img src={props.src} className="card-img-top" alt={props.title} />
                 <div className="card-body">
                                     
-                    <h5 className="card-title">{props.title}</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary text-muted">{props.subtitle}</h6>
-
+                    <h6 className="card-subtitle p-2 mb-2 text-end text-body-secondary text-muted">{props.subtitle}</h6>
+                    <h5 className="card-title text-center">{props.title}</h5>
                     {props.children}
                     
                 </div>

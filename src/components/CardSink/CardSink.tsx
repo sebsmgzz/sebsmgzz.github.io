@@ -7,7 +7,7 @@ export const CardSink = function(props: CardSinkProps) {
         <ul className="list-group list-group-flush">
         {
             props.children?.map((child, index) => (
-                <li className="list-group-item" key={index}>
+                <li className="list-group-item text-center" key={index}>
                     {child}
                 </li>
             ))

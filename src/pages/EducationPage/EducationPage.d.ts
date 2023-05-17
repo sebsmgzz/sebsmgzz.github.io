@@ -1,18 +1,11 @@
-export { Certificate, Organization } from "apis/local";
+export { Certificate, Organization } from "apis/local.d";
 
 export type EducationPageProps = {
 
 }
 
 export type EducationPageData = {
-    certificates: Array<Certificate & {
-        issuers: Array<{ 
-            id: string,
-            name: string,
-            url: URL,
-            imagePath: string
-        }>
-    }>
+    certificates: Array<CertificateData>
 }
 
 export type CertificateData = Certificate & {

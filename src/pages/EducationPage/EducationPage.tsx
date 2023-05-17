@@ -56,7 +56,7 @@ export const EducationPage = function(props: EducationPageProps) {
                     data?.certificates.map(certificate => (
                         <Card
                             key={certificate.id}
-                            title={certificate.name}
+                            title={certificate.title}
                             subtitle={moment(certificate.issuedDate).format("MMMM YYYY")}
                             src={certificate.issuers[0].imagePath}>
                             <CardSink>
