@@ -1,77 +1,77 @@
 {
     "wpf": {
         "name": "WPF",
-        "language": "csharp",
+        "codingLanguageId": "csharp",
         "imagePath": "/imgs/frameworks/wpf.png"
     },
     "xamarin": {
         "name": "Xamarin",
-        "language": "csharp",
+        "codingLanguageId": "csharp",
         "imagePath": "/imgs/frameworks/xamarin.png"
     },
     "unity": {
         "name": "Unity",
-        "language": "csharp",
+        "codingLanguageId": "csharp",
         "imagePath": "/imgs/frameworks/unity.png"
     },
     "entityFramework": {
         "name": "Entity framework",
-        "language": "csharp",
+        "codingLanguageId": "csharp",
         "imagePath": "/imgs/frameworks/entity-framework.png"
     },
     "dapper": {
         "name": "Dapper",
-        "language": "csharp",
+        "codingLanguageId": "csharp",
         "imagePath": "/imgs/frameworks/dapper.png"
     },
     "node": {
         "name": "Node.js",
-        "language": "js",
+        "codingLanguageId": "js",
         "imagePath": "/imgs/frameworks/node.png"
     },
     "react": {
         "name": "React",
-        "language": "js",
+        "codingLanguageId": "js",
         "imagePath": "/imgs/frameworks/react.png"
     },
     "vue": {
         "name": "Vue.js",
-        "language": "js",
+        "codingLanguageId": "js",
         "imagePath": "/imgs/frameworks/vue.png"
     },
     "angular": {
         "name": "Angular",
-        "language": "js",
+        "codingLanguageId": "js",
         "imagePath": "/imgs/frameworks/angular.png"
     },
     "javafx": {
         "name": "JavaFX",
-        "language": "java",
+        "codingLanguageId": "java",
         "imagePath": "/imgs/frameworks/javafx.png"
     },
     "android": {
         "name": "Android",
-        "language": "java",
+        "codingLanguageId": "java",
         "imagePath": "/imgs/frameworks/android.png"
     },
     "jetpack": {
         "name": "Jetpack compose",
-        "language": "kotlin",
+        "codingLanguageId": "kotlin",
         "imagePath": "/imgs/frameworks/jetpack-compose.png"
     },
     "flask": {
         "name": "Flask",
-        "language": "python",
+        "codingLanguageId": "python",
         "imagePath": "/imgs/frameworks/flask.png"
     },
     "django": {
         "name": "Django",
-        "language": "python",
+        "codingLanguageId": "python",
         "imagePath": "/imgs/frameworks/django.png"
     },
     "bootstrap": {
         "name": "Bootstrap",
-        "language": "css",
+        "codingLanguageId": "css",
         "imagePath": "/imgs/frameworks/bootstrap.png"
     }
 }

@@ -3,22 +3,23 @@ import { Link } from "react-router-dom";
 import { Fragment, useState } from "react";
 
 import { Card, CardSink, Spinner } from "components";
-import { fetchCertificates, fetchOrganizations } from "apis/public";
+import { fetchAllCertificates, fetchAllOrganizations } from "apis/local";
 
-import { EducationPageProps, EducationPageData } from "./EducationPage.d";
+import { EducationPageProps, EducationPageData, IssuerData } from "./EducationPage.d";
 import "./EducationPage.scss";
 
 const fetchData = async function(): Promise<EducationPageData> {
-    const certificates = await fetchCertificates();
-    const organizations = await fetchOrganizations();
+    const certificates = await fetchAllCertificates();
+    const organizations = await fetchAllOrganizations();
     return {
         certificates: certificates
-            .map(cert => Object.assign(cert, {
+            .map(certificate => Object.assign(certificate, {
                 issuers: organizations
-                    .filter(org => cert.issuers.includes(org.id))
+                    .filter(org => certificate.organizationsIds.includes(org.id))
                     .sort((left, right) => left.id === "coursera" ? 1 : 0)
+                    .map(organization => organization as IssuerData)
             }))
-            .sort((left, right) => right.issuedDate.getTime() - left.issuedDate.getTime())
+            .sort((left, right) => right.issuedAt.getTime() - left.issuedAt.getTime())
     };
 }
 
@@ -54,13 +55,14 @@ export const EducationPage = function(props: EducationPageProps) {
                 {
                     data?.certificates.map(certificate => (
                         <Card
+                            key={certificate.id}
                             title={certificate.name}
                             subtitle={moment(certificate.issuedDate).format("MMMM YYYY")}
                             src={certificate.issuers[0].imagePath}>
                             <CardSink>
                             {
                                 certificate.issuers.map(issuer => (
-                                    <Link to={issuer.url} target="_blank">
+                                    <Link to={issuer.url} target="_blank" key={issuer.id}>
                                         {issuer.name}
                                     </Link>
                                 ))

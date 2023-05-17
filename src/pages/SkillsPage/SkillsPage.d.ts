@@ -1,4 +1,4 @@
-import { Cloud, Database, Feed, Framework, Language, Linguistic, Software, VersionControlSystem } from "apis/public/index.d";
+import { Cloud, Database, Feed, Framework, Language, Linguistic, Software, VersionControlSystem } from "apis/local";
 
 export type SkillsPageProps = {
 

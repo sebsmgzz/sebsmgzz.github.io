@@ -1,16 +1,10 @@
 
 export type Certificate = {
-    name: string,
-    issuedDate: Date,
-    certificatePath: string,
-    issuers: string[]
-}
-
-export type Organization = {
-    id: string,
-    name: string,
-    url: URL,
-    imagePath: string
+    id: number,
+    title: string,
+    issuedAt: Date,
+    path: string,
+    organizationsIds: string[]
 }
 
 export type Cloud = {
@@ -18,6 +12,21 @@ export type Cloud = {
     name: string,
     url: URL,
     imagePath: string
+}
+
+export type CodingLanguage = {
+    id: string,
+    name: string,
+    type: CodingLanguageType,
+    url: URL,
+    imagePath: string
+}
+
+export enum CodingLanguageType {
+    Programming,
+    Markup,
+    Spreadsheet,
+    Shell
 }
 
 export type Database = {
@@ -37,27 +46,46 @@ export type Feed = {
 export type Framework = {
     id: string,
     name: string,
+    codingLanguageId: string,
     imagePath: string
 }
 
-export type Language = {
+export type LinguisticLanguage = {
+    id: string,
+    name: string,
+    imagePath: string
+}
+
+export type Organization = {
     id: string,
     name: string,
     url: URL,
     imagePath: string
 }
 
-export type Linguistic = {
-    id: string,
+export type Projects = {
+    id: number,
     name: string,
-    imagePath: string
+    useCase: string,
+    description: string,
+    startDate: Date,
+    stacks: string[]
 }
 
 export type Software = {
     id: string,
     name: string,
+    type: SoftwareType,
     url: URL,
     imagePath: string
+} 
+
+export enum SoftwareType {
+    Virtualization,
+    IDEs,
+    Misc,
+    Databases,
+    CAD
 }
 
 export type VersionControlSystem = {
@@ -65,12 +93,4 @@ export type VersionControlSystem = {
     name: string,
     url: URL,
     imagePath: string
-}
-
-export type Project = {
-    name: string,
-    useCase: string,
-    description: string,
-    startDate: Date,
-    stacks: string[]
 }

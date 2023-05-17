@@ -1,13 +1,13 @@
 import { Fragment, useState } from "react";
 import moment from "moment";
-import { fetchProjects } from "apis/public";
+import { fetchAllProjects } from "apis/local";
 
 import { Accordion, AccordionItem, AccordionHeader, AccordionBody, Spinner } from "components";
 import { ProjectsPageProps, ProjectsPageData } from "./ProjectsPage.d";
 import "./ProjectsPage.scss";
 
 const fetchData = async function(): Promise<ProjectsPageData> {
-    const projects = await fetchProjects();
+    const projects = await fetchAllProjects();
     return { projects };
 }
 

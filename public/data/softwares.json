@@ -25,25 +25,25 @@
     },
     "ads": {
         "name": "Azure data studio",
-        "type": "databaseClients",
+        "type": "databases",
         "url": "https://azure.microsoft.com/en-us/products/data-studio/",
         "imagePath": "/imgs/softwares/ads.png"
     },
     "ssms": {
         "name": "SQL server managment studio",
-        "type": "databaseClients",
+        "type": "databases",
         "url": "https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio",
         "imagePath": "/imgs/softwares/ssms.png"
     },
     "solidworks": {
         "name": "Solidworks",
-        "type": "CAD",
+        "type": "cad",
         "url": "https://www.solidworks.com/",
         "imagePath": "/imgs/softwares/solidworks.png"
     },
     "creo": {
         "name": "CREO",
-        "type": "CAD",
+        "type": "cad",
         "url": "https://www.ptc.com/en/products/creo/",
         "imagePath": "/imgs/softwares/creo.png"
     },

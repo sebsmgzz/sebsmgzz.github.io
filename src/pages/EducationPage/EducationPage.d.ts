@@ -1,18 +1,26 @@
-import { Certificate } from "apis/public/index.d";
+export { Certificate, Organization } from "apis/local";
 
 export type EducationPageProps = {
 
 }
 
 export type EducationPageData = {
-    certificates: Array<EducationPageCertificate>
+    certificates: Array<Certificate & {
+        issuers: Array<{ 
+            id: string,
+            name: string,
+            url: URL,
+            imagePath: string
+        }>
+    }>
 }
 
-export type EducationPageCertificate = Omit<Certificate, "issuers"> & {
-    issuers: Array<EducationPageIssuer>
+export type CertificateData = Certificate & {
+    issuers: Array<IssuerData>
 }
 
-export type EducationPageIssuer = { 
+export type IssuerData = { 
+    id: string,
     name: string,
     url: URL,
     imagePath: string

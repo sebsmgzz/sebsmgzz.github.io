@@ -1,30 +1,28 @@
-
 import { Fragment, useState } from "react";
 
-import * as publicApi from "apis/public";
+import * as localApi from "apis/local";
 import { Spinner } from "components";
-
 import { SkillsPageProps, SkillsPageData } from "./SkillsPage.d";
 import "./SkillsPage.scss";
 
 const fetchData = async function(): Promise<SkillsPageData> {
-    const clouds = await publicApi.fetchClouds();
-    const databases = await publicApi.fetchDatabases();
-    const feeds = await publicApi.fetchFeeds();
-    const frameworks = await publicApi.fetchFrameworks();
-    const languages = await publicApi.fetchLanguages();
-    const linguistics = await publicApi.fetchLinguistics();
-    const softwares = await publicApi.fetchSoftwares();
-    const vcs = await publicApi.fetchVersionControlSystems();
+    const clouds = await localApi.fetchAllClouds();
+    const databases = await localApi.fetchAllDatabases();
+    const feeds = await localApi.fetchAllFeeds();
+    const frameworks = await localApi.fetchAllFrameworks();
+    const codingLanguages = await localApi.fetchAllCodingLanguages();
+    const linguisticLanguage = await localApi.fetchAllLinguisticLanguages();
+    const softwares = await localApi.fetchAllSoftwares();
+    const versionControlSystem = await localApi.fetchAllVersionControlSystems();
     return { 
         clouds,
         databases,
         feeds,
         frameworks,
-        languages,
-        linguistics,
+        languages: codingLanguages,
+        linguistics: linguisticLanguage,
         softwares,
-        vcs
+        vcs: versionControlSystem
     };
 }
 
