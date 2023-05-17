@@ -11,7 +11,7 @@ export const Layout = function(props: LayoutProps) {
 		<Fragment>
             
             <Header>
-                <NavBar src="favicon.ico" root={routes.homePage}>
+                <NavBar title="Sebastián" src="favicon.ico" root={routes.homePage}>
                     <NavBarLink route={routes.educationPage}>Education</NavBarLink>
                     <NavBarLink route={routes.projectsPage}>Projects</NavBarLink>
                     <NavBarLink route={routes.skillsPage}>Skills</NavBarLink>
