@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Fragment } from "react";
 
 import * as routes from "global/routes";
-import * as urls from "global/urls";
+import { urls } from "global/constants";
 import { Header, Main, Footer, NavBar, NavBarLink } from "layouts";
 import { LayoutProps } from "./Layout.d";
 import "./Layout.scss";
