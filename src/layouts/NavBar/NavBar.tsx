@@ -33,9 +33,7 @@ export const NavBar = function(props: NavBarProps) {
                 aria-expanded="false" 
                 aria-label="Toggle navigation"
                 type="button">
-                <span className="navbar-toggler-icon">
-                    <i className="bi bi-list"></i>
-                </span>
+                <span className="navbar-toggler-icon" />
             </button>
 
             <div className="navbar-collapse collapse justify-content-end" id={id}>
