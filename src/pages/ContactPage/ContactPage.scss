@@ -1,28 +1,30 @@
 
+.ContactPageSection a {
+    text-decoration: none;
+    color: unset;
+}
+
 .ContactPageSection .bi {
     font-size: 2.5rem;
+    &.bi-geo-alt-fill {
+        color: red;
+    }
+    &.bi-telephone-fill {
+        color: green;
+    }
+    &.bi-envelope-fill {
+        color: #006ec3;
+    }
+    &.bi-linkedin {
+        color: blue;
+    }
+    &.bi-github {
+        color: black;
+    }
 }
 
 .ContactPageSection .list-group-item {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.ContactPageSection {
-    .list-group-item:nth-of-type(1) .bi {
-        color: red;
-    }
-    .list-group-item:nth-of-type(2) .bi {
-        color: green;
-    }
-    .list-group-item:nth-of-type(3) .bi {
-        color: #006ec3;
-    }
-    .list-group-item:nth-of-type(4) .bi {
-        color: blue;
-    }
-    .list-group-item:nth-of-type(5) .bi {
-        color: black;
-    }
 }

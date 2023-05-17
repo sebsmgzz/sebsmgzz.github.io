@@ -24,7 +24,7 @@ export const Footer = function(props: FooterProps) {
                     </li>
                 </ul>
                 <div>
-                    <a className="mx-3 text-muted" href={`https://wa.me/${props.phoneNumber}`} target="_blank">
+                    <a className="mx-3 text-muted" href={props.phoneUrl} target="_blank">
                         {formatPhoneNumber(props.phoneNumber)}
                     </a>
                     <i className="bi bi-telephone-fill"></i>

@@ -24,6 +24,7 @@ export const Layout = function(props: LayoutProps) {
             <Footer 
                 copyright={`© 2023 ${my.shortName}`} 
                 phoneNumber={my.phoneNumber}
+                phoneUrl={urls.whatapp}
                 email={my.email}
                 linkedin={urls.linkedin}
                 github={urls.github}/>

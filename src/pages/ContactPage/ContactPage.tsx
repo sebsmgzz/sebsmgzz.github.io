@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 
+import { my, urls } from "global/constants";
+import { formatPhoneNumber } from "utils/strings";
 import { ContactPageProps } from "./ContactPage.d";
 import "./ContactPage.scss";
 
@@ -21,27 +23,37 @@ export const ContactPage = function(props: ContactPageProps) {
 
                             <li className="list-group-item">
                                 <i className="bi bi-geo-alt-fill"></i>
-                                <span className="mx-3">Monterrey, N.L., México</span>
+                                <a className="mx-3" href={urls.location} target="_blank">
+                                    Monterrey, N.L., México
+                                </a>
                             </li>
 
                             <li className="list-group-item">
                                 <i className="bi bi-telephone-fill"></i>
-                                <span className="mx-3">+52 826 2615753</span>
+                                <a className="mx-3" href={urls.whatapp} target="_blank">
+                                    {formatPhoneNumber(my.phoneNumber)}
+                                </a>
                             </li>
 
                             <li className="list-group-item">
                                 <i className="bi bi-envelope-fill"></i>
-                                <span className="mx-3">sebastian.mgzz@outlook.com</span>
+                                <a className="mx-3" href={`mailto:${my.email}`} target="_blank">
+                                    {my.email}
+                                </a>
                             </li>
 
                             <li className="list-group-item">
                                 <i className="bi bi-linkedin"></i>
-                                <span className="mx-3">LinkedIn</span>
+                                <a className="mx-3" href={urls.linkedin} target="_blank">
+                                    LinkedIn
+                                </a>
                             </li>
 
                             <li className="list-group-item">
                                 <i className="bi bi-github"></i>
-                                <span className="mx-3">GitHub</span>
+                                <a className="mx-3" href={urls.github} target="_blank">
+                                    GitHub
+                                </a>
                             </li>
 
                         </ul>
