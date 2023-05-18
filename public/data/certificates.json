@@ -1,0 +1,38 @@
+{
+    "0": {
+        "title": "C# Programming for Unity Game Development Specialization",
+        "issuedAt": "2020-09-01T05:00:00.000Z",
+        "path": "/docs/credentials/unity-specialization.pdf",
+        "organizationsIds": [ "uoc", "coursera" ]
+    },
+    "1": {
+        "title": "Mechanic Electrics Bachelor Degree",
+        "issuedAt": "2020-07-01T05:00:00.000Z",
+        "path": "https://certificados.tec.mx/certificate/79f3d4311a675d24acf4f6eea9f290ce",
+        "organizationsIds": [ "itesm" ]
+    },
+    "2": {
+        "title": "IT Fundamentals for Cybersecurity Specialization",
+        "issuedAt": "2020-07-01T05:00:00.000Z",
+        "path": "/docs/credentials/cybersecurity-specialization.pdf",
+        "organizationsIds": [ "ibm", "coursera" ]
+    },
+    "3": {
+        "title": "Python for Everbody Specialization",
+        "issuedAt": "2020-06-01T05:00:00.000Z",
+        "path": "/docs/credentials/python-specialization.pdf",
+        "organizationsIds": [ "uom", "coursera" ]
+    },
+    "4": {
+        "title": "PHP Course",
+        "issuedAt": "2020-06-01T05:00:00.000Z",
+        "path": "/docs/credentials/php-zero.pdf",
+        "organizationsIds": [ "tecGurus" ]
+    },
+    "5": {
+        "title": "Web Design Course",
+        "issuedAt": "2020-04-01T06:00:00.000Z",
+        "path": "/docs/credentials/web-design.pdf",
+        "organizationsIds": [ "tecGurus" ]
+    }
+}

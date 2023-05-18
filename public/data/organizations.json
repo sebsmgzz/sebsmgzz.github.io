@@ -1,0 +1,87 @@
+{
+    "uoc": {
+        "name": "University of Colorado",
+        "url": "https://www.colorado.edu/",
+        "imagePath": "/imgs/organizations/uni-of-colorado.png"
+    },
+    "coursera": {
+        "name": "Coursera",
+        "url": "https://www.coursera.org/",
+        "imagePath": "/imgs/organizations/coursera.png"
+    },
+    "itesm": {
+        "name": "Instituto Tecnologico de Estudios Superiores de Monterrey",
+        "url": "https://tec.mx/en",
+        "imagePath": "/imgs/organizations/itesm.png"
+    },
+    "ibm": {
+        "name": "IBM",
+        "url": "https://www.ibm.com",
+        "imagePath": "/imgs/organizations/ibm.png"
+    },
+    "uom": {
+        "name": "University of Michigan",
+        "url": "https://umich.edu/",
+        "imagePath": "/imgs/organizations/uni-of-michigan.png"
+    },
+    "tecGurus": {
+        "name": "Tec Gurus",
+        "url": "https://www.tecgurus.net/",
+        "imagePath": "/imgs/organizations/tecgurus.png"
+    },
+    "jd": {
+        "name": "John Deere",
+        "url": "https://www.deere.com/en/index.html",
+        "imagePath": "/imgs/organizations/john-deere.png"
+    },
+    "bioana": {
+        "name": "Bioana",
+        "url": "http://www.bioana.com.mx/",
+        "imagePath": "/imgs/organizations/bioana.png"
+    },
+    "bmes": {
+        "name": "BioMedial Engineer Society",
+        "url": "https://www.bmes.org/",
+        "imagePath": "/imgs/organizations/bmes.png"
+    },
+    "tecsalud": {
+        "name": "Medical and Wellness Sciences Shcool",
+        "url": "http://escuelademedicina.tec.mx/",
+        "imagePath": "/imgs/organizations/tec-salud.png"
+    },
+    "ideea": {
+        "name": "International Design & Engineering Education Association",
+        "url": "https://ideea.network/",
+        "imagePath": "/imgs/organizations/ideea.png"
+    },
+    "prepanet": {
+        "name": "PrepaNet @NET",
+        "url": "http://sitios.itesm.mx/prepanet/",
+        "imagePath": "/imgs/organizations/prepanet.png"
+    },
+    "n360": {
+        "name": "Negocio 360",
+        "url": "https://www.facebook.com/Negocio360",
+        "imagePath": "/imgs/organizations/negocio360.png"
+    },
+    "clinicasAzure": {
+        "name": "Clinicas del azucar (Sugar clinics)",
+        "url": "https://www.clinicasdelazucar.com/",
+        "imagePath": "/imgs/organizations/clinicas-del-azucar.png"
+    },
+    "iknextia": {
+        "name": "IKNEXTIA",
+        "url": "https://www.facebook.com/iknextia",
+        "imagePath": "/imgs/organizations/iknextia.png"
+    },
+    "dimex": {
+        "name": "DIMEX",
+        "url": "https://www.pinterest.com.mx/dimexmty/",
+        "imagePath": "/imgs/organizations/dimex.png"
+    },
+    "cva": {
+        "name": "CVA - Virtual Learning Center",
+        "url": "http://www.centroscomunitariosdeaprendizaje.org.mx/",
+        "imagePath": "/imgs/organizations/cva.png"
+    }
+}

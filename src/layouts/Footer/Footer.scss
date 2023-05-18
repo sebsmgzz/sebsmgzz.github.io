@@ -1,0 +1,23 @@
+
+.Footer .bi {
+    font-size: px;
+
+    &.bi-envelope-fill {
+        color: #006ec3;
+    }
+    &.bi-telephone-fill {
+        color: green;
+    }
+    &.bi-linkedin {
+        color: blue;
+    }
+
+    &.bi-github { 
+        color: black;
+    }
+    
+}
+
+.Footer a {
+    text-decoration: none;
+}

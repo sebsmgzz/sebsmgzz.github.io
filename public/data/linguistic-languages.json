@@ -1,0 +1,18 @@
+{
+    "spanish": {
+        "name": "Spanish",
+        "imagePath": "/imgs/linguistics/mexico.png"
+    },
+    "english": {
+        "name": "English",
+        "imagePath": "/imgs/linguistics/usa.png"
+    },
+    "italian": {
+        "name": "Italian",
+        "imagePath": "/imgs/linguistics/italy.png"
+    },
+    "german": {
+        "name": "German",
+        "imagePath": "/imgs/linguistics/germany.png"
+    }
+}
