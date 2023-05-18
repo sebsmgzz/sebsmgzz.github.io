@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import * as routes from "global/routes";
 import * as pages from "pages";
@@ -8,7 +8,7 @@ import "./App.scss";
 
 export const App = function() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path={routes.homePage} element={<Layout />}>
 					<Route 
@@ -28,6 +28,6 @@ export const App = function() {
 						element={<pages.SkillsPage />} />
 				</Route>
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
