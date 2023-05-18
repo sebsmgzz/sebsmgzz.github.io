@@ -38,6 +38,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+      - name: Test
+        run: echo $GITHUB_TOKEN
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
