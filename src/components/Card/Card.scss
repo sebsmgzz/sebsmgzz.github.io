@@ -1,0 +1,17 @@
+
+.CertificateCard img {
+    height: 10rem;
+    object-fit: contain;
+}
+
+.CertificateCard a {
+    text-decoration: none;
+}
+
+.CertificateCard a:hover {
+    text-decoration: underline;
+}
+
+.CertificateCard .list-group-item {
+    padding: 0;
+}

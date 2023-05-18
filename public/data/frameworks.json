@@ -1,0 +1,77 @@
+{
+    "wpf": {
+        "name": "WPF",
+        "codingLanguageId": "csharp",
+        "imagePath": "/imgs/frameworks/wpf.png"
+    },
+    "xamarin": {
+        "name": "Xamarin",
+        "codingLanguageId": "csharp",
+        "imagePath": "/imgs/frameworks/xamarin.png"
+    },
+    "unity": {
+        "name": "Unity",
+        "codingLanguageId": "csharp",
+        "imagePath": "/imgs/frameworks/unity.png"
+    },
+    "entityFramework": {
+        "name": "Entity framework",
+        "codingLanguageId": "csharp",
+        "imagePath": "/imgs/frameworks/entity-framework.png"
+    },
+    "dapper": {
+        "name": "Dapper",
+        "codingLanguageId": "csharp",
+        "imagePath": "/imgs/frameworks/dapper.png"
+    },
+    "node": {
+        "name": "Node.js",
+        "codingLanguageId": "js",
+        "imagePath": "/imgs/frameworks/node.png"
+    },
+    "react": {
+        "name": "React",
+        "codingLanguageId": "js",
+        "imagePath": "/imgs/frameworks/react.png"
+    },
+    "vue": {
+        "name": "Vue.js",
+        "codingLanguageId": "js",
+        "imagePath": "/imgs/frameworks/vue.png"
+    },
+    "angular": {
+        "name": "Angular",
+        "codingLanguageId": "js",
+        "imagePath": "/imgs/frameworks/angular.png"
+    },
+    "javafx": {
+        "name": "JavaFX",
+        "codingLanguageId": "java",
+        "imagePath": "/imgs/frameworks/javafx.png"
+    },
+    "android": {
+        "name": "Android",
+        "codingLanguageId": "java",
+        "imagePath": "/imgs/frameworks/android.png"
+    },
+    "jetpack": {
+        "name": "Jetpack compose",
+        "codingLanguageId": "kotlin",
+        "imagePath": "/imgs/frameworks/jetpack-compose.png"
+    },
+    "flask": {
+        "name": "Flask",
+        "codingLanguageId": "python",
+        "imagePath": "/imgs/frameworks/flask.png"
+    },
+    "django": {
+        "name": "Django",
+        "codingLanguageId": "python",
+        "imagePath": "/imgs/frameworks/django.png"
+    },
+    "bootstrap": {
+        "name": "Bootstrap",
+        "codingLanguageId": "css",
+        "imagePath": "/imgs/frameworks/bootstrap.png"
+    }
+}

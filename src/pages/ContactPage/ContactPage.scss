@@ -1,0 +1,30 @@
+
+.ContactPageSection a {
+    text-decoration: none;
+    color: unset;
+}
+
+.ContactPageSection .bi {
+    font-size: 2.5rem;
+    &.bi-geo-alt-fill {
+        color: red;
+    }
+    &.bi-telephone-fill {
+        color: green;
+    }
+    &.bi-envelope-fill {
+        color: #006ec3;
+    }
+    &.bi-linkedin {
+        color: blue;
+    }
+    &.bi-github {
+        color: black;
+    }
+}
+
+.ContactPageSection .list-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
