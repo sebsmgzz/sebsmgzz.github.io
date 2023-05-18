@@ -1,4 +1,4 @@
-export { Certificate, Organization } from "apis/local.d";
+export { Certificate, Organization } from "apis/data.d";
 
 export type EducationPageProps = {
 
@@ -15,6 +15,6 @@ export type CertificateData = Certificate & {
 export type IssuerData = { 
     id: string,
     name: string,
-    url: URL,
+    refUrl: URL,
     imagePath: string
 }

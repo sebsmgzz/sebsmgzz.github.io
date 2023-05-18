@@ -1,0 +1,32 @@
+[
+    {
+        "id": "git",
+        "name": "Git",
+        "refUrl": "https://git-scm.com/",
+        "imagePath": "/imgs/vcss/git.png"
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "refUrl": "https://github.com/",
+        "imagePath": "/imgs/vcss/gh.png"
+    },
+    {
+        "id": "gitlab",
+        "name": "GitLab",
+        "refUrl": "https://about.gitlab.com/",
+        "imagePath": "/imgs/vcss/gitlab.png"
+    },
+    {
+        "id": "ado",
+        "name": "Azure DevOps",
+        "refUrl": "https://azure.microsoft.com/en-us/products/devops/",
+        "imagePath": "/imgs/vcss/ado.png"
+    },
+    {
+        "id": "bitbucket",
+        "name": "Bitbuket",
+        "refUrl": "https://bitbucket.org/",
+        "imagePath": "/imgs/vcss/bitbucket.png"
+    }
+]

@@ -1,77 +1,92 @@
-{
-    "wpf": {
+[
+    {
+        "id": "wpf",
         "name": "WPF",
-        "codingLanguageId": "csharp",
+        "code": "csharp",
         "imagePath": "/imgs/frameworks/wpf.png"
     },
-    "xamarin": {
+    {
+        "id": "xamarin",
         "name": "Xamarin",
-        "codingLanguageId": "csharp",
+        "code": "csharp",
         "imagePath": "/imgs/frameworks/xamarin.png"
     },
-    "unity": {
+    {
+        "id": "unity",
         "name": "Unity",
-        "codingLanguageId": "csharp",
+        "code": "csharp",
         "imagePath": "/imgs/frameworks/unity.png"
     },
-    "entityFramework": {
+    {
+        "id": "ef",
         "name": "Entity framework",
-        "codingLanguageId": "csharp",
+        "code": "csharp",
         "imagePath": "/imgs/frameworks/entity-framework.png"
     },
-    "dapper": {
+    {
+        "id": "dapper",
         "name": "Dapper",
-        "codingLanguageId": "csharp",
+        "code": "csharp",
         "imagePath": "/imgs/frameworks/dapper.png"
     },
-    "node": {
+    {
+        "id": "node",
         "name": "Node.js",
-        "codingLanguageId": "js",
+        "code": "js",
         "imagePath": "/imgs/frameworks/node.png"
     },
-    "react": {
+    {
+        "id": "react",
         "name": "React",
-        "codingLanguageId": "js",
+        "code": "js",
         "imagePath": "/imgs/frameworks/react.png"
     },
-    "vue": {
+    {
+        "id": "vue",
         "name": "Vue.js",
-        "codingLanguageId": "js",
+        "code": "js",
         "imagePath": "/imgs/frameworks/vue.png"
     },
-    "angular": {
+    {
+        "id": "angular",
         "name": "Angular",
-        "codingLanguageId": "js",
+        "code": "js",
         "imagePath": "/imgs/frameworks/angular.png"
     },
-    "javafx": {
+    {
+        "id": "javafx",
         "name": "JavaFX",
-        "codingLanguageId": "java",
+        "code": "java",
         "imagePath": "/imgs/frameworks/javafx.png"
     },
-    "android": {
+    {
+        "id": "android",
         "name": "Android",
-        "codingLanguageId": "java",
+        "code": "java",
         "imagePath": "/imgs/frameworks/android.png"
     },
-    "jetpack": {
+    {
+        "id": "jetpack",
         "name": "Jetpack compose",
-        "codingLanguageId": "kotlin",
+        "code": "kotlin",
         "imagePath": "/imgs/frameworks/jetpack-compose.png"
     },
-    "flask": {
+    {
+        "id": "flask",
         "name": "Flask",
-        "codingLanguageId": "python",
+        "code": "python",
         "imagePath": "/imgs/frameworks/flask.png"
     },
-    "django": {
+    {
+        "id": "django",
         "name": "Django",
-        "codingLanguageId": "python",
+        "code": "python",
         "imagePath": "/imgs/frameworks/django.png"
     },
-    "bootstrap": {
+    {
+        "id": "bootstrap",
         "name": "Bootstrap",
-        "codingLanguageId": "css",
+        "code": "css",
         "imagePath": "/imgs/frameworks/bootstrap.png"
     }
-}
+]

@@ -1,28 +1,28 @@
 import { Fragment, useState } from "react";
 
-import * as localApi from "apis/local";
+import * as dataApi from "apis/data";
 import { Spinner } from "components";
 import { SkillsPageProps, SkillsPageData } from "./SkillsPage.d";
 import "./SkillsPage.scss";
 
 const fetchData = async function(): Promise<SkillsPageData> {
-    const clouds = await localApi.fetchAllClouds();
-    const databases = await localApi.fetchAllDatabases();
-    const feeds = await localApi.fetchAllFeeds();
-    const frameworks = await localApi.fetchAllFrameworks();
-    const codingLanguages = await localApi.fetchAllCodingLanguages();
-    const linguisticLanguage = await localApi.fetchAllLinguisticLanguages();
-    const softwares = await localApi.fetchAllSoftwares();
-    const versionControlSystem = await localApi.fetchAllVersionControlSystems();
+    const clouds = await dataApi.fetchAllClouds();
+    const codes = await dataApi.fetchAllCodes();
+    const databases = await dataApi.fetchAllDatabases();
+    const feeds = await dataApi.fetchAllFeeds();
+    const frameworks = await dataApi.fetchAllFrameworks();
+    const languages = await dataApi.fetchAllLanguages();
+    const softwares = await dataApi.fetchAllSoftwares();
+    const vcs = await dataApi.fetchAllVCSs();
     return { 
         clouds,
         databases,
         feeds,
         frameworks,
-        languages: codingLanguages,
-        linguistics: linguisticLanguage,
+        codes,
+        languages,
         softwares,
-        vcs: versionControlSystem
+        vcs
     };
 }
 
@@ -43,7 +43,7 @@ export const SkillsPage = function(props: SkillsPageProps) {
             <Spinner /> 
         );
     }
-    console.log(data?.feeds);
+    
     return (
         <Fragment>
             <section className="SkillsPageSection py-5 text-center container-fluid">
@@ -93,7 +93,7 @@ export const SkillsPage = function(props: SkillsPageProps) {
                         ))
                     }
                     {
-                        data?.languages.map(language => (
+                        data?.codes.map(language => (
                             <div className="col col-lg-2" key={language.id}>
                                 <img className="bd-placeholder-img" 
                                     src={language.imagePath} width="140" />
@@ -102,7 +102,7 @@ export const SkillsPage = function(props: SkillsPageProps) {
                         ))
                     }
                     {
-                        data?.linguistics.map(linguistic => (
+                        data?.languages.map(linguistic => (
                             <div className="col col-lg-2" key={linguistic.id}>
                                 <img className="bd-placeholder-img" 
                                     src={linguistic.imagePath} width="140" />

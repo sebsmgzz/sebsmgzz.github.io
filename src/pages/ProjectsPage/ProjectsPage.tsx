@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import moment from "moment";
-import { fetchAllProjects } from "apis/local";
 
+import { fetchAllProjects } from "apis/data";
 import { Accordion, AccordionItem, AccordionHeader, AccordionBody, Spinner } from "components";
 import { ProjectsPageProps, ProjectsPageData } from "./ProjectsPage.d";
 import "./ProjectsPage.scss";
@@ -45,7 +45,7 @@ export const ProjectsPage = function(props: ProjectsPageProps) {
                         <AccordionItem>
                             <AccordionHeader title={project.name}>
                             {
-                                project.stacks.map((stack: string) => {
+                                project.stack.map((stack: string) => {
                                     const stackName = stack.replace("#", "sharp").replace("++", "pp")
                                     return (
                                         <span className={`badge rounded-pill stack-${stackName}`}>
@@ -58,7 +58,7 @@ export const ProjectsPage = function(props: ProjectsPageProps) {
                             <AccordionBody>
                                 <div className="d-flex flex-column text-justify gap-2 w-100 justify-content-between">
                                     <small className="ms-auto opacity-50 text-nowrap">
-                                        {moment(project.startDate).format("YYYY MMMM")}
+                                        {moment(project.date).format("YYYY MMMM")}
                                     </small>
                                     <p className="mb-0">
                                         &emsp;<strong>Use case: </strong>

@@ -1,56 +1,55 @@
 
 export type Certificate = {
-    id: number,
     title: string,
     issuedAt: Date,
     path: string,
-    organizationsIds: string[]
+    organizations: string[]
 }
 
 export type Cloud = {
     id: string,
     name: string,
-    url: URL,
+    refUrl: URL,
     imagePath: string
 }
 
-export type CodingLanguage = {
+export type Code = {
     id: string,
     name: string,
-    type: CodingLanguageType,
-    url: URL,
+    category: CodeCategory,
+    refUrl: URL,
     imagePath: string
 }
 
-export enum CodingLanguageType {
-    Programming,
-    Markup,
-    Spreadsheet,
-    Shell
+export enum CodeCategory {
+    Programming = "programming",
+    Markup = "markup",
+    Spreadsheet = "stylesheet",
+    Shell = "shell"
 }
 
 export type Database = {
     id: string,
     name: string,
-    url: URL,
+    refUrl: URL,
     imagePath: string
 }
 
 export type Feed = {
     id: string,
     name: string,
-    url: URL,
+    refUrl: URL,
     imagePath: string
 }
 
 export type Framework = {
     id: string,
     name: string,
-    codingLanguageId: string,
+    code: string,
     imagePath: string
 }
 
-export type LinguisticLanguage = {
+export type Language = {
     id: string,
     name: string,
     imagePath: string
@@ -59,38 +58,38 @@ export type LinguisticLanguage = {
 export type Organization = {
     id: string,
     name: string,
-    url: URL,
+    refUrl: URL,
     imagePath: string
 }
 
-export type Projects = {
+export type Project = {
     id: number,
     name: string,
     useCase: string,
     description: string,
-    startDate: Date,
-    stacks: string[]
+    date: Date,
+    stack: string[]
 }
 
 export type Software = {
     id: string,
     name: string,
-    type: SoftwareType,
-    url: URL,
+    category: SoftwareType,
+    refUrl: URL,
     imagePath: string
 } 
 
 export enum SoftwareType {
-    Virtualization,
-    IDEs,
-    Misc,
-    Databases,
-    CAD
+    Virtualization = "virtualization",
+    IDEsAndSimilar = "ides-and-similar",
+    Misc = "misc",
+    DatabaseClient = "database-client",
+    CAD = "cad"
 }
 
 export type VersionControlSystem = {
     id: string,
     name: string,
-    url: URL,
+    refUrl: URL,
     imagePath: string
 }

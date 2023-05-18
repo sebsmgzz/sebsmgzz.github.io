@@ -1,0 +1,72 @@
+[
+    {
+        "id": "csharp",
+        "name": "C#",
+        "category": "programming",
+        "refUrl": "https://dotnet.microsoft.com/en-us/languages/csharp",
+        "imagePath": "/imgs/codes/csharp.png"
+    },
+    {
+        "id": "vb",
+        "name": "VB.NET",
+        "category": "programming",
+        "refUrl": "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
+        "imagePath": "/imgs/codes/vb.png"
+    },
+    {
+        "id": "js",
+        "name": "Javascript",
+        "category": "programming",
+        "refUrl": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "imagePath": "/imgs/codes/js.png"
+    },
+    {
+        "id": "java",
+        "name": "Java",
+        "category": "programming",
+        "refUrl": "https://www.java.com/en/",
+        "imagePath": "/imgs/codes/java.png"
+    },
+    {
+        "id": "kotlin",
+        "name": "Kotlin",
+        "category": "programming",
+        "refUrl": "https://kotlinlang.org/",
+        "imagePath": "/imgs/codes/kotlin.png"
+    },
+    {
+        "id": "python",
+        "name": "Python",
+        "category": "programming",
+        "refUrl": "https://www.python.org/",
+        "imagePath": "/imgs/codes/python.png"
+    },
+    {
+        "id": "html",
+        "name": "HTML",
+        "category": "markup",
+        "refUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "imagePath": "/imgs/codes/html.png"
+    },
+    {
+        "id": "css",
+        "name": "CSS",
+        "category": "stylesheet",
+        "refUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "imagePath": "/imgs/codes/css.png"
+    },
+    {
+        "id": "ps",
+        "name": "Powershell",
+        "category": "shell",
+        "refUrl": "https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3",
+        "imagePath": "/imgs/codes/powershell.png"
+    },
+    {
+        "id": "bash",
+        "name": "Bash",
+        "category": "shell",
+        "refUrl": "https://www.gnu.org/software/bash/",
+        "imagePath": "/imgs/codes/bash.png"
+    }
+]

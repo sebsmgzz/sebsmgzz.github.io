@@ -1,4 +1,4 @@
-import { Cloud, Database, Feed, Framework, Language, Linguistic, Software, VersionControlSystem } from "apis/local";
+import { Cloud, Database, Feed, Framework, Language, Linguistic, Software, VersionControlSystem } from "apis/data.d";
 
 export type SkillsPageProps = {
 
@@ -9,8 +9,8 @@ export type SkillsPageData = {
     databases: Array<Database>,
     feeds: Array<Feed>,
     frameworks: Array<Framework>,
-    languages: Array<Language>,
-    linguistics: Array<Linguistic>,
+    codes: Array<Language>,
+    languages: Array<Linguistic>,
     softwares: Array<Software>,
     vcs: Array<VersionControlSystem>
 }
