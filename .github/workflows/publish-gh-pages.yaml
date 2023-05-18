@@ -42,6 +42,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          token: ${{ secrets.TOKEN }}
           artifact_name: ${{ env.ARTIFACT_NAME }}
               
