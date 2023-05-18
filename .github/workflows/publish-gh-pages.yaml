@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1.0.8
         with:
           name: ${{ env.ARTIFACT_NAME }}
-          path: '.'
+          path: ./build
           
   # Deploy artifact
   deploy:
@@ -35,12 +35,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ env.ARTIFACT_NAME }}
-      - name: Test
-        run: echo $GITHUB_TOKEN
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
