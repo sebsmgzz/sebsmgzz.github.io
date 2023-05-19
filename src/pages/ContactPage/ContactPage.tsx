@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { my, urls } from "global/constants";
+import { my, urls } from "constants/core";
 import { formatPhoneNumber } from "utils/strings";
 import { ContactPageProps } from "./ContactPage.d";
 import "./ContactPage.scss";

@@ -1,22 +1,22 @@
-{
-    "sql": {
+[
+    {
+        "id": "sql",
         "name": "SQL",
-        "url": "https://www.microsoft.com/en-us/sql-server/sql-server-downloads",
-        "imagePath": "/imgs/databases/sql.png"
+        "refUrl": "https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
     },
-    "cosmos": {
+    {
+        "id": "cosmos",
         "name": "Cosmos",
-        "url": "https://azure.microsoft.com/en-us/products/cosmos-db/",
-        "imagePath": "/imgs/databases/cosmos.png"
+        "refUrl": "https://azure.microsoft.com/en-us/products/cosmos-db/"
     },
-    "postgres": {
+    {
+        "id": "postgres",
         "name": "Postgres",
-        "url": "https://www.postgresql.org/",
-        "imagePath": "/imgs/databases/postgres.png"
+        "refUrl": "https://www.postgresql.org/"
     },
-    "sqlite": {
+    {
+        "id": "sqlite",
         "name": "Sqlite",
-        "url": "https://www.sqlite.org/index.html",
-        "imagePath": "/imgs/databases/sqlite.png"
+        "refUrl": "https://www.sqlite.org/index.html"
     }
-}
+]

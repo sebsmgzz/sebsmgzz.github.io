@@ -1,4 +1,4 @@
-import { Project } from "apis/public";
+import { Project } from "apis/data.d";
 
 export type ProjectsPageProps = {
 

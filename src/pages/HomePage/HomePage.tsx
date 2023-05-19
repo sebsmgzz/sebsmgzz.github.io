@@ -1,6 +1,6 @@
 
-import { my, urls } from "global/constants";
-import myself from "resources/images/myself.png";
+import { docs } from "constants/public";
+import { my } from "constants/core";
 import { HomePageProps } from "./HomePage.d";
 import "./HomePage.scss";
 
@@ -19,7 +19,7 @@ export const HomePage = function(props: HomePageProps) {
             <div className="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
 
                 <div className="col-lg-6 col-sm-8 m-auto">
-                    <img src={myself} 
+                    <img src="/imgs/myself.png" 
                         className="d-block mx-lg-auto img-fluid m-auto" 
                         alt="Bootstrap Themes" 
                         loading="lazy" />
@@ -44,7 +44,7 @@ export const HomePage = function(props: HomePageProps) {
                         name2="I do hardware as well" />
 
                     <div className="d-flex flex-column flex-md-row justify-content-evenly align-items-center w-100">
-                        <a className="btn btn-outline-primary my-2" type="button" target="_blank" href={urls.cv} >
+                        <a className="btn btn-outline-primary my-2" type="button" target="_blank" href={docs.cv} >
                             <span className="px-2">Download CV</span>
                             <i className="bi bi-file-earmark-arrow-down-fill"></i>
                         </a>

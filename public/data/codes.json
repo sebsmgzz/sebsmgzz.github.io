@@ -1,0 +1,62 @@
+[
+    {
+        "id": "csharp",
+        "name": "C#",
+        "category": "programming",
+        "refUrl": "https://dotnet.microsoft.com/en-us/languages/csharp"
+    },
+    {
+        "id": "vb",
+        "name": "VB.NET",
+        "category": "programming",
+        "refUrl": "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+    },
+    {
+        "id": "js",
+        "name": "Javascript",
+        "category": "programming",
+        "refUrl": "https://developer.mozilla.org/en-US/docs/Web/javascript"
+    },
+    {
+        "id": "java",
+        "name": "Java",
+        "category": "programming",
+        "refUrl": "https://www.java.com/en/"
+    },
+    {
+        "id": "kotlin",
+        "name": "Kotlin",
+        "category": "programming",
+        "refUrl": "https://kotlinlang.org/"
+    },
+    {
+        "id": "python",
+        "name": "Python",
+        "category": "programming",
+        "refUrl": "https://www.python.org/"
+    },
+    {
+        "id": "html",
+        "name": "HTML",
+        "category": "markup",
+        "refUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+        "id": "css",
+        "name": "CSS",
+        "category": "stylesheet",
+        "refUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+        "id": "ps",
+        "name": "Powershell",
+        "category": "shell",
+        "refUrl": "https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3"
+    },
+    {
+        "id": "bash",
+        "name": "Bash",
+        "category": "shell",
+        "refUrl": "https://www.gnu.org/software/bash/"
+    }
+]

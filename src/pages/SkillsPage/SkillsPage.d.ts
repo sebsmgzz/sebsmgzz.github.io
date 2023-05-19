@@ -1,16 +1,27 @@
-import { Cloud, Database, Feed, Framework, Language, Linguistic, Software, VersionControlSystem } from "apis/local";
+import * as d from "apis/data.d";
 
 export type SkillsPageProps = {
 
 }
 
 export type SkillsPageData = {
-    clouds: Array<Cloud>,
-    databases: Array<Database>,
-    feeds: Array<Feed>,
-    frameworks: Array<Framework>,
-    languages: Array<Language>,
-    linguistics: Array<Linguistic>,
-    softwares: Array<Software>,
-    vcs: Array<VersionControlSystem>
+    skills: Array<SkillData>
+}
+
+export type SkillData = {
+    id: string,
+    name: string,
+    category: SkillCategory,
+    imagePath: string
+}
+
+export enum SkillCategory {
+    Cloud = "Clouds",
+    Database = "Databases",
+    Feed = "Feeds",
+    Framework = "Frameworks",
+    Code = "Code languages",
+    Language = "Languages",
+    Software = "Softwares",
+    VCS = "Version control"
 }

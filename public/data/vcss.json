@@ -1,0 +1,27 @@
+[
+    {
+        "id": "git",
+        "name": "Git",
+        "refUrl": "https://git-scm.com/"
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "refUrl": "https://github.com/"
+    },
+    {
+        "id": "gitlab",
+        "name": "GitLab",
+        "refUrl": "https://about.gitlab.com/"
+    },
+    {
+        "id": "ado",
+        "name": "Azure DevOps",
+        "refUrl": "https://azure.microsoft.com/en-us/products/devops/"
+    },
+    {
+        "id": "bitbucket",
+        "name": "Bitbuket",
+        "refUrl": "https://bitbucket.org/"
+    }
+]

@@ -2,9 +2,9 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import { Fragment, useState } from "react";
 
+import * as imgs from "constants/imgs";
 import { Card, CardSink, Spinner } from "components";
-import { fetchAllCertificates, fetchAllOrganizations } from "apis/local";
-
+import { fetchAllCertificates, fetchAllOrganizations } from "apis/data";
 import { EducationPageProps, EducationPageData, IssuerData } from "./EducationPage.d";
 import "./EducationPage.scss";
 
@@ -13,11 +13,15 @@ const fetchData = async function(): Promise<EducationPageData> {
     const organizations = await fetchAllOrganizations();
     return {
         certificates: certificates
-            .map(certificate => Object.assign(certificate, {
+            .map(certificate => ({
+                ...certificate,
                 issuers: organizations
-                    .filter(org => certificate.organizationsIds.includes(org.id))
+                    .filter(org => certificate.organizations.includes(org.id))
                     .sort((left, right) => left.id === "coursera" ? 1 : 0)
-                    .map(organization => organization as IssuerData)
+                    .map(organization => ({
+                        ...organization,
+                        imagePath: imgs.organizations[organization.id],
+                    }))
             }))
             .sort((left, right) => right.issuedAt.getTime() - left.issuedAt.getTime())
     };
@@ -62,7 +66,7 @@ export const EducationPage = function(props: EducationPageProps) {
                             <CardSink>
                             {
                                 certificate.issuers.map(issuer => (
-                                    <Link to={issuer.url} target="_blank" key={issuer.id}>
+                                    <Link to={issuer.refUrl} target="_blank" key={issuer.id}>
                                         {issuer.name}
                                     </Link>
                                 ))

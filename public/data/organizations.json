@@ -1,87 +1,100 @@
-{
-    "uoc": {
+[
+    {
+        "id": "uoc",
         "name": "University of Colorado",
-        "url": "https://www.colorado.edu/",
+        "refUrl": "https://www.colorado.edu/",
         "imagePath": "/imgs/organizations/uni-of-colorado.png"
     },
-    "coursera": {
+    {
+        "id": "coursera",
         "name": "Coursera",
-        "url": "https://www.coursera.org/",
+        "refUrl": "https://www.coursera.org/",
         "imagePath": "/imgs/organizations/coursera.png"
     },
-    "itesm": {
+    {
+        "id": "itesm",
         "name": "Instituto Tecnologico de Estudios Superiores de Monterrey",
-        "url": "https://tec.mx/en",
+        "refUrl": "https://tec.mx/en",
         "imagePath": "/imgs/organizations/itesm.png"
     },
-    "ibm": {
+    {
+        "id": "ibm",
         "name": "IBM",
-        "url": "https://www.ibm.com",
+        "refUrl": "https://www.ibm.com",
         "imagePath": "/imgs/organizations/ibm.png"
     },
-    "uom": {
+    {
+        "id": "uom",
         "name": "University of Michigan",
-        "url": "https://umich.edu/",
+        "refUrl": "https://umich.edu/",
         "imagePath": "/imgs/organizations/uni-of-michigan.png"
     },
-    "tecGurus": {
+    {
+        "id": "tecGurus",
         "name": "Tec Gurus",
-        "url": "https://www.tecgurus.net/",
+        "refUrl": "https://www.tecgurus.net/",
         "imagePath": "/imgs/organizations/tecgurus.png"
     },
-    "jd": {
+    {
+        "id": "jd",
         "name": "John Deere",
-        "url": "https://www.deere.com/en/index.html",
+        "refUrl": "https://www.deere.com/en/index.html",
         "imagePath": "/imgs/organizations/john-deere.png"
     },
-    "bioana": {
+    {
+        "id": "bioana",
         "name": "Bioana",
-        "url": "http://www.bioana.com.mx/",
+        "refUrl": "http://www.bioana.com.mx/",
         "imagePath": "/imgs/organizations/bioana.png"
     },
-    "bmes": {
+    {
+        "id": "bmes",
         "name": "BioMedial Engineer Society",
-        "url": "https://www.bmes.org/",
+        "refUrl": "https://www.bmes.org/",
         "imagePath": "/imgs/organizations/bmes.png"
     },
-    "tecsalud": {
+    {
+        "id": "tecsalud",
         "name": "Medical and Wellness Sciences Shcool",
-        "url": "http://escuelademedicina.tec.mx/",
+        "refUrl": "http://escuelademedicina.tec.mx/",
         "imagePath": "/imgs/organizations/tec-salud.png"
     },
-    "ideea": {
+    {
+        "id": "ideea",
         "name": "International Design & Engineering Education Association",
-        "url": "https://ideea.network/",
+        "refUrl": "https://ideea.network/",
         "imagePath": "/imgs/organizations/ideea.png"
     },
-    "prepanet": {
+    {
+        "id": "prepanet",
         "name": "PrepaNet @NET",
-        "url": "http://sitios.itesm.mx/prepanet/",
+        "refUrl": "http://sitios.itesm.mx/prepanet/",
         "imagePath": "/imgs/organizations/prepanet.png"
     },
-    "n360": {
+    {
+        "id": "n360",
         "name": "Negocio 360",
-        "url": "https://www.facebook.com/Negocio360",
+        "refUrl": "https://www.facebook.com/Negocio360",
         "imagePath": "/imgs/organizations/negocio360.png"
     },
-    "clinicasAzure": {
+    {
+        "id": "clinicasAzure",
         "name": "Clinicas del azucar (Sugar clinics)",
-        "url": "https://www.clinicasdelazucar.com/",
-        "imagePath": "/imgs/organizations/clinicas-del-azucar.png"
+        "refUrl": "https://www.clinicasdelazucar.com/"
     },
-    "iknextia": {
+    {
+        "id": "iknextia",
         "name": "IKNEXTIA",
-        "url": "https://www.facebook.com/iknextia",
-        "imagePath": "/imgs/organizations/iknextia.png"
+        "refUrl": "https://www.facebook.com/iknextia"
     },
-    "dimex": {
+    {
+        "id": "dimex",
         "name": "DIMEX",
-        "url": "https://www.pinterest.com.mx/dimexmty/",
-        "imagePath": "/imgs/organizations/dimex.png"
+        "refUrl": "https://www.pinterest.com.mx/dimexmty/"
     },
-    "cva": {
+    {
+        "id": "cva",
         "name": "CVA - Virtual Learning Center",
-        "url": "http://www.centroscomunitariosdeaprendizaje.org.mx/",
-        "imagePath": "/imgs/organizations/cva.png"
+        "refUrl": "http://www.centroscomunitariosdeaprendizaje.org.mx/"
     }
-}
+]

@@ -1,28 +1,82 @@
 import { Fragment, useState } from "react";
 
-import * as localApi from "apis/local";
+import * as images from "constants/imgs";
+import * as dataApi from "apis/data";
+import { useWindowSize } from "hooks";
 import { Spinner } from "components";
-import { SkillsPageProps, SkillsPageData } from "./SkillsPage.d";
+import { SkillsPageProps, SkillsPageData, SkillCategory, SkillData } from "./SkillsPage.d";
 import "./SkillsPage.scss";
 
+// TODO: Move bootstrap to NPM, remove from CDN
+const gridBreakpoints = {
+    xs: 0,
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200,
+    xxl: 1400
+};
+
 const fetchData = async function(): Promise<SkillsPageData> {
-    const clouds = await localApi.fetchAllClouds();
-    const databases = await localApi.fetchAllDatabases();
-    const feeds = await localApi.fetchAllFeeds();
-    const frameworks = await localApi.fetchAllFrameworks();
-    const codingLanguages = await localApi.fetchAllCodingLanguages();
-    const linguisticLanguage = await localApi.fetchAllLinguisticLanguages();
-    const softwares = await localApi.fetchAllSoftwares();
-    const versionControlSystem = await localApi.fetchAllVersionControlSystems();
-    return { 
-        clouds,
-        databases,
-        feeds,
-        frameworks,
-        languages: codingLanguages,
-        linguistics: linguisticLanguage,
-        softwares,
-        vcs: versionControlSystem
+    const clouds = await dataApi.fetchAllClouds();
+    const codes = await dataApi.fetchAllCodes();
+    const databases = await dataApi.fetchAllDatabases();
+    const feeds = await dataApi.fetchAllFeeds();
+    const frameworks = await dataApi.fetchAllFrameworks();
+    const languages = await dataApi.fetchAllLanguages();
+    const softwares = await dataApi.fetchAllSoftwares();
+    const vcss = await dataApi.fetchAllVCSs();
+    return {
+        skills: [
+            ...clouds.map<SkillData>(cloud => ({
+                id: cloud.id,
+                name: cloud.name,
+                category: SkillCategory.Cloud,
+                imagePath: images.clouds[cloud.id]
+            })),
+            ...databases.map<SkillData>(database => ({
+                id: database.id,
+                name: database.name,
+                category: SkillCategory.Database,
+                imagePath: images.databases[database.id]
+            })),
+            ...feeds.map<SkillData>(feed => ({
+                id: feed.id,
+                name: feed.name,
+                category: SkillCategory.Feed,
+                imagePath: images.feeds[feed.id]
+            })),
+            ...frameworks.map<SkillData>(framework => ({
+                id: framework.id,
+                name: framework.name,
+                category: SkillCategory.Framework,
+                imagePath: images.frameworks[framework.id]
+            })),
+            ...codes.map<SkillData>(code => ({
+                id: code.id,
+                name: code.name,
+                category: SkillCategory.Code,
+                imagePath: images.codes[code.id]
+            })),
+            ...languages.map<SkillData>(language => ({
+                id: language.id,
+                name: language.name,
+                category: SkillCategory.Language,
+                imagePath: images.languages[language.id]
+            })),
+            ...softwares.map<SkillData>(software => ({
+                id: software.id,
+                name: software.name,
+                category: SkillCategory.Software,
+                imagePath: images.softwares[software.id]
+            })),
+            ...vcss.map<SkillData>(vcs => ({
+                id: vcs.id,
+                name: vcs.name,
+                category: SkillCategory.VCS,
+                imagePath: images.vcss[vcs.id]
+            }))
+        ]
     };
 }
 
@@ -43,7 +97,7 @@ export const SkillsPage = function(props: SkillsPageProps) {
             <Spinner /> 
         );
     }
-    console.log(data?.feeds);
+    
     return (
         <Fragment>
             <section className="SkillsPageSection py-5 text-center container-fluid">
@@ -54,81 +108,37 @@ export const SkillsPage = function(props: SkillsPageProps) {
                 </div>
             </section>
             <section className="SkillsPageSection container-fluid">
-                <div className="row">
-
-                    {
-                        data?.clouds.map(cloud => (
-                            <div className="col col-lg-2" key={cloud.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={cloud.imagePath} width="140" />
-                                <h2 className="text-center">{cloud.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.databases.map(database => (
-                            <div className="col col-lg-2" key={database.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={database.imagePath} width="140" />
-                                <h2 className="text-center">{database.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.feeds.map(feed => (
-                            <div className="col col-lg-2" key={feed.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={feed.imagePath} width="140" />
-                                <h2 className="text-center">{feed.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.frameworks.map(frameworks => (
-                            <div className="col col-lg-2" key={frameworks.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={frameworks.imagePath} width="140" />
-                                <h2 className="text-center">{frameworks.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.languages.map(language => (
-                            <div className="col col-lg-2" key={language.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={language.imagePath} width="140" />
-                                <h2 className="text-center">{language.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.linguistics.map(linguistic => (
-                            <div className="col col-lg-2" key={linguistic.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={linguistic.imagePath} width="140" />
-                                <h2 className="text-center">{linguistic.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.softwares.map(software => (
-                            <div className="col col-lg-2" key={software.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={software.imagePath} width="140" />
-                                <h2 className="text-center">{software.name}</h2>
-                            </div>
-                        ))
-                    }
-                    {
-                        data?.vcs.map(vc => (
-                            <div className="col col-lg-2" key={vc.id}>
-                                <img className="bd-placeholder-img" 
-                                    src={vc.imagePath} width="140" />
-                                <h2 className="text-center">{vc.name}</h2>
-                            </div>
-                        ))
-                    }
-
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {
+                    Object.entries(SkillCategory).map(([ i, category ]) => (
+                        <div className="col p-0">
+                            <div className="card text-center">          
+                                <div className="card-header">
+                                    <strong>
+                                        {category}
+                                    </strong>
+                                </div>
+                                <ul className="list-group list-group-flush">
+                                {
+                                    data?.skills
+                                    .filter(skill => skill.category === category)
+                                    .map(skill => (
+                                        <li className="list-group-item">
+                                            <img 
+                                                className="mx-1"
+                                                src={skill.imagePath} 
+                                                width={30} />
+                                            <span>
+                                                {skill.name}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                                </ul>
+                            </div> 
+                        </div>
+                    ))
+                }
                 </div>
             </section>
         </Fragment>
