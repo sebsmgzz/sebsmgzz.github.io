@@ -9,16 +9,14 @@ export type Certificate = {
 export type Cloud = {
     id: string,
     name: string,
-    refUrl: URL,
-    imagePath: string
+    refUrl: URL
 }
 
 export type Code = {
     id: string,
     name: string,
     category: CodeCategory,
-    refUrl: URL,
-    imagePath: string
+    refUrl: URL
 }
 
 export enum CodeCategory {
@@ -31,35 +29,31 @@ export enum CodeCategory {
 export type Database = {
     id: string,
     name: string,
-    refUrl: URL,
-    imagePath: string
+    refUrl: URL
 }
 
 export type Feed = {
     id: string,
     name: string,
     refUrl: URL,
-    imagePath: string
+
 }
 
 export type Framework = {
     id: string,
     name: string,
-    code: string,
-    imagePath: string
+    code: string
 }
 
 export type Language = {
     id: string,
-    name: string,
-    imagePath: string
+    name: string
 }
 
 export type Organization = {
     id: string,
     name: string,
-    refUrl: URL,
-    imagePath: string
+    refUrl: URL
 }
 
 export type Project = {
@@ -75,8 +69,7 @@ export type Software = {
     id: string,
     name: string,
     category: SoftwareType,
-    refUrl: URL,
-    imagePath: string
+    refUrl: URL
 } 
 
 export enum SoftwareType {
@@ -90,6 +83,5 @@ export enum SoftwareType {
 export type VersionControlSystem = {
     id: string,
     name: string,
-    refUrl: URL,
-    imagePath: string
+    refUrl: URL
 }

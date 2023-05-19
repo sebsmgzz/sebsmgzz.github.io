@@ -2,19 +2,16 @@
     {
         "id": "azure",
         "name": "Azure",
-        "refUrl": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/",
-        "imagePath": "/imgs/clouds/azure.png"
+        "refUrl": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/"
     },
     {
         "id": "aws",
         "name": "AWS",
-        "refUrl": "https://aws.amazon.com/what-is-aws/",
-        "imagePath": "/imgs/clouds/aws.png"
+        "refUrl": "https://aws.amazon.com/what-is-aws/"
     },
     {
         "id": "gcp",
         "name": "GCP",
-        "refUrl": "https://cloud.google.com/gcp/?hl=en",
-        "imagePath": "/imgs/clouds/gcp.png"
+        "refUrl": "https://cloud.google.com/gcp/?hl=en"
     }
 ]

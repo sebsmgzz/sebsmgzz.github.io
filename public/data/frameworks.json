@@ -2,91 +2,76 @@
     {
         "id": "wpf",
         "name": "WPF",
-        "code": "csharp",
-        "imagePath": "/imgs/frameworks/wpf.png"
+        "code": "csharp"
     },
     {
         "id": "xamarin",
         "name": "Xamarin",
-        "code": "csharp",
-        "imagePath": "/imgs/frameworks/xamarin.png"
+        "code": "csharp"
     },
     {
         "id": "unity",
         "name": "Unity",
-        "code": "csharp",
-        "imagePath": "/imgs/frameworks/unity.png"
+        "code": "csharp"
     },
     {
         "id": "ef",
         "name": "Entity framework",
-        "code": "csharp",
-        "imagePath": "/imgs/frameworks/entity-framework.png"
+        "code": "csharp"
     },
     {
         "id": "dapper",
         "name": "Dapper",
-        "code": "csharp",
-        "imagePath": "/imgs/frameworks/dapper.png"
+        "code": "csharp"
     },
     {
         "id": "node",
         "name": "Node.js",
-        "code": "js",
-        "imagePath": "/imgs/frameworks/node.png"
+        "code": "js"
     },
     {
         "id": "react",
         "name": "React",
-        "code": "js",
-        "imagePath": "/imgs/frameworks/react.png"
+        "code": "js"
     },
     {
         "id": "vue",
         "name": "Vue.js",
-        "code": "js",
-        "imagePath": "/imgs/frameworks/vue.png"
+        "code": "js"
     },
     {
         "id": "angular",
         "name": "Angular",
-        "code": "js",
-        "imagePath": "/imgs/frameworks/angular.png"
+        "code": "js"
     },
     {
         "id": "javafx",
         "name": "JavaFX",
-        "code": "java",
-        "imagePath": "/imgs/frameworks/javafx.png"
+        "code": "java"
     },
     {
         "id": "android",
         "name": "Android",
-        "code": "java",
-        "imagePath": "/imgs/frameworks/android.png"
+        "code": "java"
     },
     {
         "id": "jetpack",
         "name": "Jetpack compose",
-        "code": "kotlin",
-        "imagePath": "/imgs/frameworks/jetpack-compose.png"
+        "code": "kotlin"
     },
     {
         "id": "flask",
         "name": "Flask",
-        "code": "python",
-        "imagePath": "/imgs/frameworks/flask.png"
+        "code": "python"
     },
     {
         "id": "django",
         "name": "Django",
-        "code": "python",
-        "imagePath": "/imgs/frameworks/django.png"
+        "code": "python"
     },
     {
         "id": "bootstrap",
         "name": "Bootstrap",
-        "code": "css",
-        "imagePath": "/imgs/frameworks/bootstrap.png"
+        "code": "css"
     }
 ]

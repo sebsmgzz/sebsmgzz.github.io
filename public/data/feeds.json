@@ -2,31 +2,26 @@
     {
         "id": "nuget",
         "name": "Nuget",
-        "refUrl": "https://www.nuget.org/",
-        "imagePath": "/imgs/feeds/nuget.png"
+        "refUrl": "https://www.nuget.org/"
     },
     {
         "id": "npm",
         "name": "NPM",
-        "refUrl": "https://www.npmjs.com/",
-        "imagePath": "/imgs/feeds/npm.png"
+        "refUrl": "https://www.npmjs.com/"
     },
     {
         "id": "pip",
         "name": "PIP",
-        "refUrl": "https://pypi.org/project/pip/",
-        "imagePath": "/imgs/feeds/pip.png"
+        "refUrl": "https://pypi.org/project/pip/"
     },
     {
         "id": "maven",
         "name": "Maven",
-        "refUrl": "https://maven.apache.org/",
-        "imagePath": "/imgs/feeds/maven.png"
+        "refUrl": "https://maven.apache.org/"
     },
     {
         "id": "gradle",
         "name": "Gradle",
-        "refUrl": "https://gradle.org/",
-        "imagePath": "/imgs/feeds/gradle.png"
+        "refUrl": "https://gradle.org/"
     }
 ]

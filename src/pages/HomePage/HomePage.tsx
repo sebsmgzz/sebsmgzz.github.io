@@ -1,6 +1,6 @@
 
-import { docs } from "global/public";
-import { my, urls } from "global/constants";
+import { docs } from "constants/public";
+import { my } from "constants/core";
 import { HomePageProps } from "./HomePage.d";
 import "./HomePage.scss";
 

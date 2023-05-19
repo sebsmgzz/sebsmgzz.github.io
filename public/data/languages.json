@@ -1,22 +1,18 @@
 [
     {
         "id": "spanish",
-        "name": "Spanish",
-        "imagePath": "/imgs/linguistics/mexico.png"
+        "name": "Spanish"
     },
     {
         "id": "english",
-        "name": "English",
-        "imagePath": "/imgs/linguistics/usa.png"
+        "name": "English"
     },
     {
         "id": "italian",
-        "name": "Italian",
-        "imagePath": "/imgs/linguistics/italy.png"
+        "name": "Italian"
     },
     {
         "id": "german",
-        "name": "German",
-        "imagePath": "/imgs/linguistics/germany.png"
+        "name": "German"
     }
 ]

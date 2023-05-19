@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-import * as routes from "global/routes";
-import { my, urls } from "global/constants";
+import * as routes from "constants/routes";
+import { my, urls } from "constants/core";
 import { Header, Main, Footer, NavBar, NavBarLink } from "layouts";
 import { LayoutProps } from "./Layout.d";
 import "./Layout.scss";

@@ -1,7 +1,7 @@
 
 import { fetchSuccess } from "utils/fetch";
 
-import { data } from "global/public";
+import { data } from "constants/public";
 import * as d from "./data.d";
 
 export const fetchAll = async function<T = any>(endpoint: string): Promise<T> {

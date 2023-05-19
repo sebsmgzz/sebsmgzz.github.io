@@ -80,25 +80,21 @@
     {
         "id": "clinicasAzure",
         "name": "Clinicas del azucar (Sugar clinics)",
-        "refUrl": "https://www.clinicasdelazucar.com/",
-        "imagePath": "/imgs/organizations/clinicas-del-azucar.png"
+        "refUrl": "https://www.clinicasdelazucar.com/"
     },
     {
         "id": "iknextia",
         "name": "IKNEXTIA",
-        "refUrl": "https://www.facebook.com/iknextia",
-        "imagePath": "/imgs/organizations/iknextia.png"
+        "refUrl": "https://www.facebook.com/iknextia"
     },
     {
         "id": "dimex",
         "name": "DIMEX",
-        "refUrl": "https://www.pinterest.com.mx/dimexmty/",
-        "imagePath": "/imgs/organizations/dimex.png"
+        "refUrl": "https://www.pinterest.com.mx/dimexmty/"
     },
     {
         "id": "cva",
         "name": "CVA - Virtual Learning Center",
-        "refUrl": "http://www.centroscomunitariosdeaprendizaje.org.mx/",
-        "imagePath": "/imgs/organizations/cva.png"
+        "refUrl": "http://www.centroscomunitariosdeaprendizaje.org.mx/"
     }
 ]

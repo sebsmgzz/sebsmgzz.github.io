@@ -1,6 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 
-import * as routes from "global/routes";
+import * as routes from "constants/routes";
 import * as pages from "pages";
 import { Layout } from "layouts";
 

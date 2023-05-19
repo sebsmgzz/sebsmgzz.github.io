@@ -2,9 +2,9 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import { Fragment, useState } from "react";
 
+import * as imgs from "constants/imgs";
 import { Card, CardSink, Spinner } from "components";
 import { fetchAllCertificates, fetchAllOrganizations } from "apis/data";
-
 import { EducationPageProps, EducationPageData, IssuerData } from "./EducationPage.d";
 import "./EducationPage.scss";
 
@@ -18,7 +18,10 @@ const fetchData = async function(): Promise<EducationPageData> {
                 issuers: organizations
                     .filter(org => certificate.organizations.includes(org.id))
                     .sort((left, right) => left.id === "coursera" ? 1 : 0)
-                    .map(organization => organization as IssuerData)
+                    .map(organization => ({
+                        ...organization,
+                        imagePath: imgs.organizations[organization.id],
+                    }))
             }))
             .sort((left, right) => right.issuedAt.getTime() - left.issuedAt.getTime())
     };

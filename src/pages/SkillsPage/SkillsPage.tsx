@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 
+import * as images from "constants/imgs";
 import * as dataApi from "apis/data";
 import { Spinner } from "components";
 import { SkillsPageProps, SkillsPageData } from "./SkillsPage.d";
@@ -13,16 +14,40 @@ const fetchData = async function(): Promise<SkillsPageData> {
     const frameworks = await dataApi.fetchAllFrameworks();
     const languages = await dataApi.fetchAllLanguages();
     const softwares = await dataApi.fetchAllSoftwares();
-    const vcs = await dataApi.fetchAllVCSs();
+    const vcss = await dataApi.fetchAllVCSs();
     return { 
-        clouds,
-        databases,
-        feeds,
-        frameworks,
-        codes,
-        languages,
-        softwares,
-        vcs
+        clouds: clouds.map(cloud => ({
+            ...cloud,
+            imagePath: images.clouds[cloud.id]
+        })),
+        databases: databases.map(database => ({
+            ...database,
+            imagePath: images.databases[database.id]
+        })),
+        feeds: feeds.map(feed => ({
+            ...feed,
+            imagePath: images.feeds[feed.id]
+        })),
+        frameworks: frameworks.map(framework => ({
+            ...framework,
+            imagePath: images.frameworks[framework.id]
+        })),
+        codes: codes.map(code => ({
+            ...code,
+            imagePath: images.codes[code.id]
+        })),
+        languages: languages.map(language => ({
+            ...language,
+            imagePath: images.languages[language.id]
+        })),
+        softwares: softwares.map(software => ({
+            ...software,
+            imagePath: images.softwares[software.id]
+        })),
+        vcss: vcss.map(vcs => ({
+            ...vcs,
+            imagePath: images.vcss[vcs.id]
+        }))
     };
 }
 
@@ -93,20 +118,20 @@ export const SkillsPage = function(props: SkillsPageProps) {
                         ))
                     }
                     {
-                        data?.codes.map(language => (
-                            <div className="col col-lg-2" key={language.id}>
+                        data?.codes.map(code => (
+                            <div className="col col-lg-2" key={code.id}>
                                 <img className="bd-placeholder-img" 
-                                    src={language.imagePath} width="140" />
-                                <h2 className="text-center">{language.name}</h2>
+                                    src={code.imagePath} width="140" />
+                                <h2 className="text-center">{code.name}</h2>
                             </div>
                         ))
                     }
                     {
-                        data?.languages.map(linguistic => (
-                            <div className="col col-lg-2" key={linguistic.id}>
+                        data?.languages.map(language => (
+                            <div className="col col-lg-2" key={language.id}>
                                 <img className="bd-placeholder-img" 
-                                    src={linguistic.imagePath} width="140" />
-                                <h2 className="text-center">{linguistic.name}</h2>
+                                    src={language.imagePath} width="140" />
+                                <h2 className="text-center">{language.name}</h2>
                             </div>
                         ))
                     }
@@ -120,11 +145,11 @@ export const SkillsPage = function(props: SkillsPageProps) {
                         ))
                     }
                     {
-                        data?.vcs.map(vc => (
-                            <div className="col col-lg-2" key={vc.id}>
+                        data?.vcss.map(vcs => (
+                            <div className="col col-lg-2" key={vcs.id}>
                                 <img className="bd-placeholder-img" 
-                                    src={vc.imagePath} width="140" />
-                                <h2 className="text-center">{vc.name}</h2>
+                                    src={vcs.imagePath} width="140" />
+                                <h2 className="text-center">{vcs.name}</h2>
                             </div>
                         ))
                     }

@@ -3,70 +3,60 @@
         "id": "docker",
         "name": "Docker",
         "category": "virtualization",
-        "refUrl": "https://www.docker.com/",
-        "imagePath": "/imgs/softwares/docker.png"
+        "refUrl": "https://www.docker.com/"
     },
     {
         "id": "vs",
         "name": "Visual Studio",
         "category": "ides-and-similar",
-        "refUrl": "https://visualstudio.microsoft.com/",
-        "imagePath": "/imgs/softwares/vs.png"
+        "refUrl": "https://visualstudio.microsoft.com/"
     },
     {
-        "id": "vscode",
+        "id": "vsc",
         "name": "Visual Studio Code",
         "category": "ides-and-similar",
-        "refUrl": "https://code.visualstudio.com/",
-        "imagePath": "/imgs/softwares/vsc.png"
+        "refUrl": "https://code.visualstudio.com/"
     },
     {
         "id": "postman",
         "name": "Postman",
         "category": "misc",
-        "refUrl": "https://www.postman.com/",
-        "imagePath": "/imgs/softwares/postman.png"
+        "refUrl": "https://www.postman.com/"
     },
     {
         "id": "ads",
         "name": "Azure data studio",
         "category": "database-client",
-        "refUrl": "https://azure.microsoft.com/en-us/products/data-studio/",
-        "imagePath": "/imgs/softwares/ads.png"
+        "refUrl": "https://azure.microsoft.com/en-us/products/data-studio/"
     },
     {
         "id": "ssms",
         "name": "SQL server managment studio",
         "category": "database-client",
-        "refUrl": "https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio",
-        "imagePath": "/imgs/softwares/ssms.png"
+        "refUrl": "https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio"
     },
     {
         "id": "solidworks",
         "name": "Solidworks",
         "category": "cad",
-        "refUrl": "https://www.solidworks.com/",
-        "imagePath": "/imgs/softwares/solidworks.png"
+        "refUrl": "https://www.solidworks.com/"
     },
     {
         "id": "creo",
         "name": "CREO",
         "category": "cad",
-        "refUrl": "https://www.ptc.com/en/products/creo/",
-        "imagePath": "/imgs/softwares/creo.png"
+        "refUrl": "https://www.ptc.com/en/products/creo/"
     },
     {
         "id": "matlab",
         "name": "MatLab",
         "category": "misc",
-        "refUrl": "https://www.mathworks.com/products/matlab.html",
-        "imagePath": "/imgs/softwares/matlab.png"
+        "refUrl": "https://www.mathworks.com/products/matlab.html"
     },
     {
         "id": "twx",
         "name": "Thingworx",
         "category": "misc",
-        "refUrl": "https://www.ptc.com/en/products/thingworx/",
-        "imagePath": "/imgs/softwares/twx.png"
+        "refUrl": "https://www.ptc.com/en/products/thingworx/"
     }
 ]

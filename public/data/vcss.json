@@ -2,31 +2,26 @@
     {
         "id": "git",
         "name": "Git",
-        "refUrl": "https://git-scm.com/",
-        "imagePath": "/imgs/vcss/git.png"
+        "refUrl": "https://git-scm.com/"
     },
     {
         "id": "github",
         "name": "GitHub",
-        "refUrl": "https://github.com/",
-        "imagePath": "/imgs/vcss/gh.png"
+        "refUrl": "https://github.com/"
     },
     {
         "id": "gitlab",
         "name": "GitLab",
-        "refUrl": "https://about.gitlab.com/",
-        "imagePath": "/imgs/vcss/gitlab.png"
+        "refUrl": "https://about.gitlab.com/"
     },
     {
         "id": "ado",
         "name": "Azure DevOps",
-        "refUrl": "https://azure.microsoft.com/en-us/products/devops/",
-        "imagePath": "/imgs/vcss/ado.png"
+        "refUrl": "https://azure.microsoft.com/en-us/products/devops/"
     },
     {
         "id": "bitbucket",
         "name": "Bitbuket",
-        "refUrl": "https://bitbucket.org/",
-        "imagePath": "/imgs/vcss/bitbucket.png"
+        "refUrl": "https://bitbucket.org/"
     }
 ]
