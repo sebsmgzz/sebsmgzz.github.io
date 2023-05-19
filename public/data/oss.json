@@ -1,0 +1,32 @@
+[
+    {
+        "id": "windows",
+        "name": "Windows",
+        "refUrl": "https://www.microsoft.com/en-us/windows"
+    },
+    {
+        "id": "macos",
+        "name": "MacOS",
+        "refUrl": "https://support.apple.com/macos"
+    },
+    {
+        "id": "manjaro",
+        "name": "Linux Manjaro",
+        "refUrl": "https://manjaro.org/"
+    },
+    {
+        "id": "ubuntu",
+        "name": "Linux Ubuntu",
+        "refUrl": "https://ubuntu.com/"
+    },
+    {
+        "id": "centos",
+        "name": "Linux CentOS",
+        "refUrl": "https://www.centos.org/"
+    },
+    {
+        "id": "redhat",
+        "name": "Linux Red Hat",
+        "refUrl": "https://www.redhat.com/en"
+    }
+]

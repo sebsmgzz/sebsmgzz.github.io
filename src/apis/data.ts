@@ -72,6 +72,14 @@ export const fetchAllOrganizations = async function(): Promise<Array<d.Organizat
     }));
 }
 
+export const fetchAllOSs = async function(): Promise<Array<d.OS>> {
+    const entities = await fetchAll<Array<any>>(data.oss);
+    return entities.map<d.OS>(entity => ({ 
+        ...entity,
+        refUrl: new URL(entity.refUrl)
+    }));
+}
+
 export const fetchAllProjects = async function(): Promise<Array<d.Project>> {
     const entities = await fetchAll<Array<any>>(data.projects);
     return entities.map<d.Project>(entity => ({ 

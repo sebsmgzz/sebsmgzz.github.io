@@ -56,6 +56,12 @@ export type Organization = {
     refUrl: URL
 }
 
+export type OS = {
+    id: string,
+    name: string,
+    refUrl: URL
+}
+
 export type Project = {
     id: number,
     name: string,
