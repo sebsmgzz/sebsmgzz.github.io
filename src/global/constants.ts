@@ -11,6 +11,5 @@ export const urls = {
     linkedin: "https://linkedin.com/in/sebastian-mgzz",
     github: "https://github.com/sebsmgzz",
     whatapp: `https://wa.me/${my.phoneNumber}`,
-    location: "https://goo.gl/maps/Q6PmbC1vrjaS34jX9?coh=178571&entry=tt",
-    cv: "/docs/cv.pdf"
+    location: "https://goo.gl/maps/Q6PmbC1vrjaS34jX9?coh=178571&entry=tt"
 }
