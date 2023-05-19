@@ -76,7 +76,7 @@ export const organizations = {
     negocio360: "/imgs/organizations/negocio360.png",
     prepanet: "/imgs/organizations/prepanet.png",
     tecSalud: "/imgs/organizations/tec-salud.png",
-    tecgurus: "/imgs/organizations/tec-gurus.png",
+    tecGurus: "/imgs/organizations/tec-gurus.png",
     uoc: "/imgs/organizations/uoc.png",
     uom: "/imgs/organizations/uom.png"
 }
