@@ -2,9 +2,20 @@ import { Fragment, useState } from "react";
 
 import * as images from "constants/imgs";
 import * as dataApi from "apis/data";
+import { useWindowSize } from "hooks";
 import { Spinner } from "components";
 import { SkillsPageProps, SkillsPageData, SkillCategory, SkillData } from "./SkillsPage.d";
 import "./SkillsPage.scss";
+
+// TODO: Move bootstrap to NPM, remove from CDN
+const gridBreakpoints = {
+    xs: 0,
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200,
+    xxl: 1400
+};
 
 const fetchData = async function(): Promise<SkillsPageData> {
     const clouds = await dataApi.fetchAllClouds();
@@ -51,13 +62,13 @@ const fetchData = async function(): Promise<SkillsPageData> {
                 id: language.id,
                 name: language.name,
                 category: SkillCategory.Language,
-                imagePath: images.codes[language.id]
+                imagePath: images.languages[language.id]
             })),
             ...softwares.map<SkillData>(software => ({
                 id: software.id,
                 name: software.name,
                 category: SkillCategory.Software,
-                imagePath: images.codes[software.id]
+                imagePath: images.softwares[software.id]
             })),
             ...vcss.map<SkillData>(vcs => ({
                 id: vcs.id,
@@ -97,13 +108,34 @@ export const SkillsPage = function(props: SkillsPageProps) {
                 </div>
             </section>
             <section className="SkillsPageSection container-fluid">
-                <div className="row">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {
-                    data?.skills.map(skill => (
-                        <div className="col col-lg-2" key={skill.id}>
-                            <img className="bd-placeholder-img" 
-                                src={skill.imagePath} width="140" />
-                            <h2 className="text-center">{skill.name}</h2>
+                    Object.entries(SkillCategory).map(([ i, category ]) => (
+                        <div className="col p-0">
+                            <div className="card text-center">          
+                                <div className="card-header">
+                                    <strong>
+                                        {category}
+                                    </strong>
+                                </div>
+                                <ul className="list-group list-group-flush">
+                                {
+                                    data?.skills
+                                    .filter(skill => skill.category === category)
+                                    .map(skill => (
+                                        <li className="list-group-item">
+                                            <img 
+                                                className="mx-1"
+                                                src={skill.imagePath} 
+                                                width={30} />
+                                            <span>
+                                                {skill.name}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                                </ul>
+                            </div> 
                         </div>
                     ))
                 }

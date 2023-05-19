@@ -26,7 +26,7 @@ export const ProjectsPage = function(props: ProjectsPageProps) {
     if (isLoading) {
         return (
             <Spinner />
-        )
+        );
     }
 
     return (
