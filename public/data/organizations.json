@@ -1,5 +1,10 @@
 [
     {
+        "id": "microsoft",
+        "name": "Microsoft",
+        "refUrl": "https://www.microsoft.com/"
+    },
+    {
         "id": "uoc",
         "name": "University of Colorado",
         "refUrl": "https://www.colorado.edu/",

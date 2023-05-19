@@ -3,6 +3,7 @@ export const data = {
     certificates: "/data/certificates.json",
     clouds: "/data/clouds.json",
     codes: "/data/codes.json",
+    oss: "/data/oss.json",
     databases: "/data/databases.json",
     feeds: "/data/feeds.json",
     frameworks: "/data/frameworks.json",

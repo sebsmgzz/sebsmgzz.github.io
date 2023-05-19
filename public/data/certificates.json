@@ -1,5 +1,17 @@
 [
     {
+        "title": "Azure Developer Associate",
+        "issuedAt": "2021-10-01",
+        "path": "/docs/credentials/az204-certificate.png",
+        "organizations": [ "microsoft" ]
+    },
+    {
+        "title": "Azure IoT Developer Specialty",
+        "issuedAt": "2021-12-03",
+        "path": "/docs/credentials/az204-certificate.png",
+        "organizations": [ "microsoft" ]
+    },
+    {
         "title": "C# Programming for Unity Game Development Specialization",
         "issuedAt": "2020-09-01T05:00:00.000Z",
         "path": "/docs/credentials/unity-specialization.pdf",

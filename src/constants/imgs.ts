@@ -62,6 +62,7 @@ export const languages = {
 }
 
 export const organizations = {
+    microsoft: "/imgs/organizations/microsoft.png",
     bioana: "/imgs/organizations/bioana.png",
     bmes: "/imgs/organizations/bmes.png",
     clinicasAzucar: "/imgs/organizations/clinicas-azucar.png",
@@ -79,6 +80,15 @@ export const organizations = {
     tecGurus: "/imgs/organizations/tec-gurus.png",
     uoc: "/imgs/organizations/uoc.png",
     uom: "/imgs/organizations/uom.png"
+}
+
+export const oss = {
+    windows: "/imgs/oss/windows.png",
+    macos: "/imgs/oss/macos.png",
+    manjaro: "/imgs/oss/manjaro.png",
+    ubuntu: "/imgs/oss/ubuntu.png",
+    centos: "/imgs/oss/centos.png",
+    redhat: "/imgs/oss/redhat.png"
 }
 
 export const softwares= {

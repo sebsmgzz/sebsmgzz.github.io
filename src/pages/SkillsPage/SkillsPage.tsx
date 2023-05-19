@@ -20,6 +20,7 @@ const gridBreakpoints = {
 const fetchData = async function(): Promise<SkillsPageData> {
     const clouds = await dataApi.fetchAllClouds();
     const codes = await dataApi.fetchAllCodes();
+    const oss = await dataApi.fetchAllOSs();
     const databases = await dataApi.fetchAllDatabases();
     const feeds = await dataApi.fetchAllFeeds();
     const frameworks = await dataApi.fetchAllFrameworks();
@@ -39,6 +40,12 @@ const fetchData = async function(): Promise<SkillsPageData> {
                 name: database.name,
                 category: SkillCategory.Database,
                 imagePath: images.databases[database.id]
+            })),
+            ...oss.map<SkillData>(os => ({
+                id: os.id,
+                name: os.name,
+                category: SkillCategory.OS,
+                imagePath: images.oss[os.id]
             })),
             ...feeds.map<SkillData>(feed => ({
                 id: feed.id,

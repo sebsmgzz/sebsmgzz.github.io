@@ -18,6 +18,7 @@ export type SkillData = {
 export enum SkillCategory {
     Cloud = "Clouds",
     Database = "Databases",
+    OS = "Operating system",
     Feed = "Feeds",
     Framework = "Frameworks",
     Code = "Code languages",

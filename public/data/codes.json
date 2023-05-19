@@ -48,6 +48,12 @@
         "refUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
+        "id": "scss",
+        "name": "Sassy CSS",
+        "category": "stylesheet",
+        "refUrl": "https://sass-lang.com/"
+    },
+    {
         "id": "ps",
         "name": "Powershell",
         "category": "shell",
